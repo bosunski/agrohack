@@ -42,17 +42,18 @@
   </a>
 </div>
 
+<!-- End of Carousel -->
 
-<div class="head">
-      <h4>How it Works</h4>
+<div>
+      <h4 class="head">How it Works</h4>
     </div>
 
- <div class="row">
+ <div class="row ml-5">
 
-  <div class="col-12 col-md-3">
+  <div class="col-md-3">
         <div class="card" style="width: 13rem; height: 11rem;">
-           <div class="card-body">
-              <img src="/img/access-fund-icon.svg">
+          <div class="card-body text-center mt-5">
+            <img class=" " src="/img/access-fund-icon.svg" alt="Card image cap">
           </div>
         </div>
         <h5 class="card-title c-t-1">Access Funding</h5>
@@ -60,10 +61,10 @@
   </div>
 
 
-  <div class="col-12 col-md-3">
+  <div class="col-md-3">
         <div class="card" style="width: 13rem; height: 11rem;">
-           <div class="card-body">
-              <img src="/img/access-fund-icon.svg">
+           <div class="card-body text-center mt-5">
+            <img class=" " src="/img/access-fund-icon.svg" alt="Card image cap">
           </div>
         </div>
         <h5 class="card-title c-t-1">Access Funding</h5>
@@ -72,10 +73,10 @@
 
 
 
-  <div class="col-12 col-md-3">
+  <div class="col-md-3">
         <div class="card" style="width: 13rem; height: 11rem;">
-           <div class="card-body text-center">
-            <img class="card-img-top" src="/img/access-fund-icon.svg" alt="Card image cap">
+           <div class="card-body text-center mt-5">
+            <img class=" " src="/img/access-fund-icon.svg" alt="Card image cap">
           </div>
         </div>
         <h5 class="card-title c-t-1">Access Funding</h5>
@@ -83,10 +84,10 @@
   </div>
 
 
-  <div class="col-12 col-md-3">
+  <div class=" col-md-3">
         <div class="card" style="width: 13rem; height: 11rem;">
-           <div class="card-body">
-              <img src="/img/access-fund-icon.svg">
+           <div class="card-body text-center mt-5">
+            <img class=" " src="/img/access-fund-icon.svg" alt="Card image cap">
           </div>
         </div>
         <h5 class="card-title c-t-1">Access Funding</h5>
@@ -95,8 +96,54 @@
 
    
  </div>
-    
 
+
+ <div class="section2">
+  <h4 class="text-center section2-h">We are here to help you grow</h4>
+  <p class="mt-2 text-center p-0">This is a wider card with this card has </p>
+   <p class="p-1 text-center">Mix and match multiple content types to create the card you need,or throw everything in there. Shown below are image styles, blocks,<br> text styles, and a list group—all wrapped in a fixed-width card.</p>
+ </div>
+    
+  <div class="section3 text-center">
+      <button type="button" class="btn btn-primary">SEE MORE ABOUT US</button>
+  </div>
+
+  <div class="section4">
+    <h3 class="text-center section4-h">LATEST NEWS</h3>
+    <p class="mt-2 text-center p-0">This is a wider card with this card has </p>
+
+    <div class="row mt-5 ml-5">
+      
+      <div class="col-12 col-md-3">
+        <p class="h-1">Are farmers Getting Adeq</p>
+        <p>Growth through innovation, Rather<br> than be constrained</p>
+        <img src="/img/img-1.jpg" width="80%;">
+      </div>
+
+
+       <div class="col-12 col-md-3">
+         <p class="h-1">Low cost Fertilizer</p>
+         <p>The effort vastly improved the farm-<br>ers planning and other...</p>
+         <img src="/img/img-2.jpg" width="80%;">
+      </div>
+
+
+       <div class="col-12 col-md-3">
+         <p class="h-1">The best time to Stud</p>
+        <p>Supported by a robust sales froce and <br>tight cost...</p>
+        <img src="/img/img-3.jpg" width="80%;">
+      </div>
+
+
+       <div class="col-12 col-md-3">
+         <p class="h-1">Why Farmers need</p>
+         <p>In particular , The Initial state of the<br>company's sale..</p>
+         <img src="/img/img-4.jpg" width="80%;">
+      </div>
+
+    </div>
+    
+  </div>
    
 
    <!-- Bootstrap JS -->
