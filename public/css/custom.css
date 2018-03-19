@@ -5,6 +5,37 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
+.head{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.fa-basketball-ball{
+   font-size: 50px;
+   margin-top: 20%;
+   margin-left: 100px;
+}
+
+.c-t-1{
+	font-weight: bold;
+	text-align: center;
+}
+
+.c-text{
+	justify-content: center;
+}
+
+.deck-2{
+	border: 0;
+}
+
+.section2{
+	margin-top: 4%;
+}
+
+.section2-h{
+	text-align: center;
+}
 
 
 
