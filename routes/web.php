@@ -26,4 +26,7 @@ Route::get('/header', function () {
     return view('front.header');
 });
 
+Route::get('/dashboard', function () {
+    return view('front.dashboard');
+});
 
