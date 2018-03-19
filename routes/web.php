@@ -25,3 +25,8 @@ Route::get('/signup', function () {
 Route::get('/login', function () {
     return view('front.login');
 });
+Route::get('/header', function () {
+    return view('front.header');
+});
+
+

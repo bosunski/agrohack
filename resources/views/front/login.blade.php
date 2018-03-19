@@ -43,14 +43,19 @@
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                         </div>
 
-                       <button type="submit" class="btn btn-primary col-xs-4 col-md-4 sm-btn mr-5">Log In</button>
-                                               
-                        <p class="login-text">
-                            Forgot Password?
-                        </p>
-                        <p class="login-text">
-                            Or Click <a href="">here</a> to register
-                        </p>
+                        <div class="justify-content-end">
+                            <button type="submit" class="btn btn-primary col-xs-4 col-md-4 sm-btn">Log In</button>
+                        </div>
+                         
+                        <div>
+                            <p class="login-text">
+                                Forgot Password?
+                            </p>
+                            <p class="login-text">
+                                Or Click <a href="">here</a> to register
+                            </p>
+                        </div>
+                        
                                                
                     </form>
                 </div>
