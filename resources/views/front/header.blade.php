@@ -23,7 +23,6 @@
 
 <body>
     
-</body>
     <div class="row header-1">
         <div class="col-12 col-md-3 "> 
             <img src="../img/logo.png" class="img-fluid " width="100%">
@@ -52,9 +51,9 @@
     
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-primary bg-primary pl-5 py-0 my-0 pr-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary my-0">
       <a class="navbar-brand" href="#">
-        <img src="img/logo.png" width="50%" >
+        <img src="img/logo.png" width="20%" >
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -80,6 +79,10 @@
           <li class="nav-item mr-4">
             <a class="nav-link text-white nav-link-bold" href="#">CONTACT US</a>
           </li>
+
+          <li class="nav-item mr-4 btn-toggle d-flex justify-content-center">      
+            <button type="button" class="btn btn-primary-toggle btn-lg rounded-0"><span class="login-btn-text">REGISTER/LOGIN</span></button>
+          </li>
         </ul>
         <form class="form-inline my-0 my-lg-0  mx-0 ">
           <input class="form-control form-control-lg border-0 rounded-0 text-white bg-deep-blue" type="search" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;search for produce/farmer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#x1F50D;" size="45">
@@ -87,6 +90,12 @@
       </div>
     </nav>
 
+
+
+    <footer>
+        <p class="text-center footer-text">&copy OpenFarm 2018. All Rights Reserved</p>
+    </footer>
+</body>
   <script src="/js/jquery/jquery.min.js"></script>
   <script src="/js/bootstrap/bootstrap.min.js"></script>
   <script src="/js/items.js"></script>

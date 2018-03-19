@@ -10,6 +10,9 @@ body{
 .login-btn-text{
 	font-size: 70%;
 }
+.navbar{
+	padding: 0 0 0 5%;
+}
 .navbar-brand{
 	display: none;
 }
@@ -38,8 +41,24 @@ body{
     color: #fff;
     opacity: 1; /* Firefox */
 }
-	
-
+.btn-primary-toggle{
+	display: none;
+}
+.navbar-toggler{
+	position: absolute;
+	top: 5;
+	right: 5%;
+	background-color: #0055ff;
+	border-radius: 0;
+	border: 0;
+}	
+.navbar-toggler:focus{
+	outline: none;
+}
+.footer-text{
+	font-size: 120%;
+	font-weight: 600;
+}
 
 
 @media only screen and (max-width: 900px){
@@ -54,11 +73,22 @@ body{
 	.header-1{
 		display: none;
 	}
+	.navbar{
+		padding: 0 5% 0 5%;
+		text-align: center;
+	}
 	.navbar-brand{
 		display: none;
 	}
 	.navbar-brand{
 		display: flex;
+	}
+	.btn-toggle{
+		display: flex;
+	}
+	.btn-primary-toggle{
+		background-color: #fff;
+		width: 100%;
 	}
 }
 
