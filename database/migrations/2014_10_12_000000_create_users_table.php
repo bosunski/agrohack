@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('phone');
             $table->string('state');
             $table->string('gender');
+            $table->string('location');
             $table->text('farmproducts');
             $table->string('password');
             $table->rememberToken();

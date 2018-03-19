@@ -2,9 +2,10 @@
 
 namespace App\Repositories;
 
-use App\User;
-
+use Hash;
+use Auth;
 use File;
+use App\User;
 
 class UserRepository extends BaseRepository
 {
@@ -20,6 +21,10 @@ class UserRepository extends BaseRepository
             'email'         =>    $data->email,
             'location'      =>    $data->location,
             'state'         =>    $data->state,
+            'phone'         =>    $data->phone,
+            'gender'        =>    $data->gender,
+            'farmproducts'  =>    $data->farmproducts,
+            'password'      =>    Hash::make($data->password),
             'picture'       =>    $data->picture,
         ]);
     }
