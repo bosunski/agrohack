@@ -2,19 +2,128 @@
 
 body{
     margin:0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
+.form-control{
+    font-size: 0.8em;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.form-control:focus{
+  outline: none;
+  box-shadow: none;
+}
 
+.mr-sm-2{
+    font-size: 0.6em;
+    color: #BDBDBD;
+}
 
+.profile-img{
+    width: 29%;
+    height: 17%;
+    position: absolute;
+    background-color: #ffffff;
+    margin-top: -30%;
+}
+.logo-banner img{
+    width: 60%;
+    height: 60%;
+}
 
+.profile-img img{
+    width: 60%;
+    height: 60%;
+    padding-top: 10%;
+}
 
+select{
+    border:0px;
+    outline:0px;
+    font-size: 0.8em;    
+}
+
+select:focus{
+    box-shadow: 0px;
+    outline: none; 
+    border: 0px;  
+}
+
+.signupheader{
+    font-size: 1em;
+}
+
+.signupcontent{
+    box-shadow:0px 0px 1px #BDBDBD;
+    padding: 10%;
+}
+
+.terms{
+    color: #00abc9;
+}
+
+.login-text{
+    font-size: 0.6em;
+}
+
+.btn{
+    font-size: 0.8em;
+}
+
+.btn-default{
+    background-color: #f2f2f2;
+}
+
+.btn-primary{
+    background-color: #09ABC9;
+}
+
+.btn-primary:focus {
+    background-color: #09ABC9;
+}
+
+.btn-primary:hover {
+    background-color: #09ABC9;
+}
+
+.two-btn{
+    display: flex;
+}
+
+.login-text{
+    font-size: 0.8em;
+}
 
 @media only screen and (max-width: 900px){
     }
 
 @media only screen and (max-width: 600px){
+    .sm-btn{
+        margin-bottom: 5%;
+    }
     }
 @media only screen and (max-width: 400px){
+    
+    .form-control{
+        font-size: 1em;
+        border-top: none;
+        border-left: none;
+        border-right: none;
     }
+
+    .btn{
+    font-size: 1em;
+    }
+
+
+    .signupheader{
+        font-size: 1em;
+    }
+
+    .sm-btn{
+        margin-bottom: 5%;
+    }
+}
 
