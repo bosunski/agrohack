@@ -22,7 +22,21 @@ body{
 }
 
 .profile-img{
-    padding: 2%;
+    width: 29%;
+    height: 17%;
+    position: absolute;
+    background-color: #ffffff;
+    margin-top: -30%;
+}
+.logo-banner img{
+    width: 60%;
+    height: 60%;
+}
+
+.profile-img img{
+    width: 60%;
+    height: 60%;
+    padding-top: 10%;
 }
 
 select{
@@ -58,12 +72,37 @@ select:focus{
     font-size: 0.8em;
 }
 
+.btn-default{
+    background-color: #f2f2f2;
+}
 
+.btn-primary{
+    background-color: #09ABC9;
+}
+
+.btn-primary:focus {
+    background-color: #09ABC9;
+}
+
+.btn-primary:hover {
+    background-color: #09ABC9;
+}
+
+.two-btn{
+    display: flex;
+}
+
+.login-text{
+    font-size: 0.8em;
+}
 
 @media only screen and (max-width: 900px){
     }
 
 @media only screen and (max-width: 600px){
+    .sm-btn{
+        margin-bottom: 5%;
+    }
     }
 @media only screen and (max-width: 400px){
     
@@ -82,5 +121,9 @@ select:focus{
     .signupheader{
         font-size: 1em;
     }
+
+    .sm-btn{
+        margin-bottom: 5%;
     }
+}
 
