@@ -19,3 +19,7 @@ Route::get('/signup', function () {
     return view('front.signup');
 });
 
+Route::get('/header', function () {
+    return view('front.header');
+});
+

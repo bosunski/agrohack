@@ -2,19 +2,63 @@
 
 body{
     margin:0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
+.header-1{
+	padding: 1% 5%;
+}
+.login-btn-text{
+	font-size: 70%;
+}
+.navbar-brand{
+	display: none;
+}
+.nav-item{
+	margin-right: 0%;
+}
+.nav-link-bold{
+	font-weight: 600;
 
-
-
+}
+.bg-deep-blue{
+	background-color: #0055ff;
+}
+.form-control-lg {
+	/*height: 25px !important;*/
+	/*width: 220px !important;*/
+	font-size: 14px !important;
+	font-style: italic !important;
+	color: #000 !important;
+}
+.form-control-lg:focus {
+	box-shadow: none;	
+}
+::placeholder {
+	/*background-color:red;*/
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+	
 
 
 
 @media only screen and (max-width: 900px){
-    }
+
+}
 
 @media only screen and (max-width: 600px){
-    }
+
+}
+
 @media only screen and (max-width: 400px){
-    }
+	.header-1{
+		display: none;
+	}
+	.navbar-brand{
+		display: none;
+	}
+	.navbar-brand{
+		display: flex;
+	}
+}
 
