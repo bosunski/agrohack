@@ -15,23 +15,107 @@
   <!--Main CSS-->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/style.css">
+
 </head>
 <body>
+  <!-- Header -->
+   <div class="row header-1">
+        <div class="col-12 col-md-3 "> 
+            <img src="../img/logo.png" class="img-fluid " width="100%">
+        </div>
+    
+        <div class="col-12 col-md-3 text-center d-flex"> 
+            <i class="fa fa-map-marker-alt text-primary pt-3"></i>
+            <div>
+                <p class="mb-0 pb-0">11, Elekahia Road,</p>
+                <p class="mb-0 pb-0 pr-4">Port Harcourt</p>
+                <span class="mt-0 pt-0 pl-3"><em class="text-primary">or find agent near you</em></span>
+            </div>
+        </div>
 
+        <div class="col-12 col-md-3 text-center d-flex"> 
+            <i class="fa fa-info text-primary pt-3 mr-4"></i>
+            <div>
+                <p class="mb-0 pb-0">info@openfarm.com.ng</p>
+                <p class="mb-0 pb-0 pr-4">+234 809 773 7457</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-3 text-right"> 
+            <button type="button" class="btn btn-primary btn-lg"><span class="login-btn-text">REGISTER/LOGIN</span></button>
+        </div>
+    
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary my-0">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" width="20%" >
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse header-no-auth " id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item mr-4 active">
+            <a class="nav-link text-white nav-link-bold" href="#">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link text-white nav-link-bold" href="#">FUNDNG</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link text-white nav-link-bold" href="#">TRAINING</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link text-white nav-link-bold" href="#">NEWS</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link text-white nav-link-bold" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link text-white nav-link-bold" href="#">CONTACT US</a>
+          </li>
+
+          <li class="nav-item mr-4 btn-toggle d-flex justify-content-center">      
+            <button type="button" class="btn btn-primary-toggle btn-lg rounded-0"><span class="login-btn-text">REGISTER/LOGIN</span></button>
+          </li>
+        </ul>
+        <form class="form-inline my-0 my-lg-0  mx-0 ">
+          <input class="form-control form-control-lg border-0 rounded-0 text-white bg-deep-blue" type="search" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;search for produce/farmer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#x1F50D;" size="45">
+        </form>
+      </div>
+    </nav>
+  <!-- End of Header -->
 
   <!-- Main body -->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="/img/lol.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/img/lal.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="/img/my.jpg" alt="Third slide">
-    </div>
+      <div class="carousel-caption d-none d-md-block">
+    <h5 class="carousel-1">CONNECT WITH FARMERS,<br>FUNDING AND MARKET</h5>
+    <p class="p-01">With over 10 years experience of helping</p>
+    <button type="button" class="btn btn-primary btn-01">GET STARTED</button>
   </div>
+      <img class="d-block w-100" src="/img/hero1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+       <div class="carousel-caption d-none d-md-block">
+    <h5 class="carousel-1">CONNECT WITH FARMERS,<br>FUNDING AND MARKET</h5>
+    <p class="p-01">With over 10 years experience of helping</p>
+    <button type="button" class="btn btn-primary btn-01">GET STARTED</button>
+  </div>
+      <img class="d-block w-100" src="/img/hero1.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+       <div class="carousel-caption d-none d-md-block">
+    <h5 class="carousel-1">CONNECT WITH FARMERS,<br>FUNDING AND MARKET</h5>
+    <p class="p-01">With over 10 years experience of helping</p>
+    <button type="button" class="btn btn-primary btn-01">GET STARTED</button>
+  </div>
+      <img class="d-block w-100" src="/img/hero1.jpg" alt="Third slide">
+    </div>
+ 
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -41,6 +125,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
 
 <!-- End of Carousel -->
 
@@ -64,7 +149,7 @@
   <div class="col-md-3">
         <div class="card" style="width: 13rem; height: 11rem;">
            <div class="card-body text-center mt-5">
-            <img class=" " src="/img/access-fund-icon.svg" alt="Card image cap">
+            <img class=" " src="/img/list-produce-icon.svg" alt="Card image cap">
           </div>
         </div>
         <h5 class="card-title c-t-1">Access Funding</h5>
@@ -87,7 +172,7 @@
   <div class=" col-md-3">
         <div class="card" style="width: 13rem; height: 11rem;">
            <div class="card-body text-center mt-5">
-            <img class=" " src="/img/access-fund-icon.svg" alt="Card image cap">
+            <img class=" " src="/img/connect-icon.svg" alt="Card image cap">
           </div>
         </div>
         <h5 class="card-title c-t-1">Access Funding</h5>
@@ -105,7 +190,7 @@
  </div>
     
   <div class="section3 text-center">
-      <button type="button" class="btn btn-primary">SEE MORE ABOUT US</button>
+      <button type="button" class="btn btn-primary btn-1">SEE MORE ABOUT US</button>
   </div>
 
   <div class="section4">
@@ -144,7 +229,10 @@
     </div>
     
   </div>
-   
+    <!-- Footer -->
+     <footer>
+        <p class="text-center footer-text mt-5">&copy OpenFarm 2018. All Rights Reserved</p>
+    </footer> 
 
    <!-- Bootstrap JS -->
   <script src="/js/jquery/jquery.min.js"></script>
