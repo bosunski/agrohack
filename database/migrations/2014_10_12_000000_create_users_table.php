@@ -18,10 +18,12 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('phone');
+            $table->string('business_category')->nullable();
             $table->string('state');
             $table->string('gender');
+            $table->enum('user_type', ['doctor', 'farmer', 'investor', 'buyer'])->default('farmer');
             $table->string('location');
-            $table->text('farmproducts');
+            $table->text('farmproducts')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->primary('id');

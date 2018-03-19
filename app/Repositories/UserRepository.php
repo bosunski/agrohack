@@ -23,7 +23,9 @@ class UserRepository extends BaseRepository
             'state'         =>    $data->state,
             'phone'         =>    $data->phone,
             'gender'        =>    $data->gender,
-            'farmproducts'  =>    $data->farmproducts,
+            'user_type'     => $data->user_type ? $data->user_type : null,
+            'business_category'        =>    $data->business_category ? $data->business_category : null,
+            'farmproducts'  =>    $data->farmproducts ? $data->farmproducts : null,
             'password'      =>    Hash::make($data->password),
             'picture'       =>    $data->picture,
         ]);

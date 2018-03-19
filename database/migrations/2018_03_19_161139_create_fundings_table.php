@@ -16,6 +16,7 @@ class CreateFundingsTable extends Migration
         Schema::create('fundings', function (Blueprint $table) {
             $table->string('id', 36);
             $table->string('user_id', 36);
+            $table->string('investor_id', 36)->nullable();
             $table->string('farm_id', 36);
             $table->primary('id');
             $table->timestamps();
