@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('front.index');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/signup', function () {
     return view('front.signup');
@@ -22,4 +25,5 @@ Route::get('/signup', function () {
 Route::get('/header', function () {
     return view('front.header');
 });
+
 
