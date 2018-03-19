@@ -67,13 +67,13 @@
 
         
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-xs-2 col-md-4">
               <button type="submit" class="btn btn-default">No,thanks!</button>
             </div>
-            <div class="col-md-4">
+            <div class="col-xs-2 col-md-4">
 
             </div>
-            <div class="col-md-4 text-right">
+            <div class="col-xs-2 col-md-4">
               <button type="submit" class="btn btn-primary">Register</button>
             </div>
           </div>
