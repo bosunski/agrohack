@@ -31,35 +31,35 @@
       <div class="col-md-4">
         <div class="logo-banner">
       <img src="" alt="" srcset="">
-      <h5 class="signupheader">
+      <h5 class="signupheader text-center mt-5">
         CREATE FARMERS PROFILE
       </h3>
     </div>
 
-    <div class="signupcontent">      
+    <div class="signupcontent mt-5">      
         <form class="form">
 
           <label class="mr-sm-2" for="inlineFormCustomSelect">Business Category</label>
-          <select class="custom-select border-top-0 border-left-0 border-right-0" id="inlineFormCustomSelect">
+          <select class="custom-select border-top-0 border-left-0 border-right-0 mb-3" id="inlineFormCustomSelect">
             <option selected>Choose...</option>
             <option value="1">Poultry</option>
             <option value="2">Foodstuffs</option>
             <option value="3">Animals</option>
           </select>
         
-          <div class="form-group">          
+          <div class="form-group mb-3">          
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
           </div>
 
-          <div class="form-group">          
+          <div class="form-group mb-3">          
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
           </div>
         
-          <div class="form-group">          
+          <div class="form-group mb-3">          
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password Again">
           </div>
 
-          <div class="form-group">          
+          <div class="form-group mb-3">          
             <input type="text" class="form-control" id="exampleInputPassword1" placeholder="State">
           </div>
 

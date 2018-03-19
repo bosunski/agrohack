@@ -1,5 +1,10 @@
 /*THELMA*/
 
+body{
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .form-control{
     font-size: 0.8em;
     border-top: none;
@@ -10,14 +15,14 @@
   outline: none;
   box-shadow: none;
 }
-body{
-    margin:0;
-    font-family: 'Open Sans', sans-serif;
-}
 
 .mr-sm-2{
     font-size: 0.6em;
-    color: #828282;
+    color: #BDBDBD;
+}
+
+.profile-img{
+    padding: 2%;
 }
 
 select{
@@ -27,8 +32,13 @@ select{
 }
 
 select:focus{
-    box-shadow: none;
-    outline: none;   
+    box-shadow: 0px;
+    outline: none; 
+    border: 0px;  
+}
+
+.signupheader{
+    font-size: 1em;
 }
 
 .signupcontent{
@@ -41,7 +51,7 @@ select:focus{
 }
 
 .login-text{
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 .btn{
