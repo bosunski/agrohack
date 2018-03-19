@@ -45,85 +45,63 @@
 
 <div class="head">
       <h4>How it Works</h4>
-    </div><br>
-
-  <div class="card-deck">
-
-  <div class="card" style="width: 13rem; height: 11rem;">
-    <div class="card-body">
-       <i class="fa fa-basketball-ball"></i>
     </div>
-  </div>
 
-  <div class="card">
-    <div class="card-body">
-       <i class="fa fa-basketball-ball"></i>
-    </div>
-  </div>
+ <div class="row">
 
-  <div class="card">
-    <div class="card-body">
-       <i class="fa fa-basketball-ball"></i>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-body">
-       <i class="fa fa-basketball-ball"></i>
-    </div>
-  </div>
-
-
-</div>
-
-<div class="card-deck">
-
-  <div class="card border-0">
-    <div class="card-body">
-      <h5 class="card-title c-t-1">Register a Profile</h5>
+  <div class="col-12 col-md-3">
+        <div class="card" style="width: 13rem; height: 11rem;">
+           <div class="card-body">
+              <img src="/img/access-fund-icon.svg">
+          </div>
+        </div>
+        <h5 class="card-title c-t-1">Access Funding</h5>
        <p class="card-text c-text">This is a wider card with this card has <br>even longer content than the first.</p>
-    </div>
   </div>
 
-  <div class="card  border-0">
-    <div class="card-body">
-      <h5 class="card-title c-t-1">List your produce</h5>
-      <p class="card-text c-text">This is a wider card with this card has <br>even longer content than the first.</p>
-    </div>
-  </div>
 
-  <div class="card  border-0">
-    <div class="card-body">
-      <h5 class="card-title c-t-1">Access Funding</h5>
+  <div class="col-12 col-md-3">
+        <div class="card" style="width: 13rem; height: 11rem;">
+           <div class="card-body">
+              <img src="/img/access-fund-icon.svg">
+          </div>
+        </div>
+        <h5 class="card-title c-t-1">Access Funding</h5>
        <p class="card-text c-text">This is a wider card with this card has <br>even longer content than the first.</p>
-    </div>
-  </div>
-
-  <div class="card  border-0">
-    <div class="card-body">
-      <h5 class="card-title c-t-1">Connect a network</h5>
-      <p class="card-text c-text">This is a wider card with this card has <br>even longer content than the first.</p>
-    </div>
   </div>
 
 
-</div>
 
-<div class="section2">
-  <h4 class="section2-h">We are here to help grow your farm</h4>
+  <div class="col-12 col-md-3">
+        <div class="card" style="width: 13rem; height: 11rem;">
+           <div class="card-body text-center">
+            <img class="card-img-top" src="/img/access-fund-icon.svg" alt="Card image cap">
+          </div>
+        </div>
+        <h5 class="card-title c-t-1">Access Funding</h5>
+       <p class="card-text c-text">This is a wider card with this card has <br>even longer content than the first.</p>
+  </div>
 
 
-</div>
+  <div class="col-12 col-md-3">
+        <div class="card" style="width: 13rem; height: 11rem;">
+           <div class="card-body">
+              <img src="/img/access-fund-icon.svg">
+          </div>
+        </div>
+        <h5 class="card-title c-t-1">Access Funding</h5>
+       <p class="card-text c-text">This is a wider card with this card has <br>even longer content than the first.</p>
+  </div>
 
-
-  
+   
+ </div>
     
 
    
 
    <!-- Bootstrap JS -->
   <script src="/js/jquery/jquery.min.js"></script>
-  <script src="/js/botstrap/bootstrap.min.js"></script>
+  <script src="/js/bootstrap/bootstrap.min.js"></script>
   <script src="/js/items.js"></script>
   <script src="/js/sweetalert2.min.js"></script>
  </body>
