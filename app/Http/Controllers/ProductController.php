@@ -54,7 +54,7 @@ class ProductController extends Controller
     {
         $product = $this->product->getProduct($product_id);
         $data['product'] = $product;
-        
+
         //return $this->response->paginator($product, $this->transformer);
     }
 

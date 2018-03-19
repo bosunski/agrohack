@@ -26,7 +26,6 @@
   <script src="/js/botstrap/bootstrap.min.js"></script>
   <script src="/js/items.js"></script>
   <script src="/js/sweetalert2.min.js"></script>
- 
+
 </script>
 </html>
- 
