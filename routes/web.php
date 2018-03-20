@@ -91,3 +91,4 @@ Route::get('category/{category_id}', 'CategoryController@getCategory')->name('ca
 Route::get('/storage', function () {
    return view('front.storage');
 });
+
