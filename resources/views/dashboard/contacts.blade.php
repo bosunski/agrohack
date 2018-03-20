@@ -14,8 +14,14 @@
             <div class="col-md-2 op links">
               <p>{{ $contact->user->location }}</p>
             </div>
-            <div class="col-md-5 op links" style="overflow-x:hidden;">
+            <div class="col-md-4 op links" style="overflow-x:hidden;">
               {{ $contact->farmproducts ? $product->farmproducts : 'None Added' }}
+            </div>
+            <div class=" col-md-1 op links" style="overflow-x:hidden;">
+                <form id="" class="" action="{{ route('removecontact', $contact->id) }}" method="post">
+                    @csrf
+                </form>
+              <span id="{{ $contact->id }}" class="delete-contact fa fa-times"></span>
             </div>
           </div>
      @empty
@@ -66,5 +72,24 @@
           this.className += " contact-row-active";
         });
       }
+
+      $(function() {
+          // $(".delete-contact").click(function(event) {
+          //     id = '#form-'+$(this).attr(id);
+          //     swal({
+          //       title: "Are you sure?",
+          //       text: "Once this contact is deleted, you will not be able to recover it.",
+          //       icon: "warning",
+          //       buttons: true,
+          //       dangerMode: true,
+          //     }).then((willDelete) => {
+          //       if (willDelete) {
+          //           $(id).submit();
+          //       } else {
+          //         swal("Your contact is still safe.");
+          //       }
+          //     });
+          // });
+      });
     </script>
 @endsection
