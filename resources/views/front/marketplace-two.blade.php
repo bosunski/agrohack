@@ -16,11 +16,12 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="/css/custom.css">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/main.css">
 
 </head>
 <body>
   <!-- Header -->
-   <!-- <div class="row header-1">
+   <div class="row header-1">
         <div class="col-12 col-md-3 "> 
             <img src="../img/logo.png" class="img-fluid " width="100%">
         </div>
@@ -46,7 +47,7 @@
             <button type="button" class="btn btn-primary btn-lg"><span class="login-btn-text">REGISTER/LOGIN</span></button>
         </div>
     
-    </div> -->
+    </div>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-primary my-0">
       <a class="navbar-brand" href="#">
@@ -89,13 +90,21 @@
   <!-- End of Header -->
   <!-- Main Body -->
 
-  <div class="">
-    <img src="/img/blog01.jpg" class="img-002">
-    <div class="centered">BROWSE THE LATEST ARTICLES AND NEWS</div>
-  </div>
+  <div class="container-fluid storage-header">
+        <div class="storage-search mx-auto">
+            <h4 class="storage-header-text pt-5 pb-3 text-center">
+               Market Place
+            </h4>
+            <form class="form-inline">
+                <select class="custom-select mb-4" id="inlineFormCustomSelect" name="search" id="Search">
+               
+                </select>
+            </form>
+        </div>
+    </div>
 
   <div class="">
-    <h4 class="blog-h1">Market Place</h4>
+    <p class="text-center mb-5 mt-4"> Nigeria has an annual deficit of over 60 million <br>tons of chicken meat processed from boiler valued</p>
   </div>
 
   <!-- <div class="row ml-3">
@@ -365,8 +374,8 @@
               <li style="list-style-type: none; font-weight: bold; font-size:17px; ">3 Months Old</li>
           </ul>
         </p>
-        <button class="btn btn-blue read-btn btn-primary">&#8358;3000</button>
-        <button class="btn btn-blue btn-success">Pay</button>
+        <button class="btn  read-btn btn-primary">&#8358;3000</button>
+        <button class="btn btn-success">Pay</button>
       </div>
     </div>
  
