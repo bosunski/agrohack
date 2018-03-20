@@ -129,7 +129,9 @@ header{
 	height: 40%;
 	font-weight: 600;
 }
-
+.links {
+	cursor: pointer;
+}
 
 
 

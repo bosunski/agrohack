@@ -94,11 +94,11 @@
     <!-- MAIN -->
     <div class="wrapper">
         <!-- Sidebar Holder -->
-        <nav id="sidebar" class="sidebar px-4">
+        <nav id="sidebar" class="sidebar px-4 pt-4 bg-light">
             <p class="text-right date">Sunday <span class="font-weight-bold">August 9, 2018</span></p>
 
                       <div class="d-flex">
-                        <i class="fa fa-cloud text-white f-2 mt-4 mr-auto"></i>
+                        <i class="fa fa-cloud text-warning f-2 mt-4 mr-auto"></i>
                         <span class="f-4">27</span>
                         <span class="fa fa-genderless f-1 mt-3"></span>
                       </div>
@@ -213,40 +213,82 @@
       
         <!-- Page Content Holder -->
 
-       
-        <div id="content">
-              <button type="button" id="sidebarCollapse" class="btn bg-transparent border-0 rounded-0 btn-cut">
-                  <i class="fa fa-cut icons"></i>
-                  <i class="fa fa-bars icons" style="display: none;"></i>
-                  <span></span>
-              </button>
-          </div> 
-              <!-- ONLY EDIT CODE BELOW THIS LINE -->
-        
-        <div class="row">
+        <!-- ONLY EDIT CODE BELOW THIS LINE -->
+        <div id="content" class="content ">
+
+              
+            <!-- <nav class="" > -->
+              <div class=" d-flex stretch pt-3 pb-0 mb-0">
+
+                  <div class=" mr-auto">
+                     <!--  <button type="button" id="sidebarCollapse" class="btn bg-transparent border-0 rounded-0 btn-cut mr-auto">
+                        <i class="fa fa-cut icons" style="transform: rotateY(180deg);"></i>
+                        <i class="fa fa-bars icons" style="display: none;"></i>
+                      </button> -->
+                  </div>
+
+                  <div class="d-flex pb-0 mb-0">
+                    <div class="d-flex mr-5 pt-3">
+                      <p class=" pr-0 text-right">View as:</p>
+                      <button class="btn bg-transparent view-active p-0 my-0  mx-3 btn-sm links">LIST</button>
+                      <button class="btn bg-transparent m-0 p-0 btn-sm links">CARD</button>
+                    </div>
+                      
+                    <div class="mr-5 text-center  mb-0 pb-0 ">
+                      <!-- <i class="fa fa-user-plus f-2"></i> -->
+                      <img src="/img/add-user.svg" class="img-fluid img-responsive" width="150%">
+                      <p class="mb-0 pb-0 links">New</p>
+                    </div>
+
+                    <div class="mr-5 text-center mb-0 pb-0">
+                      <!-- <i class="fa fa-file-alt f-2"></i> -->
+                      <img src="/img/report.svg" class="img-fluid img-responsive" width="55%">
+                      <p class="links">Report</p>
+                    </div>
+
+                    <div  class="mr-5 text-center mb-0 pb-0">
+                      <!-- <i class="fa fa-comments f-2"></i> -->
+                      <img src="/img/chats.svg" class="img-fluid img-responsive" width="120%">
+                      <p class="links">Chat</p>
+                    </div>
+
+                    <div  class="mr-5 text-center mb-0 pb-0">
+                      <!-- <i class="fa fa-eye f-2"></i> -->
+                      <img src="/img/profile-view.svg" class="img-fluid img-responsive" width="80%">
+                      <p class="profile-eye links">My Profile</p>
+                    </div>
+                  </div>
+              </div>
+            <!-- </nav> -->
+         
+
+
+
+        <div class="row" style="">
 
           <div class="col-12 col-md-8">
               <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Chat with Farmers</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Notification</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Chat With Doctors</a>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-    <p class="text-center" style="opacity: 0.7; margin-top: 40%">You do not have any farmer in your personal network. User the search box above to connect with farmers; you can search by name or by farm produce.</p>
-  </div>
-</div>
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Chat with Farmers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Notification</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Chat With Doctors</a>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <p class="text-center" style="opacity: 0.7; margin-top: 40%; display:none;">You do not have any farmer in your personal network. User the search box above to connect with farmers; you can search by name or by farm produce.</p>
+                </div>
+              </div>
 
           </div>
 
 
-           <div class="col-12 col-md-4 profile-div px-5 pb-5 pt-2 border-left">
+           <div class="col-12 col-md-4 profile-div px-3 pb-5 pt-2 border-left">
 
            <div class="d-flex">
              <h4 class="text-center mr-auto">EDIT MY PROFILE</h4>
@@ -270,7 +312,6 @@
                 <input type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputPassword1" placeholder="Last Name">
               </div>
 
-              <!-- <label class="mr-sm-2" for="inlineFormCustomSelect"></label> -->
               <select class="custom-select border-top-0 border-left-0 border-right-0 rounded-0 mb-3" id="inlineFormCustomSelect">
                 <option selected>Gender</option>
                 <option value="1">Male</option>
@@ -333,14 +374,14 @@
               </div>
           
               <div class="d-flex justify-content-center">
-                <button class="btn btn-primary"> Save</button>
+               <button class="btn btn-primary"> Save</button>
               </div>
-        </div>
+        </div> 
+    
+        <!-- CHAT -->
 
 
-        </div>
-
-
+       
 
 
 
@@ -366,9 +407,13 @@
         $('.btn-close').on('click', function (){
             $(this).parent().parent().hide();
         })
+
+        $('.profile-eye').on('click', function() {
+          /* Act on the event */
+          $('.profile-div').toggle();
+        });
     });
   </script>
  
 </script>
 </html>
- 

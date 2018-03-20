@@ -12,35 +12,40 @@
 */
 
 Route::get('/', function () {
-    return view('front.index');
+   return view('front.index');
 });
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/signup', function () {
-    return view('front.signup');
+   return view('front.signup');
 });
 
 Route::get('/login', function () {
-    return view('front.login');
+   return view('front.login');
 });
 Route::get('/header', function () {
-    return view('front.header');
+   return view('front.header');
 });
 
 Route::get('/blog', function () {
-    return view('front.blog');
+   return view('front.blog');
 });
 
 Route::get('/dashboard', function () {
-    return view('front.dashboard');
+   return view('front.dashboard');
 });
 
+
 Route::get('/showcase', function () {
-    return view('front.showcase');
+   return view('front.showcase');
 });
 
 Route::get('/chat', function () {
-    return view('front.chat');
+   return view('front.chat');
+});
+
+Route::get('/storage', function () {
+   return view('front.storage');
 });
