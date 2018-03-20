@@ -67,6 +67,11 @@ class UserRepository extends BaseRepository
         return User::where('email', '=', $email)->first();
     }
 
+    public function search($query, $type)
+    {
+        return User::where('name', 'LIKE', "%$query%")->where('user_type', $type)->get();
+    }
+
     public function updateUser($user_id, $data)
     {
         $product = User::where('id', $user_id)->update($data);
@@ -113,4 +118,5 @@ class UserRepository extends BaseRepository
     {
         return User::where('id', $user_id)->get();
     }
+
 }

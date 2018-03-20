@@ -6,7 +6,9 @@
           <img class="img-responsive img-fluid text-center img-icon" src="/img/messages.svg" alt="Card image cap" width="70px">
         </div>
         <div class="card-body">
-          <h5 class="card-title h4">Messages</h5>
+          <h5 class="card-title h4">
+              <a href="/dashboard/messages"> Messages</a>
+          </h5>
           </div>
       </div>
       <div class="card about-card py-5 rounded-0">
@@ -14,7 +16,9 @@
             <img class="img-responsive img-fluid text-center img-icon" src="/img/notifications.svg" alt="Card image cap" style="width: 150px">
           </div>
           <div class="card-body">
-            <h5 class="card-title h4">Notifications</h5>
+            <h5 class="card-title h4">
+                <a href="/dashboard/notifications"> Notifications</a>
+            </h5>
             </div>
         </div>
       <div class="card about-card py-5 rounded-0">
@@ -22,7 +26,9 @@
             <img class="img-responsive img-fluid text-center img-icon" src="/img/access-fund-icon.svg" alt="Card image cap" width="70px">
           </div>
           <div class="card-body">
-            <h5 class="card-title h4">Funding</h5>
+            <h5 class="card-title h4">
+                <a href="/funding"> Funding</a>
+            </h5>
             </div>
         </div>
     </div>
@@ -33,7 +39,9 @@
           <img class="img-responsive img-fluid text-center img-icon" src="/img/showcase.svg" alt="Card image cap" width="70px">
         </div>
         <div class="card-body">
-          <h5 class="card-title h4">Showcase & Sell</h5>
+          <h5 class="card-title h4">
+              <a href="/product/list">Showcase & Sell</a>
+          </h5>
           </div>
       </div>
       <div class="card about-card py-5 rounded-0">
@@ -41,7 +49,9 @@
             <img class="img-responsive img-fluid text-center img-icon" src="/img/trainings.svg" alt="Card image cap" width="70px">
           </div>
           <div class="card-body">
-            <h5 class="card-title h4">Trainings</h5>
+            <h5 class="card-title h4">
+                <a href="/training"> Trainings</a>
+            </h5>
             </div>
         </div>
       <div class="card about-card py-5 bg-transparent border-0">

@@ -1,0 +1,414 @@
+
+.main-nav{
+	padding: 1% 5%; 
+}
+.main-div{
+	padding: 2% 5%;
+}
+
+.contact-div{
+	padding: 5%;
+} 
+.bg-lighter{
+	background-color: #fafafa;
+}
+.btn-send{
+	width: 40%;
+}
+.contact-form{
+	padding: 12%;
+	box-shadow: 0px 0px 10px #b0b0b0;
+	color: #333;
+
+}
+.details-div{
+	padding: 0 5%;
+}
+.details-div-1{
+	color: #333;
+	/*padding: 2% 40%;*/
+	box-shadow: 0px 0px 10px #b0b0b0;
+	height: 167px;
+
+}
+.fa-border{
+	padding: 4% 5%;
+	/*border-radius: 100%;*/
+	border-color: #09ABC9;
+	border-width: 1.3px;
+	font-size: 2.5em;
+	margin-top: -40px;
+	margin-bottom: 2%;
+	background-color: white;
+
+}
+.fa-envelope , .fa-map-marker , .fa-phone{
+	color: #09ABC9;
+}
+
+iframe{
+	width: 100%;
+	height: 450px;
+}
+.iframe{
+	width: 100%;
+	height: 550px;
+}
+
+
+/*ABOUT us*/
+ .banner_img{
+ 	height: 450px;
+ 	width:100%;
+ 	background-image: url(" ");
+ 	background-position: top;
+ 	background-repeat: no-repeat;
+ 	background-color:#09ABC9;
+ 	background-size: cover;
+ 	/*margin: auto;*/
+ }
+.hero{
+	/*margin: auto;*/
+	margin: 0% 10%;
+}
+.hr{
+    width: 7%;
+    border: 3px solid #219653;
+    margin: 0 43%;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.hr-2{
+    width: 25%;
+    border: 2px solid #fff;
+    /*margin: 0 40%;*/
+    padding: 0;
+    margin-left: 0%;
+    margin-top: 0;
+    /*margin-bottom: 20px;*/
+}
+.hr-3{
+    width: 7%;
+    border: 3px solid #219653;
+    margin: 0 43%;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.lorem{
+	margin: 5% 25% 5% 25%;
+	text-align: justify;
+}
+.card-div{
+	padding: 10%;
+	margin-bottom: 5%
+}
+.about-card{
+	box-shadow: 0 0 10px #b0b0b0;
+	text-align: center;
+}
+.img-div{
+	/*border: 1px solid green;*/
+	width: 30%;
+	padding: 6% 2%;
+	box-shadow: 0 0 10px #b0b0b0;
+}
+.team-div{
+	width:100%;
+ 	background-image: url(" ");
+ 	background-size: cover;
+ 	background-position: top;
+ 	background-color:#09ABC9;
+}
+.display-5{
+	font-size: 2.5em;
+	margin-top: 5%;
+}
+.team-img{
+	box-shadow: 0 0 10px #b0b0b0;
+	width: 48%;
+	/*height: 100%;*/
+}
+.team-img:hover{
+	box-shadow: 0 0 20px #fff;
+	cursor: pointer;
+	border: 3px solid #fff;
+}
+.contact-form-diff{
+	margin: 5% 15% ;
+	padding: 2%;
+	/*box-shadow: 0px 0px 10px #b0b0b0;*/
+	/*color: #333;*/
+
+}
+.btn-send-diff{
+	width: 50%;
+}
+.bg-image{
+ 	background-image: url("../Assets/img/Background/sams-bg@0.png");
+}
+.last-div{
+	margin: 10% 0;
+}
+.hero-image{
+	width: 90%;
+}
+.hero-text{
+	font-size: 3.5em;
+	font-weight: 300;
+}
+.hero-text-2{
+/*	font-size: 3.5em;
+	font-weight: 300;*/
+	padding: 0 15% 1% 1%;
+}
+.header-tag{
+	font-size: 250%;
+}
+.stats-card{
+	margin: 10% 0;
+}
+.hero-sub-col{
+	padding: 5% 0;
+}
+.about-team-member-2{
+	/*text-align: center;*/
+	margin: 2% 0;
+}
+
+
+
+
+
+@media(min-width:576px) and (max-width:768px){
+	iframe{
+		width: 100%;
+		height: 400px;
+	}
+	.main-nav{
+		padding: 2% 5%; 
+	}
+	.hero-image{
+		width: 75%;
+		margin-right: 15%;
+	}
+	.hero{
+		/*margin: auto;*/
+		margin: 0% 0%;
+		padding: 0;
+	}
+	.hero-text{
+		font-size: 2.5em;
+		font-weight: 400;
+		text-align: center;
+	}
+	.hero-text-2{
+	/*	font-size: 3.5em;
+		font-weight: 300;*/
+		padding: 1%;
+		text-align: center;
+	}
+
+	.hr{
+	    width: 50%;
+	    border: 3px solid #219653;
+	    margin: 0 25%;
+	    padding: 0;
+	}
+	.hr-2{
+	    width: 27%;
+	    border: 2px solid #fff;
+	    /*margin: 0 40%;*/
+	    padding: 0;
+	    margin-left: 0%;
+	    margin-top: 0;
+	    /*margin-bottom: 20px;*/
+	}
+	.hr-3{
+	    width: 50%;
+	    border: 3px solid #219653;
+	    margin: 0 25%;
+	    padding: 0;
+	}
+	.story-div{
+		padding: 0;
+		margin: 0;
+	}
+	.lorem{
+		margin: 4% 8%;
+		text-align: justify;
+	}
+	.card-div{
+		padding: 5%;
+	}
+}
+
+@media(min-width:410px)and (max-width:575px){
+	.btn-send{
+		width: 100%;
+	}
+	.btn-send-diff{
+		width: 100%;
+	}
+	.contact-form-text{
+		text-align: center;
+	}
+	iframe{
+		width: 100%;
+		height: 300px;
+	}
+	.main-nav{
+		padding: 2% 5%; 
+	}
+	.hero-image{
+		width: 75%;
+		margin-right: 15%;
+	}
+	.hero{
+		/*margin: auto;*/
+		margin: 0% 0%;
+		padding: 0;
+	}
+	.hero-text{
+		font-size: 2.1em;
+		font-weight: 400;
+		text-align: center;
+	}
+	.hero-text-2{
+	/*	font-size: 3.5em;
+		font-weight: 300;*/
+		padding: 1%;
+		text-align: center;
+	}
+
+	.hr{
+	    width: 50%;
+	    border: 3px solid #219653;
+	    margin: 0 25%;
+	    padding: 0;
+	}
+	.hr-2{
+	    width: 27%;
+	    border: 2px solid #fff;
+	    /*margin: 0 40%;*/
+	    padding: 0;
+	    margin-left: 0%;
+	    margin-top: 0;
+	    /*margin-bottom: 20px;*/
+	}
+	.hr-3{
+	    width: 50%;
+	    border: 3px solid #219653;
+	    margin: 0 25%;
+	    padding: 0;
+	}
+	.story-div{
+		padding: 0;
+		margin: 0;
+	}
+	.lorem{
+		margin: 4% 8%;
+		text-align: justify;
+	}
+	.card-div{
+		padding: 5%;
+	}
+}
+
+@media (max-width:400px){
+	.btn-send{
+		width: 100%;
+	}
+	.btn-send-diff{
+		width: 100%;
+	}
+	.contact-form-text{
+		text-align: center;
+	}
+	.details-div{
+		margin-top: 15%;
+		padding: 0%;
+	}
+	iframe{
+		width: 100%;
+		height: 250px;
+	}
+	.main-nav{
+		padding: 2% 5%; 
+	}
+	.hero-image{
+		width: 75%;
+		margin-right: 15%;
+	}
+	.hero{
+		/*margin: auto;*/
+		margin: 0% 0%;
+		padding: 0;
+	}
+	.hero-text{
+		font-size: 2em;
+		font-weight: 400;
+		text-align: center;
+	}
+	.hero-text-2{
+	/*	font-size: 3.5em;
+		font-weight: 300;*/
+		padding: 1%;
+		text-align: center;
+	}
+	.hr{
+	    width: 50%;
+	    border: 3px solid #219653;
+	    margin: 0 25%;
+	    padding: 0;
+	}
+	.hr-2{
+	    width: 60%;
+	    border: 2px solid #fff;
+	    /*margin: 0 40%;*/
+	    padding: 0;
+	    margin-left: 20%;
+	    margin-top: 0;
+	    /*margin-bottom: 20px;*/
+	}
+	.hr-3{
+	    width: 50%;
+	    border: 3px solid #219653;
+	    margin: 0 25%;
+	    padding: 0;
+	}
+	.story-div{
+		padding: 0;
+		margin: 0;
+	}
+	.lorem{
+		margin: 4% 8%;
+		text-align: justify;
+	}
+	.card-div{
+		padding: 5%;
+	}
+	.contact-form-diff{
+		margin: 5% 0 ;
+		padding: 2%;
+	}
+	.display-5{
+		font-size: 2.5em;
+		margin-top: 0%;
+		text-align: center;
+		color: #f0be69;
+	}
+	.hero-sub-col{
+		padding: 0% 5%;
+	}
+	#diff{
+		text-align: center;
+	}
+	.about-team-member{
+		text-align: justify;
+	}
+	.about-team-member-2{
+		text-align: center;
+		margin: 2%;
+	}
+}
+

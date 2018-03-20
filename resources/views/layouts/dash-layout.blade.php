@@ -83,30 +83,36 @@
       <div class="collapse navbar-collapse header-no-auth " id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item mr-4 active">
-            <a class="nav-link text-white nav-link-bold" href="#">HOME <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white nav-link-bold" href="/">HOME <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="#">DASHBOARD</a>
+            <a class="nav-link text-white nav-link-bold" href="/dashboard">DASHBOARD</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="#">FUNDING</a>
+            <a class="nav-link text-white nav-link-bold" href="/funding">FUNDING</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="#">TRAINING</a>
+            <a class="nav-link text-white nav-link-bold" href="/training">TRAINING</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="#">NEWS</a>
+            <a class="nav-link text-white nav-link-bold" href="/news">NEWS</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="#">STORAGE FACILITIES</a>
+            <a class="nav-link text-white nav-link-bold" href="/storage">STORAGE FACILITIES</a>
           </li>
 
           <li class="nav-item mr-4 btn-toggle d-flex justify-content-center">
             <button type="button" class="btn btn-primary-toggle btn-lg rounded-0"><span class="login-btn-text">LOGOUT</span></button>
           </li>
         </ul>
-        <form class="form-inline my-0 my-lg-0  mx-0 ">
-          <input class="form-control form-control-lg border-0 rounded-0 text-white bg-deep-blue" type="search" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;search for produce/farmer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#x1F50D;" size="45">
+        <form method="post" class="form-inline my-0 my-lg-0  mx-0" action="{{ route('find') }}">
+            @csrf
+          <input required name="query" class="form-control form-control-lg border-0 rounded-0 text-white bg-deep-blue" type="search" placeholder="Search for produce/farmer &#x1F50D;" size="45">
+          <select required class="form-control" name="user_type">
+              <option value=""> Select Type </option>
+              <option value="farmer">Farmer</option>
+              <option value="doctor">Doctor</option>
+          </select>
         </form>
       </div>
     </nav>
@@ -275,6 +281,23 @@
                   $(id).submit();
               } else {
                 swal("Your contact is still safe.");
+              }
+            });
+        });
+
+        $(".add-c").click(function(event) {
+            id = '#form-'+$(this).attr('id');
+            swal({
+              title: "Are you sure?",
+              text: "This person will be added to your contact list so you can chat.",
+              icon: "warning",
+              buttons: true,
+              dangerMode: true,
+            }).then((willDelete) => {
+              if (willDelete) {
+                  $(id).submit();
+              } else {
+                //swal("Your contact is still safe.");
               }
             });
         });

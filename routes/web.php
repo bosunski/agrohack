@@ -86,7 +86,7 @@ Route::get('/funding/all', 'FundingController@getAllFundingRequests')->name('all
 
 
 // Search Routes
-Route::get('/search', 'SearchController@find')->name('find');
+Route::post('/search', 'SearchController@find')->name('find');
 // // Category Routes
 // Route::get('category/list', 'CategoryController@list')->name('category-list');
 // Route::get('category/all', 'CategoryController@all')->name('category-all');
