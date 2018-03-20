@@ -57,3 +57,7 @@ Route::get('/contacts', function () {
 Route::get('/funding', function () {
     return view('front.funding');
 });
+
+Route::get('/training', function () {
+    return view('front.training');
+});

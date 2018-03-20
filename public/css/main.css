@@ -177,7 +177,6 @@ select:focus{
     font-size:1em;
 }
 .card-row{
-    width: 100%;
     border: 2px solid rgba(105, 103, 115, 0.15);
 }
 
