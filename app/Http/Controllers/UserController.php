@@ -76,10 +76,9 @@ class UserController extends Controller
 
     public function removeContact($contact_id)
     {
-        $done = $this->contact->removeContact($this->user_id, $contact_id);
-        if ($done) {
-            // Alert
-        }
+        $done = $this->contact->deleteContact($contact_id);
+        Alert::success('Contact Deleted!', 'Your Contact has been deleted Successfully.')->persistent('Close');
+        return redirect()->back();
     }
 
 

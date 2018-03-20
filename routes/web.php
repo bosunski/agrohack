@@ -65,7 +65,7 @@ Route::get('/user/inviteaccept/{contact_id}', 'UserController@acceptContact')->n
 Route::get('/dashboard/contacts', 'UserController@getContacts')->name('contacts');
 Route::get('/user/{id}', 'UserController@getUser')->name('get-user');
 Route::post('/user/addcontact', 'UserController@addContact')->name('addcontact');
-Route::get('/user/removecontact', 'UserController@removeContact')->name('removecontact');
+Route::post('/user/removecontact/{id}', 'UserController@removeContact')->name('removecontact');
 Route::get('/user/messages', 'UserController@getMessages')->name('messages');
 Route::get('/user/conversation/{id}', 'UserController@getConversation')->name('conversation');
 

@@ -58,6 +58,15 @@ class ContactRepository extends BaseRepository
         return true;
     }
 
+    public function deleteContact($Contact_id)
+    {
+        $done = Contact::where([
+                                ['id', '=', $Contact_id],
+                                ['user_id', '=', Auth::user()->id]]
+                            )->delete();
+        return true;
+    }
+
     public function getContact($Contact_id)
     {
         return Contact::where('id', $Contact_id)->with('user')->first();
