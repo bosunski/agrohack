@@ -64,6 +64,11 @@ class ProductRepository extends BaseRepository
         return Product::where('id', $product_id)->update($update);
     }
 
+    public function allProducts()
+    {
+        return Product::all();
+    }
+
     public function list($category_id = null, $perpage = 10)
     {
         $products = Product::where('user_id', Auth::user()->id)->get();

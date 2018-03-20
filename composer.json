@@ -11,6 +11,7 @@
         "laravel/tinker": "^1.0",
         "ramsey/uuid": "^3.7",
         "spatie/laravel-fractal": "^5.3",
+        "unicodeveloper/laravel-paystack": "^1.0",
         "uxweb/sweet-alert": "^1.4"
     },
     "require-dev": {

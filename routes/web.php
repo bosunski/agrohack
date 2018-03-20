@@ -67,6 +67,12 @@ Route::get('/user/conversation/{id}', 'UserController@getConversation')->name('c
 
 // Market Routes
 Route::get('/marketplace', 'MarketController@index')->name('market');
+Route::get('/market/item/{id}', 'MarketController@getItem')->name('marketitem');
+
+// Payment Routes
+Route::post('/pay', 'PaymentController@redirectToGateway')->name('pay');
+Route::get('/sub', 'PaymentController@sub')->name('sub');
+Route::get('/payment/callback', 'PaymentController@handleGatewayCallback');
 
 // Funding Routes
 Route::post('/funding/request', 'FundingController@requestFund')->name('fundrequest');

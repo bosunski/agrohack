@@ -17,16 +17,16 @@
   <link rel="stylesheet" href="/css/custom.css">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/main.css">
-
+  <link rel="stylesheet" href="/css/sweetalert2.css">
 </head>
 <body>
   <!-- Header -->
    <div class="row header-1">
-        <div class="col-12 col-md-3 "> 
+        <div class="col-12 col-md-3 ">
             <img src="../img/logo.png" class="img-fluid " width="100%">
         </div>
-    
-        <div class="col-12 col-md-3 text-center d-flex"> 
+
+        <div class="col-12 col-md-3 text-center d-flex">
             <i class="fa fa-map-marker-alt text-primary pt-3"></i>
             <div>
                 <p class="mb-0 pb-0">11, Elekahia Road,</p>
@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-3 text-center d-flex"> 
+        <div class="col-12 col-md-3 text-center d-flex">
             <i class="fa fa-info text-primary pt-3 mr-4"></i>
             <div>
                 <p class="mb-0 pb-0">info@openfarm.com.ng</p>
@@ -43,10 +43,10 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-3 text-right"> 
+        <div class="col-12 col-md-3 text-right">
             <button type="button" class="btn btn-primary btn-lg"><span class="login-btn-text">REGISTER/LOGIN</span></button>
         </div>
-    
+
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-primary my-0">
@@ -78,7 +78,7 @@
             <a class="nav-link text-white nav-link-bold" href="#">CONTACT US</a>
           </li>
 
-          <li class="nav-item mr-4 btn-toggle d-flex justify-content-center">      
+          <li class="nav-item mr-4 btn-toggle d-flex justify-content-center">
             <button type="button" class="btn btn-primary-toggle btn-lg rounded-0"><span class="login-btn-text">REGISTER/LOGIN</span></button>
           </li>
         </ul>
@@ -97,7 +97,7 @@
             </h4>
             <form class="form-inline">
                 <select class="custom-select mb-4" id="inlineFormCustomSelect" name="search" id="Search">
-               
+
                 </select>
             </form>
         </div>
@@ -106,267 +106,15 @@
   <div class="">
     <p class="text-center mb-5 mt-4"> Nigeria has an annual deficit of over 60 million <br>tons of chicken meat processed from boiler valued</p>
   </div>
-
-  <!-- <div class="row ml-3">
-    
-    <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-1.jpg" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">It takes time, money and a lot of effort to start and successfully run an agribusiness, either as a </p>
-              <a href="#" class="card-link">Top Posts </a>
-              <a href="#" class="card-link cl-01">Innovation</a>
-            </div>
-        </div>
-
-    </div>
-
-
-      <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-3.jpg" alt="Card image cap">
-          <div class="card-body">
-             <h5 class="card-title">Community Index</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">View Points</a>
-              <a href="#" class="card-link">Technology</a>
-            </div>
-        </div>
-    </div>
-
-
-     <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-3.jpg" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title">Farming in the Niger-Delta</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Top Posts</a>
-              <a href="#" class="card-link">Population</a>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-3.jpg" alt="Card image cap">
-          <div class="card-body">
-             <h5 class="card-title">Utilizing various Channels</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Curations</a>
-              <a href="#" class="card-link">Investments</a>
-            </div>
-        </div>
-    </div>
-
-
-
-     <div class="col-12 col-md-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-1.jpg" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">It takes time, money and a lot of effort to start and successfully run an agribusiness, either as a </p>
-              <a href="#" class="card-link">Top Posts </a>
-              <a href="#" class="card-link cl-01">Innovation</a>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-4.jpg" alt="Card image cap">
-          <div class="card-body">
-             <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-    </div>
-
-
-     <div class="col-12 col-md-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-2.jpg" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Recent</a>
-              <a href="#" class="card-link">New Oil</a>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="col-12 col-md-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-3.jpg" alt="Card image cap">
-          <div class="card-body">
-             <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Personal</a>
-              <a href="#" class="card-link">Earth</a>
-            </div>
-        </div>
-    </div>
-
-
-     <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-1.jpg" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">It takes time, money and a lot of effort to start and successfully run an agribusiness, either as a </p>
-              <a href="#" class="card-link">Top Posts </a>
-              <a href="#" class="card-link cl-01">Innovation</a>
-            </div>
-        </div>
-
-    </div>
-
-
-      <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-4.jpg" alt="Card image cap">
-          <div class="card-body">
-             <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Personal</a>
-              <a href="#" class="card-link">Harvest</a>
-            </div>
-        </div>
-    </div>
-
-
-     <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-1.jpg" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-3.jpg" alt="Card image cap">
-          <div class="card-body">
-             <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-    </div>
-
-
-
-     <div class="col-12 col-md-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-2.jpg" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">It takes time, money and a lot of effort to start and successfully run an agribusiness, either as a </p>
-              <a href="#" class="card-link">Top Posts </a>
-              <a href="#" class="card-link cl-01">Innovation</a>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-4.jpg" alt="Card image cap">
-          <div class="card-body">
-             <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-    </div>
-
-
-     <div class="col-12 col-md-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-1.jpg" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="col-12 col-md-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-4.jpg" alt="Card image cap">
-          <div class="card-body">
-             <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-    </div>
-
-
-
-  </div>
- -->
-
- <!-- <div class="d-flex justify-content-end d-div">
-        <div class="dropdown">
-          <button class="btn bg-white btn-lg" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Large button &nbsp;<i class="fa fa-angle-down"></i>
-          </button>
-          <div class="dropdown-menu">
-            <button class="dropdown-item" type="button">Action</button>
-            <div class="dropdown-divider"></div>
-              <button class="dropdown-item" type="button">Another action</button>
-              <div class="dropdown-divider"></div>
-              <button class="dropdown-item" type="button">Something else here</button>
-          </div>
-        </div>
-      </div> -->
-      
   <!-- blog posts -->
   <div class="">
     <div class="row bg-white card-div">
       <div class="col-12 col-md-4">
-        <img src="/img/img-10.jpg" class="img-fluid" alt="Responsive image">
+        <img src="/img/products/{{ $product->picture ? $product->picture : 'default.png' }}" class="img-fluid" alt="Responsive image">
       </div>
       <div class="col-12 col-md-4">
         <p class="date">Nov 29 2017 &nbsp;| &nbsp;<span class="name1">Okoye Chidi</span></p>
-        <h3>Broiler Chicken</h3>
+        <h3>{{ $product->name }}</h3>
         <p class="text-justify">
           <ul>
             <li style="list-style-type: none; font-weight: bold; font-size:17px; ">3 Months Old</li>
@@ -374,11 +122,24 @@
               <li style="list-style-type: none; font-weight: bold; font-size:17px; ">3 Months Old</li>
           </ul>
         </p>
-        <button class="btn  read-btn btn-primary">&#8358;3000</button>
-        <button class="btn btn-success">Pay</button>
+        <form class="" action="{{ route('pay') }}" method="post">
+            <div class="form-group">
+                <input type="text" id="shipping_address" class="form-control" name="shipping_address" required>
+            </div>
+            @csrf
+            <input type="hidden" name="email" value="bosunski@gmail.com"> {{-- required --}}
+            <input type="hidden" name="orderID" value="345">
+            <input type="hidden" name="amount" value="{{ $product->price * 100 }}"> {{-- required in kobo --}}
+            <input type="hidden" name="quantity" value="1">
+            <input type="hidden" id="metadata" name="metadata" value="" > {{-- For other necessary things you want to add to your payload. it is optional though --}}
+            <input type="hidden" name="reference" value="{{ Paystack::genTranxRef() }}"> {{-- required --}}
+            <input type="hidden" name="key" value="{{ config('paystack.secretKey') }}"> {{-- required --}}
+            <button class="btn  read-btn btn-primary">Pay &#8358; {{ number_format($product->price) }} Now!</button>
+        </form>
       </div>
     </div>
- 
+
+
 
   <!-- pagination -->
   <!-- <div aria-label="">
@@ -405,12 +166,25 @@
   <!-- Footer -->
      <footer>
         <p class="text-center footer-text mt-5">&copy OpenFarm 2018. All Rights Reserved</p>
-    </footer> 
+    </footer>
 
    <!-- Bootstrap JS -->
   <script src="/js/jquery/jquery.min.js"></script>
   <script src="/js/bootstrap/bootstrap.min.js"></script>
   <script src="/js/items.js"></script>
   <script src="/js/sweetalert2.min.js"></script>
+  @include('sweet::alert')
+  <script type="text/javascript">
+      $(function() {
+          $("#shipping_address").keyup(function() {
+              var input = $(this);
+              var obj = {
+                  product_id: "{{ $product->id }}",
+                  shipping_address: input.val()
+              };
+              $("#metadata").val(JSON.stringify(obj));
+          });
+      });
+  </script>
  </body>
 </html>
