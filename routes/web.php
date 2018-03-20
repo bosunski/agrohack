@@ -70,4 +70,12 @@ Route::get('/marketplace-two', function () {
     return view('front.marketplace-two');
 });
 
+Route::get('/contact-us', function () {
+    return view('front.contact-us');
+});
+
+Route::get('/about-us', function () {
+    return view('front.about-us');
+});
+
 
