@@ -124,7 +124,7 @@
                                 <div class="card-body border-0">
                                     <div class="row card-row mx-auto p-4">
                                         <div class="col-md-3">
-                                            <img src="http://d2knwvu6cegzt1.cloudfront.net/medium-compress/20137357c8834536b60.png" class="storage-img" alt="" srcset="">
+                                            <img src="/img/funding4.jpg" class="storage-img" alt="" srcset="">
                                         </div>
                                         <div class="col-md-6">
                                             <span class="accordion_heading">Capital Self Storage - East York</span><br/>
@@ -145,7 +145,7 @@
 
                                     <div class="row card-row mx-auto p-4">
                                         <div class="col-md-3">
-                                            <img src="http://d2knwvu6cegzt1.cloudfront.net/medium-compress/20137357c8834536b60.png" class="storage-img" alt="" srcset="">
+                                            <img src="/img/funding4.jpg" class="storage-img" alt="" srcset="">
                                         </div>
                                         <div class="col-md-6">
                                             <span class="accordion_heading">Capital Self Storage - East York</span><br/>
@@ -166,7 +166,7 @@
 
                                     <div class="row card-row mx-auto p-4">
                                         <div class="col-md-3">
-                                            <img src="http://d2knwvu6cegzt1.cloudfront.net/medium-compress/20137357c8834536b60.png" class="storage-img" alt="" srcset="">
+                                            <img src="/img/funding4.jpg" class="storage-img" alt="" srcset="">
                                         </div>
                                         <div class="col-md-6">
                                             <span class="accordion_heading">Capital Self Storage - East York</span><br/>

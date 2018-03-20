@@ -49,3 +49,7 @@ Route::get('/chat', function () {
 Route::get('/storage', function () {
     return view('front.storage');
 });
+
+Route::get('/funding', function () {
+    return view('front.funding');
+});
