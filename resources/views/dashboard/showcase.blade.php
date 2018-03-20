@@ -150,10 +150,11 @@
             });
 
 
-            $(".add-product").click(function(event) {
+            $("#add-product").click(function(event) {
                 event.preventDefault();
                 var button = $(this);
                 $("#product-form").attr('action', '{{ route('create-product') }}');
+                $('#newProductModal').modal();
             });
         });
 
