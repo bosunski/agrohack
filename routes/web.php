@@ -49,6 +49,3 @@ Route::get('/chat', function () {
 Route::get('/storage', function () {
     return view('front.storage');
 });
-
-   return view('front.storage');
-});
