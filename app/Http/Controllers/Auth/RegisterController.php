@@ -49,7 +49,7 @@ class RegisterController extends Controller
      */
     public function showRegistrationForm()
     {
-        return view('front.signup');
+        return view('dashboard.signup');
     }
 
 
