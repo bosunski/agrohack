@@ -43,7 +43,7 @@
         </div>
 
         <div class="col-12 col-md-3 text-right">
-            <button type="button" class="btn btn-primary btn-lg"><span class="login-btn-text">REGISTER/LOGIN</span></button>
+            <a href="{{ route('login') }}" class="btn btn-primary btn-lg"><span class="login-btn-text">REGISTER/LOGIN</span></a>
         </div>
 
     </div>
