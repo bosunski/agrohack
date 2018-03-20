@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Repositories\UserRepository;
+use App\Repositories\ContactRepository;
+use App\Repositories\MessageRepository;
+use Auth;
 
 class UserController extends Controller
 {
@@ -11,7 +15,7 @@ class UserController extends Controller
         $this->user    = $user;
         $this->message = $message;
         $this->contact = $contact;
-        $this->user_id = Auth::user()->id;
+        $this->user_id = Auth::check() ?: Auth::user();
     }
 
     public function getProfile()

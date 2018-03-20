@@ -23,6 +23,13 @@ Route::get('/signup', function () {
     return view('front.signup');
 });
 
+// Route::get('/login', function () {
+//     return view('front.login');
+// });
+Route::get('/header', function () {
+    return view('front.header');
+});
+
 // Product Routes
 Route::get('/product/list', 'ProductController@list')->name('product-list');
 Route::post('/product/create', 'ProductController@create')->name('create-product');

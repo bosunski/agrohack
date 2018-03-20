@@ -15,6 +15,7 @@ class UserRepository extends BaseRepository
             $data->picture = $this->savePicture($data);
         }
 
+        //dd($data->gender);
         return User::create([
             'id'            =>    $this->generateUuid(),
             'name'          =>    $data->name,
@@ -25,9 +26,9 @@ class UserRepository extends BaseRepository
             'gender'        =>    $data->gender,
             'user_type'     => $data->user_type ? $data->user_type : null,
             'business_category'        =>    $data->business_category ? $data->business_category : null,
-            'farmproducts'  =>    $data->farmproducts ? $data->farmproducts : null,
+            'farmproducts'  =>    isset($data->farmproducts) ? $data->farmproducts : null,
             'password'      =>    Hash::make($data->password),
-            'picture'       =>    $data->picture,
+            'picture'       =>    $data->picture == '' || $data->picture == null ? null : $data->picture,
         ]);
     }
 
@@ -92,14 +93,15 @@ class UserRepository extends BaseRepository
 
     public function savePicture($data)
     {
-        $exploded = explode(',', $data['picture']);
+        //dd($data->picture);
+        $exploded = explode('.', $data->picture);
         $decoded = base64_decode($exploded[1]);
 
         if(str_contains($exploded[0], 'jpeg'))
             $extension = 'jpg';
         else
             $extension = 'png';
-        $filename = 'product-' . time() . "." . $extension;
+        $filename = 'user-' . time() . "." . $extension;
         $destinationPath = public_path() . '/img/users/' . $filename;
 
         file_put_contents($destinationPath, $decoded);

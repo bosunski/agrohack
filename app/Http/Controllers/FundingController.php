@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Repositories\FundingRepository;
 
 class FundingController extends Controller
 {

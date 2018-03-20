@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Concession\Repositories;
+namespace App\Repositories;
 
 use Modules\Concession\Models\Category;
 use File;

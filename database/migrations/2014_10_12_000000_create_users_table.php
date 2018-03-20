@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('business_category')->nullable();
             $table->string('state');
             $table->string('gender');
+            $table->string('picture')->nullable();
             $table->enum('user_type', ['doctor', 'farmer', 'investor', 'buyer'])->default('farmer');
             $table->string('location');
             $table->text('farmproducts')->nullable();

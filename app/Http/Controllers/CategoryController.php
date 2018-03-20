@@ -1,12 +1,10 @@
 <?php
 
-namespace Modules\Concession\Controllers;
+namespace App\Http\Controllers;
 
-use App\Models\Show;
-use App\Helpers\ShowHelper;
 use Illuminate\Http\Request;
-use Modules\Concession\Transformers\CategoryTransformer;
-use Modules\Concession\Repositories\CategoryRepository;
+use App\Transformers\CategoryTransformer;
+use App\Repositories\CategoryRepository;
 use App\Http\Controllers\Controller as BaseController;
 
 

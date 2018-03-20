@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Transformers\ProductTransformer;
 use App\Repositories\ProductRepository;
-
+use App\Http\Controllers\Controller;
 
 class ProductController extends Controller
 {
