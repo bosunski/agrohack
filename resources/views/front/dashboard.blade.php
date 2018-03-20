@@ -23,7 +23,7 @@
 </head>
 
 <body>
-   <!--  
+    
     <div class="row header-1">
         <div class="col-12 col-md-3 "> 
             <img src="../img/logo.png" class="img-fluid " width="100%">
@@ -51,7 +51,7 @@
         </div>
     
     </div>
- -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-primary my-0 nav-2">
       <a class="navbar-brand" href="#">
         <img src="img/logo.png" width="20%" >
@@ -94,11 +94,11 @@
     <!-- MAIN -->
     <div class="wrapper">
         <!-- Sidebar Holder -->
-        <nav id="sidebar" class="sidebar px-4">
+        <nav id="sidebar" class="sidebar px-4 pt-4">
             <p class="text-right date">Sunday <span class="font-weight-bold">August 9, 2018</span></p>
 
                       <div class="d-flex">
-                        <i class="fa fa-cloud text-white f-2 mt-4 mr-auto"></i>
+                        <i class="fa fa-cloud text-warning f-2 mt-4 mr-auto"></i>
                         <span class="f-4">27</span>
                         <span class="fa fa-genderless f-1 mt-3"></span>
                       </div>
@@ -214,14 +214,126 @@
         <!-- Page Content Holder -->
 
         <!-- ONLY EDIT CODE BELOW THIS LINE -->
-        <div id="content">
-              <button type="button" id="sidebarCollapse" class="btn bg-transparent border-0 rounded-0 btn-cut">
-                  <i class="fa fa-cut icons"></i>
-                  <i class="fa fa-bars icons" style="display: none;"></i>
-                  <span></span>
-              </button>
-          </div>    
+        <div id="content" class="content ">
+
+              
+            <!-- <nav class="" > -->
+              <div class=" d-flex stretch pt-3 pb-0 mb-0">
+
+                  <div class=" mr-auto">
+                     <!--  <button type="button" id="sidebarCollapse" class="btn bg-transparent border-0 rounded-0 btn-cut mr-auto">
+                        <i class="fa fa-cut icons" style="transform: rotateY(180deg);"></i>
+                        <i class="fa fa-bars icons" style="display: none;"></i>
+                      </button> -->
+                  </div>
+
+                  <div class="d-flex pb-0 mb-0">
+                    <div class="d-flex mr-5 pt-3">
+                      <p class=" pr-0 text-right">View as:</p>
+                      <button class="btn bg-transparent view-active p-0 my-0  mx-3 btn-sm">LIST</button>
+                      <button class="btn bg-transparent m-0 p-0 btn-sm">CARD</button>
+                    </div>
+                      
+                    <div class="mr-5 text-center  mb-0 pb-0 ">
+                      <!-- <i class="fa fa-user-plus f-2"></i> -->
+                      <img src="/img/add-user.svg" class="img-fluid img-responsive" width="150%">
+                      <p class="mb-0 pb-0">New</p>
+                    </div>
+
+                    <div class="mr-5 text-center mb-0 pb-0">
+                      <!-- <i class="fa fa-file-alt f-2"></i> -->
+                      <img src="/img/report.svg" class="img-fluid img-responsive" width="55%">
+                      <p>Report</p>
+                    </div>
+
+                    <div  class="mr-5 text-center mb-0 pb-0">
+                      <!-- <i class="fa fa-comments f-2"></i> -->
+                      <img src="/img/chats.svg" class="img-fluid img-responsive" width="120%">
+                      <p>Chat</p>
+                    </div>
+
+                    <div  class="mr-5 text-center mb-0 pb-0">
+                      <!-- <i class="fa fa-eye f-2"></i> -->
+                      <img src="/img/profile-view.svg" class="img-fluid img-responsive" width="80%">
+                      <p>My Profile</p>
+                    </div>
+                  </div>
+              </div>
+            <!-- </nav> -->
+          <div class="p-5">
+            <p class="h3 mb-4">Welcome <span class="font-weight-bold">Gino</span></p>
+            
+                <!-- <div class="card-div bg-light"> -->
+                  <!-- <div class="row">
+                    <div></div>
+                  </div> -->
+                  <div class="card-deck text-center ">
+                    <div class="card about-card py-5 rounded-0" style="width: 15rem">
+                      <div class="img-div d-flex justify-content-center mx-auto">
+                        <img class="img-responsive img-fluid text-center img-icon" src="/img/messages.svg" alt="Card image cap" width="70px">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title h4">Messages</h5>
+                        </div>
+                    </div>
+                    <div class="card about-card py-5 rounded-0">
+                        <div class="img-div d-flex justify-content-center mx-auto">
+                          <img class="img-responsive img-fluid text-center img-icon" src="/img/notifications.svg" alt="Card image cap" style="width: 150px">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title h4">Notifications</h5>
+                          </div>
+                      </div>
+                    <div class="card about-card py-5 rounded-0">
+                        <div class="img-div d-flex justify-content-center mx-auto">
+                          <img class="img-responsive img-fluid text-center img-icon" src="/img/access-fund-icon.svg" alt="Card image cap" width="70px">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title h4">Funding</h5>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="card-deck text-center mt-3 ">
+                    <div class="card about-card py-5 rounded-0">
+                      <div class="img-div d-flex justify-content-center mx-auto">
+                        <img class="img-responsive img-fluid text-center img-icon" src="/img/showcase.svg" alt="Card image cap" width="70px">
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title h4">Showcase & Sell</h5>
+                        </div>
+                    </div>
+                    <div class="card about-card py-5 rounded-0">
+                        <div class="img-div d-flex justify-content-center mx-auto">
+                          <img class="img-responsive img-fluid text-center img-icon" src="/img/trainings.svg" alt="Card image cap" width="70px">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title h4">Trainings</h5>
+                          </div>
+                      </div>
+                    <div class="card about-card py-5 bg-transparent border-0">
+                        <!-- <div class="img-div d-flex justify-content-center mx-auto">
+                          <img class="img-responsive img-fluid text-center" src="img/link.svg" alt="Card image cap" width="70px">
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title h1">Values</h5>
+                          <p class="card-text">Explore the histroy of the lorem Ipsum passage and genrate your own text using</p>
+                          </div> -->
+                      </div>
+                  </div>
+
+                <!-- </div> -->
+
+
+
+          </div>
+
+
+
         </div>
+
+
+    </div>
 
 
 
