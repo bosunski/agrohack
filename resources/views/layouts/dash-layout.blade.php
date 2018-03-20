@@ -278,7 +278,7 @@
                   </div>
               </div>
             <!-- </nav> -->
-          <div class="p-5">
+          <div class="px-5 pb-0">
             <!--<p class="h3 mb-4">Welcome <span class="font-weight-bold">Gino</span></p>-->
 
 
@@ -299,14 +299,12 @@
 
                   <div class="tab-content" id="myTabContent">
 
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-
-
-
+                    <div class="tab-pane fade show active pt-4" id="home" role="tabpanel" aria-labelledby="home-tab">
 
                       <p class="text-center" style="opacity: 0.7; margin-top: 40%; display:none;">
                            @yield('content')
-                          You do not have any farmer in your personal network. User the search box above to connect with farmers; you can search by name or by farm produce.</p>
+
+                         </p>
                     </div>
                   </div>
 

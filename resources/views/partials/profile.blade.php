@@ -1,4 +1,4 @@
-<div class="col-12 col-md-4 profile-div px-3 pb-5 pt-2 border-left">
+<div class="col-12 col-md-4 profile-div pl-02 pb-5 pt-2 border-left">
 
 <div class="d-flex">
   <h4 class="text-center mr-auto">EDIT MY PROFILE</h4>
@@ -7,7 +7,7 @@
 
   <div class="signupcontent mt-5">
      <div class="profile-img border text-center py-3">
-   <img src="/img/profile-pic.svg" alt="profile pics" srcset="">
+   <img src="/img/profile-pic.svg" alt="profile pics" srcset="" width="50%">
  </div>
  <form class="form">
    <div class="form-group  mb-3">
@@ -33,7 +33,7 @@
      <input type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address /Location">
    </div>
 
-   <select class="custom-select  border-top-0 border-left-0 border-right-0 rounded-0mb-3" id="inlineFormCustomSelect" name="state" id="state">
+   <select class="custom-select  border-top-0 border-left-0 border-right-0 rounded-0 mb-3" id="inlineFormCustomSelect" name="state" id="state">
        <option value="" selected="selected">State</option>
        <option value="Abuja FCT">Abuja FCT</option>
        <option value="Abia">Abia</option>
@@ -75,7 +75,7 @@
        <option value="Outside Nigeria">Outside Nigeria</option>
      </select>
 
-      <div class="form-group mb-3">
+      <div class="form-group mb-3 mt-1">
      <input type="number" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputPassword1" placeholder="Phone number">
    </div>
 
@@ -83,7 +83,7 @@
      <input type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0 " id="exampleInputPassword1" placeholder="Farm produce">
    </div>
 
-   <div class="d-flex justify-content-center">
-    <button class="btn btn-primary"> Save</button>
+   <div class="d-flex justify-content-center mt-5">
+    <button class="btn btn-primary rounded-0" style="width: 100%"> Save</button>
    </div>
 </div> 
