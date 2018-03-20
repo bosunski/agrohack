@@ -4,9 +4,11 @@
 body{
     margin:0;
     font-family: 'poppins';
-
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
 }
 .header-1{
+	margin:0;
 	padding: 1% 5%;
 }
 .login-btn-text{
@@ -14,6 +16,7 @@ body{
 }
 .navbar{
 	padding: 0 0 0 5%;
+	font-size: 80%;
 }
 .navbar-brand{
 	display: none;
@@ -29,7 +32,7 @@ body{
 	background-color: #0055ff;
 }
 .form-control-lg {
-	/*height: 25px !important;*/
+	height: 50px !important;
 	/*width: 220px !important;*/
 	font-size: 14px !important;
 	font-style: italic !important;
@@ -103,18 +106,34 @@ header{
 .sidebar {
     width:25%; 
     max-width: 25%; 
-    min-height: 93vh;
-    background-color: #abb1ba;
+    max-height: 100vh;
+    /*background-color: #abb1ba;*/
     transition: all 0.3s;
 }
 .btn-cut:focus{
 	outline: none;
 	box-shadow: none;
 }
+.stretch{
+	width: 1000px;
+	border-bottom: 3px  solid #f2f2f2;
+}
+.view-active{
+	color: blue;
+}
+/*.img-icon{
+	width: 200%;
+	height: 300%;
+}*/
+.btn-sm{
+	height: 40%;
+	font-weight: 600;
+}
 
 
 
 
+/*@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";*/
 .profile-img{
     width: 29%;
     height: 200%;
@@ -138,7 +157,7 @@ header{
 ----------------------------------------------------- */
 .wrapper {
     display: flex;
-    align-items: stretch;
+    /*align-items: stretch;*/
 }
 
 
@@ -148,33 +167,43 @@ header{
 }
 
 
-
+.navbar {
+    /*padding: 15px 10px;*/
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
 
 
 
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
-#content {
-    padding: 20px;
-    min-height: 100vh;
+.content {
+    /*padding: 20px;*/
+    /*min-height: 100vh;*/
+    /*overflow-y: scroll;*/
     transition: all 0.3s;
+    /*width: 500px;*/
 }
+
+
+
 
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
 @media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
+   
 }
 
 
