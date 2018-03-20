@@ -51,6 +51,10 @@ Route::get('/contacts', function () {
    return view('front.contacts');
 });
 
+Route::get('/singleblog', function () {
+   return view('front.singleblog');
+});
+
 // Product Routes
 Route::get('/product/list', 'ProductController@index')->name('product-list');
 Route::post('/product/create', 'ProductController@create')->name('create-product');
@@ -63,6 +67,8 @@ Route::get('/user/profile', 'UserController@getProfile')->name('profile');
 Route::post('/user/updateprofile/{id}', 'UserController@updateProfile')->name('update-profile');
 Route::get('/user/inviteaccept/{contact_id}', 'UserController@acceptContact')->name('accept-contact');
 Route::get('/dashboard/contacts', 'UserController@getContacts')->name('contacts');
+
+Route::get('/dashboard/notifications', 'UserController@getNotifications')->name('notifications');
 Route::get('/user/{id}', 'UserController@getUser')->name('get-user');
 Route::post('/user/addcontact', 'UserController@addContact')->name('addcontact');
 Route::post('/user/removecontact/{id}', 'UserController@removeContact')->name('removecontact');

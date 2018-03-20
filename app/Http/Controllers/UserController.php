@@ -61,6 +61,17 @@ class UserController extends Controller
         return view('dashboard.contacts', $data);
     }
 
+
+    public function getNotifications()
+    {
+        $user_id = Auth::user()->id;
+        $contacts = $this->contact->list();
+        //dd($contacts);
+        $data['contacts'] = $contacts;
+        return view('dashboard.contacts', $data);
+    }
+
+
     public function addContact(Request $request)
     {
         $data = (object)$request->all();
