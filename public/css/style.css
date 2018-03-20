@@ -105,8 +105,8 @@ header{
 .sidebar {
     width:25%; 
     max-width: 25%; 
-    height: 100vh;
-    background-color: #abb1ba;
+    max-height: 100vh;
+    /*background-color: #abb1ba;*/
     transition: all 0.3s;
 }
 .btn-cut:focus{
@@ -203,15 +203,7 @@ header{
     MEDIAQUERIES
 ----------------------------------------------------- */
 @media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
+   
 }
 
 
