@@ -21,11 +21,11 @@
 <body>
   <!-- Header -->
    <div class="row header-1">
-        <div class="col-12 col-md-3 "> 
+        <div class="col-12 col-md-3 ">
             <img src="../img/logo.png" class="img-fluid " width="100%">
         </div>
-    
-        <div class="col-12 col-md-3 text-center d-flex"> 
+
+        <div class="col-12 col-md-3 text-center d-flex">
             <i class="fa fa-map-marker-alt text-primary pt-3"></i>
             <div>
                 <p class="mb-0 pb-0">11, Elekahia Road,</p>
@@ -34,7 +34,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-3 text-center d-flex"> 
+        <div class="col-12 col-md-3 text-center d-flex">
             <i class="fa fa-info text-primary pt-3 mr-4"></i>
             <div>
                 <p class="mb-0 pb-0">info@openfarm.com.ng</p>
@@ -42,10 +42,10 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-3 text-right"> 
+        <div class="col-12 col-md-3 text-right">
             <button type="button" class="btn btn-primary btn-lg"><span class="login-btn-text">REGISTER/LOGIN</span></button>
         </div>
-    
+
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-primary my-0">
@@ -77,8 +77,8 @@
             <a class="nav-link text-white nav-link-bold" href="#">CONTACT US</a>
           </li>
 
-          <li class="nav-item mr-4 btn-toggle d-flex justify-content-center">      
-            <button type="button" class="btn btn-primary-toggle btn-lg rounded-0"><span class="login-btn-text">REGISTER/LOGIN</span></button>
+          <li class="nav-item mr-4 btn-toggle d-flex justify-content-center">
+            <a href="{{ route('login') }}" class="btn btn-primary-toggle btn-lg rounded-0"><span class="login-btn-text">REGISTER/LOGIN</span></a>
           </li>
         </ul>
         <form class="form-inline my-0 my-lg-0  mx-0 ">
@@ -115,7 +115,7 @@
   </div>
       <img class="d-block w-100" src="/img/hero1.jpg" alt="Third slide">
     </div>
- 
+
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -179,7 +179,7 @@
        <p class="card-text c-text">This is a wider card with this card has <br>even longer content than the first.</p>
   </div>
 
-   
+
  </div>
 
 
@@ -188,7 +188,7 @@
   <p class="mt-2 text-center p-0">This is a wider card with this card has </p>
    <p class="p-1 text-center">Mix and match multiple content types to create the card you need,or throw everything in there. Shown below are image styles, blocks,<br> text styles, and a list group—all wrapped in a fixed-width card.</p>
  </div>
-    
+
   <div class="section3 text-center">
       <button type="button" class="btn btn-primary btn-1">SEE MORE ABOUT US</button>
   </div>
@@ -198,7 +198,7 @@
     <p class="mt-2 text-center p-0">This is a wider card with this card has </p>
 
     <div class="row mt-5 ml-5">
-      
+
       <div class="col-12 col-md-3">
         <p class="h-1">Are farmers Getting Adeq</p>
         <p>Growth through innovation, Rather<br> than be constrained</p>
@@ -227,12 +227,12 @@
       </div>
 
     </div><hr>
-    
+
   </div>
     <!-- Footer -->
      <footer>
         <p class="text-center footer-text mt-5">&copy OpenFarm 2018. All Rights Reserved</p>
-    </footer> 
+    </footer>
 
    <!-- Bootstrap JS -->
   <script src="/js/jquery/jquery.min.js"></script>
@@ -241,4 +241,3 @@
   <script src="/js/sweetalert2.min.js"></script>
  </body>
 </html>
- 
