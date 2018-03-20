@@ -32,9 +32,9 @@ class ProductController extends Controller
             'price'            =>     'required',
             'picture'          =>     'required',
         ]);
-
-        $imageName = 'product-'.time().'.'.$request->picture->getClientOriginalExtension();
-        $request->picture->move(public_path('products'), $imageName);
+        $picture = $request-file('picture');
+        $imageName = 'product-'.time().'.'.$picture->getClientOriginalExtension();
+        $picture->move(public_path('products'), $imageName);
 
         $data = (object) $request->all();
         $data->picture = $imageName;
