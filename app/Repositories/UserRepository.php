@@ -34,19 +34,19 @@ class UserRepository extends BaseRepository
 
     public function update($user_id, $data)
     {
-        if ($data['picture'] != '') {
+        // if ($data['picture'] != '') {
+        //
+        //     $user = User::where('id', $user_id)->first();
+        //     $this->deletePicture($user);
+        //     $data['picture'] = $this->savePicture($data);
+        // }
 
-            $user = User::where('id', $user_id)->first();
-            $this->deletePicture($user);
-            $data['picture'] = $this->savePicture($data);
-        }
+        if(isset($data['picture']) && $data['picture'] != '' && $data['picture'] != null) $update['picture'] = $data['picture'];
 
-        if($data['picture'] != '' && $data['picture'] != null) $update['picture'] = $data['picture'];
-
-        $update['name'] = $data['name'];
-        $update['description'] = $data['description'];
-        $update['price'] = $data['price'];
-
+        // $update['name'] = $data['name'];
+        // $update['description'] = $data['description'];
+        // $update['price'] = $data['price'];
+        unset($data['_token']);
         return User::where('id', $user_id)->update($data);
     }
 

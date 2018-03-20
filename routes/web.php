@@ -60,7 +60,7 @@ Route::post('/product/delete/{product_id}', 'ProductController@delete')->name('d
 
 // User Routes
 Route::get('/user/profile', 'UserController@getProfile')->name('profile');
-Route::get('/user/updateprofile', 'UserController@updateProfile')->name('update-profile');
+Route::post('/user/updateprofile/{id}', 'UserController@updateProfile')->name('update-profile');
 Route::get('/user/inviteaccept/{contact_id}', 'UserController@acceptContact')->name('accept-contact');
 Route::get('/user/{id}', 'UserController@getUser')->name('get-user');
 Route::get('/user/contacts', 'UserController@getContacts')->name('contacts');
@@ -69,6 +69,8 @@ Route::get('/user/removecontact', 'UserController@removeContact')->name('removec
 Route::get('/user/messages', 'UserController@getMessages')->name('messages');
 Route::get('/user/conversation/{id}', 'UserController@getConversation')->name('conversation');
 
+// Market Routes
+Route::get('/marketplace', 'MarketController@index')->name('market');
 
 // Funding Routes
 Route::post('/funding/request', 'FundingController@requestFund')->name('fundrequest');
@@ -92,3 +94,19 @@ Route::get('/storage', function () {
    return view('front.storage');
 });
 
+Route::get('/contacts', function () {
+   return view('front.contacts');
+});
+
+Route::get('/funding', function () {
+    return view('front.funding');
+});
+
+Route::get('/training', function () {
+    return view('front.training');
+});
+
+
+Route::get('/marketplace-two', function () {
+    return view('front.marketplace-two');
+});

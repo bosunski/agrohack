@@ -19,6 +19,36 @@
 </head>
 
 <body>
+     
+    <div class="row header-1">
+        <div class="col-12 col-md-3 "> 
+            <img src="../img/logo.png" class="img-fluid " width="100%">
+        </div>
+    
+        <div class="col-12 col-md-3 text-center d-flex"> 
+            <i class="fa fa-map-marker-alt text-primary pt-3"></i>
+            <div>
+                <p class="mb-0 pb-0">11, Elekahia Road,</p>
+                <p class="mb-0 pb-0 pr-4">Port Harcourt</p>
+                <span class="mt-0 pt-0 pl-3"><em class="text-primary">or find agent near you</em></span>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-3 text-center d-flex"> 
+            <i class="fa fa-info text-primary pt-3 mr-4"></i>
+            <div>
+                <p class="mb-0 pb-0">info@openfarm.com.ng</p>
+                <p class="mb-0 pb-0 pr-4">+234 809 773 7457</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-3 text-right"> 
+            <button type="button" class="btn btn-primary btn-lg"><span class="login-btn-text">REGISTER/LOGIN</span></button>
+        </div>
+    
+    </div>
+
+
      <nav class="navbar navbar-expand-lg navbar-light bg-primary my-0">
       <a class="navbar-brand" href="#">
         <img src="img/logo.png" width="20%" >
@@ -124,7 +154,7 @@
                                 <div class="card-body border-0">
                                     <div class="row card-row mx-auto p-4">
                                         <div class="col-md-3">
-                                            <img src="http://d2knwvu6cegzt1.cloudfront.net/medium-compress/20137357c8834536b60.png" class="storage-img" alt="" srcset="">
+                                            <img src="/img/funding4.jpg" class="storage-img" alt="" srcset="">
                                         </div>
                                         <div class="col-md-6">
                                             <span class="accordion_heading">Capital Self Storage - East York</span><br/>
@@ -145,7 +175,7 @@
 
                                     <div class="row card-row mx-auto p-4">
                                         <div class="col-md-3">
-                                            <img src="http://d2knwvu6cegzt1.cloudfront.net/medium-compress/20137357c8834536b60.png" class="storage-img" alt="" srcset="">
+                                            <img src="/img/funding4.jpg" class="storage-img" alt="" srcset="">
                                         </div>
                                         <div class="col-md-6">
                                             <span class="accordion_heading">Capital Self Storage - East York</span><br/>
@@ -166,7 +196,7 @@
 
                                     <div class="row card-row mx-auto p-4">
                                         <div class="col-md-3">
-                                            <img src="http://d2knwvu6cegzt1.cloudfront.net/medium-compress/20137357c8834536b60.png" class="storage-img" alt="" srcset="">
+                                            <img src="/img/funding4.jpg" class="storage-img" alt="" srcset="">
                                         </div>
                                         <div class="col-md-6">
                                             <span class="accordion_heading">Capital Self Storage - East York</span><br/>
