@@ -14,10 +14,12 @@
   <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
   <!--Font Awesome -->
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/weather/weather-icons.min.css">
   <!--Main CSS-->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
-      <link rel="stylesheet" href="/css/sweetalert2.css">
+  <link rel="stylesheet" href="/css/sweetalert2.css">
 
 
 
