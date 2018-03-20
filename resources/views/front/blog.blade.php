@@ -62,19 +62,19 @@
             <a class="nav-link text-white nav-link-bold" href="#">HOME <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="#">FUNDNG</a>
+            <a class="nav-link text-white nav-link-bold" href="/funding">FUNDNG</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="#">TRAINING</a>
+            <a class="nav-link text-white nav-link-bold" href="/training">TRAINING</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="#">NEWS</a>
+            <a class="nav-link text-white nav-link-bold" href="/blog">NEWS</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="#">ABOUT US</a>
+            <a class="nav-link text-white nav-link-bold" href="/about-us">ABOUT US</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="#">CONTACT US</a>
+            <a class="nav-link text-white nav-link-bold" href="/contact-us">CONTACT US</a>
           </li>
 
           <li class="nav-item mr-4 btn-toggle d-flex justify-content-center">      

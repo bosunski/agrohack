@@ -9,23 +9,24 @@
               <img src="/img/profile-pic.svg"  class="img-responsive img-fluid bg-light p-1 links" width="40%;">
             </div>
             <div class="col-md-3">
-              <p class="font-weight-bold links">{{ $contact->user->name }}</p>
+              <p class="font-weight-bold links">{{ $contact->name }}</p>
             </div>
             <div class="col-md-2 op links">
-              <p>{{ $contact->user->location }}</p>
+              <p>{{ $contact->location }}</p>
             </div>
             <div class="col-md-4 op links" style="overflow-x:hidden;">
               {{ $contact->farmproducts ? $contact->farmproducts : 'None Added' }}
             </div>
             <div class="col-md-1 op links" style="overflow-x:hidden;">
-                <form id="form-{{ $contact->id }}" class="" action="{{ route('removecontact', $contact->id) }}" method="post">
+                <form id="form-{{ $contact->id }}" class="" action="{{ route('addcontact') }}" method="post">
                     @csrf
+                    <input type="hidden" name="email" value="{{ $contact->email }}">
                 </form>
-              <span id="{{ $contact->id }}" class="delete-c fa fa-times"></span>
+              <span id="{{ $contact->id }}" class="add-c fa fa-plus"></span>
             </div>
           </div>
      @empty
-         <h6 style="opacity: 0.7">You have not added anyone to your contact list. Click add above to add people to your list.</h6>
+         <h3>What you're searching for cannot be found. Please try a different search query or... I don't know.</h3>
      @endforelse
 
     <!-- <div class="row contact-row mt-0 pt-2 mb-0 contact-row-active">

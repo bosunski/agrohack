@@ -78,10 +78,10 @@ class UserController extends Controller
         $contact = $this->contact->create($this->user_id, $data);
         if($contact->done) {
             Alert::success('Contact Created!', 'Your Contact has been created Successfully.')->persistent('Close');
-            return redirect()->back();
+            return redirect('/dashboard/contacts');
         } else {
             Alert::error('Unable to Create Contact', $contact->message)->autoclose(3000);
-            return redirect()->back();
+            return redirect('/dashboard/contacts');
         }
     }
 
