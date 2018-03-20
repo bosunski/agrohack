@@ -29,6 +29,9 @@ class ProductController extends Controller
         if($product) {
             Alert::success('Product Created!', 'Your Product has been created Successfully.')->persistent('Close');
             return redirect()->back();
+        } else {
+            Alert::error('Product Created!', 'Your Product has been created Successfully.')->autoclose(3000);
+            return redirect()->back();
         }
     }
 

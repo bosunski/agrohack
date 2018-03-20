@@ -34,9 +34,9 @@ Route::get('/blog', function () {
     return view('front.blog');
 });
 
-Route::get('/dashboard', function () {
-    return view('front.dashboard');
-});
+// Route::get('/dashboard', function () {
+//     return view('front.dashboard');
+// });
 
 Route::get('/showcase', function () {
     return view('front.showcase');
@@ -59,7 +59,7 @@ Route::get('/user/updateprofile', 'UserController@updateProfile')->name('update-
 Route::get('/user/inviteaccept/{contact_id}', 'UserController@acceptContact')->name('accept-contact');
 Route::get('/user/{id}', 'UserController@getUser')->name('get-user');
 Route::get('/user/contacts', 'UserController@getContacts')->name('contacts');
-Route::get('/user/addcontact', 'UserController@addContact')->name('addcontact');
+Route::post('/user/addcontact', 'UserController@addContact')->name('addcontact');
 Route::get('/user/removecontact', 'UserController@removeContact')->name('removecontact');
 Route::get('/user/messages', 'UserController@getMessages')->name('messages');
 Route::get('/user/conversation/{id}', 'UserController@getConversation')->name('conversation');

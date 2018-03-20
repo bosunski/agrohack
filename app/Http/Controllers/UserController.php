@@ -7,6 +7,7 @@ use App\Repositories\UserRepository;
 use App\Repositories\ContactRepository;
 use App\Repositories\MessageRepository;
 use Auth;
+use Alert;
 
 class UserController extends Controller
 {
@@ -49,7 +50,15 @@ class UserController extends Controller
 
     public function addContact(Request $request)
     {
-        $contact = $this->contact->addContact($this->user_id, $data);
+        $data = (object)$request->all();
+        $contact = $this->contact->create($this->user_id, $data);
+        if($contact->done) {
+            Alert::success('Contact Created!', 'Your Contact has been created Successfully.')->persistent('Close');
+            return redirect()->back();
+        } else {
+            Alert::error('Unable to Create Contact', $contact->message)->autoclose(3000);
+            return redirect()->back();
+        }
     }
 
     public function removeContact($contact_id)

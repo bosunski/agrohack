@@ -19,6 +19,8 @@ class User extends Authenticatable
         'picture', 'farmproducts', 'gender', 'name', 'email', 'password',
     ];
 
+    public $incrementing = false;
+
     /**
      * The attributes that should be hidden for arrays.
      *
