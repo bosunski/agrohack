@@ -145,6 +145,11 @@
            $('.w-wind-angle').html(wind.direction+'&deg;');
            $('.w-wind-speed').html(wind.speed + + units.speed);
           });
+
+
+          var fullDate = new Date()
+          console.log(fullDate);
+          document.querySelector('.date').innerHTML = fullDate;
         });
     </script>
 @endsection

@@ -47,6 +47,10 @@ Route::get('/chat', function () {
    return view('front.chat');
 });
 
+Route::get('/contacts', function () {
+   return view('front.contacts');
+});
+
 // Product Routes
 Route::get('/product/list', 'ProductController@index')->name('product-list');
 Route::post('/product/create', 'ProductController@create')->name('create-product');
