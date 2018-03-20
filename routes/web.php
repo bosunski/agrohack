@@ -22,6 +22,9 @@ Route::get('/signup', function () {
     return view('front.signup');
 });
 
+Route::get('/login', function () {
+    return view('front.login');
+});
 Route::get('/header', function () {
     return view('front.header');
 });
@@ -30,4 +33,6 @@ Route::get('/blog', function () {
     return view('front.blog');
 });
 
-
+Route::get('/dashboard', function () {
+    return view('front.dashboard');
+});
