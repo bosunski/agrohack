@@ -37,13 +37,9 @@
      <input required value="{{ Auth::user()->location }}" type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address /Location">
    </div>
 
-<<<<<<< HEAD
+
    <select id="pr-state" required selected="{{ Auth::user()->state }}" class="custom-select  border-top-0 border-left-0 border-right-0 rounded-0mb-3" name="state" id="state">
        <option value="">State</option>
-=======
-   <select class="custom-select  border-top-0 border-left-0 border-right-0 rounded-0 mb-3" id="inlineFormCustomSelect" name="state" id="state">
-       <option value="" selected="selected">State</option>
->>>>>>> 749885d331189f0f218f5151d4c00856a599fee7
        <option value="Abuja FCT">Abuja FCT</option>
        <option value="Abia">Abia</option>
        <option value="Adamawa">Adamawa</option>
@@ -84,13 +80,8 @@
        <option value="Outside Nigeria">Outside Nigeria</option>
      </select>
 
-<<<<<<< HEAD
       <div class="form-group mb-3">
      <input value="{{ Auth::user()->phone }}" name="phone" type="number" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputPassword1" placeholder="Phone number">
-=======
-      <div class="form-group mb-3 mt-1">
-     <input type="number" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputPassword1" placeholder="Phone number">
->>>>>>> 749885d331189f0f218f5151d4c00856a599fee7
    </div>
 
    <div class="form-group mb-3">
@@ -101,13 +92,8 @@
      <input style="display:none;" name="picture" type="file" class="form-control" id="picture" placeholder="Phone">
    </div>
 
-<<<<<<< HEAD
-   <div class="d-flex justify-content-center">
-       <button class="btn btn-primary"> Save</button>
-=======
    <div class="d-flex justify-content-center mt-5">
     <button class="btn btn-primary rounded-0" style="width: 100%"> Save</button>
->>>>>>> 749885d331189f0f218f5151d4c00856a599fee7
    </div>
 </form>
 </div>
