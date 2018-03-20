@@ -34,7 +34,7 @@
    </select>
 
    <div class="form-group mb-3">
-     <input required value="{{ Auth::user()->location }}" type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address /Location">
+     <input name="location" required value="{{ Auth::user()->location }}" type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address /Location">
    </div>
 
 

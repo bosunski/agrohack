@@ -142,8 +142,8 @@
            $('.w-pressure').html(atmosphere.pressure + units.pressure);
            $('.w-rising').html(rising);
            $('.w-text').html(condition.text);
-           $('.w-wind-angle').html(wind.direction+'&deg;');
-           $('.w-wind-speed').html(wind.speed + + units.speed);
+           //$('.w-wind-angle').html(wind.direction ? wind.direction +'&deg;' : '');
+           //$('.w-wind-speed').html(wind.speed + + units.speed);
           });
 
 
