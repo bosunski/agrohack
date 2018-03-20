@@ -23,7 +23,7 @@
 </head>
 
 <body>
-   <!--  
+    
     <div class="row header-1">
         <div class="col-12 col-md-3 "> 
             <img src="../img/logo.png" class="img-fluid " width="100%">
@@ -51,7 +51,7 @@
         </div>
     
     </div>
- -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-primary my-0 nav-2">
       <a class="navbar-brand" href="#">
         <img src="img/logo.png" width="20%" >
