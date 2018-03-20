@@ -44,3 +44,13 @@ Route::get('/showcase', function () {
 Route::get('/chat', function () {
     return view('front.chat');
 });
+
+Route::get('/marketplace', function () {
+    return view('front.marketplace');
+});
+
+Route::get('/marketplace-two', function () {
+    return view('front.marketplace-two');
+});
+
+
