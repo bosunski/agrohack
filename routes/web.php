@@ -47,7 +47,11 @@ Route::get('/chat', function () {
 });
 
 Route::get('/storage', function () {
-    return view('front.storage');
+   return view('front.storage');
+});
+
+Route::get('/contacts', function () {
+   return view('front.contacts');
 });
 
 Route::get('/funding', function () {
