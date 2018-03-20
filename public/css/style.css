@@ -1,8 +1,9 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 /*NEDY*/
 
 body{
     margin:0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'poppins';
 
 }
 .header-1{
@@ -129,7 +130,6 @@ header{
 /*
     DEMO STYLE
 */
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 
 
