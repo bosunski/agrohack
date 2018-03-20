@@ -36,3 +36,7 @@ Route::get('/blog', function () {
 Route::get('/dashboard', function () {
     return view('front.dashboard');
 });
+
+Route::get('/showcase', function () {
+    return view('front.showcase');
+});

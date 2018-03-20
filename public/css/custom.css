@@ -170,5 +170,13 @@ margin-left: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.show{
+	margin-left: 50%;
+}
+
+.cd-01{
+	margin-bottom: 5%;
+}
 }
 

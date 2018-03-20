@@ -334,7 +334,7 @@
   </div>
  -->
 
- <!-- <div class="d-flex justify-content-end d-div">
+ <div class="d-flex justify-content-end d-div">
         <div class="dropdown">
           <button class="btn bg-white btn-lg" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Large button &nbsp;<i class="fa fa-angle-down"></i>
@@ -347,7 +347,7 @@
               <button class="dropdown-item" type="button">Something else here</button>
           </div>
         </div>
-      </div> -->
+      </div>
       
   <!-- blog posts -->
   <div class="">
