@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('front.index');
+   return view('front.index');
 });
 
 Auth::routes();
@@ -20,30 +20,31 @@ Auth::routes();
 Route::get('/dashboard', 'DashboardController@index')->name('home');
 
 Route::get('/signup', function () {
-    return view('front.signup');
+   return view('front.signup');
 });
 
 // Route::get('/login', function () {
 //     return view('front.login');
 // });
 Route::get('/header', function () {
-    return view('front.header');
+   return view('front.header');
 });
 
 Route::get('/blog', function () {
-    return view('front.blog');
+   return view('front.blog');
 });
 
 // Route::get('/dashboard', function () {
 //     return view('front.dashboard');
 // });
 
+
 Route::get('/showcase', function () {
-    return view('front.showcase');
+   return view('front.showcase');
 });
 
 Route::get('/chat', function () {
-    return view('front.chat');
+   return view('front.chat');
 });
 
 // Product Routes
@@ -81,3 +82,8 @@ Route::post('category/create', 'CategoryController@create')->name('create-catego
 // Route::put('category/update/{category_id}', 'CategoryController@update')->name('update-category');
 Route::get('category/{category_id}', 'CategoryController@getCategory')->name('category');
 // Route::delete('category/delete/{category_id}', 'CategoryController@delete')->name('delete-category');
+
+
+Route::get('/storage', function () {
+   return view('front.storage');
+});

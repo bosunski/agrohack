@@ -270,25 +270,50 @@
                       <p>Chat</p>
                     </div>
 
-                    <div  class="mr-5 text-center mb-0 pb-0">
+                    <div  class="profile-eye links mr-5 text-center mb-0 pb-0">
                       <!-- <i class="fa fa-eye f-2"></i> -->
-                      <img src="/img/profile-view.svg" class="img-fluid img-responsive" width="80%">
+                      <img src="/img/profile-view.svg" class=" img-fluid img-responsive" width="80%">
                       <p>My Profile</p>
                     </div>
                   </div>
               </div>
             <!-- </nav> -->
           <div class="p-5">
-            <p class="h3 mb-4">Welcome <span class="font-weight-bold">Gino</span></p>
+            <!--<p class="h3 mb-4">Welcome <span class="font-weight-bold">Gino</span></p>-->
 
-                <!-- <div class="card-div bg-light"> -->
-                  <!-- <div class="row">
-                    <div></div>
-                  </div> -->
-                  @yield('content')
 
-                <!-- </div> -->
-          </div>
+            <div class="row" style="">
+
+              <div class="col-12 col-md-8">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Chat with Farmers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Notification</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Chat With Doctors</a>
+                    </li>
+                  </ul>
+
+                  <div class="tab-content" id="myTabContent">
+
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+
+
+
+                      <p class="text-center" style="opacity: 0.7; margin-top: 40%; display:none;">
+                           @yield('content')
+                          You do not have any farmer in your personal network. User the search box above to connect with farmers; you can search by name or by farm produce.</p>
+                    </div>
+                  </div>
+
+              </div>
+
+
+              @include('partials.profile')
 
 
 
@@ -323,6 +348,20 @@
 
         $("#newContact").click(function() {
             $("#newContactModal").modal();
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $('.icons').toggle();
+        });
+
+        $('.btn-close').on('click', function (){
+            $(this).parent().parent().hide();
+        })
+
+        $('.profile-eye').on('click', function() {
+          /* Act on the event */
+          $('.profile-div').toggle();
         });
 
     });
