@@ -62,8 +62,8 @@ Route::post('/product/delete/{product_id}', 'ProductController@delete')->name('d
 Route::get('/user/profile', 'UserController@getProfile')->name('profile');
 Route::post('/user/updateprofile/{id}', 'UserController@updateProfile')->name('update-profile');
 Route::get('/user/inviteaccept/{contact_id}', 'UserController@acceptContact')->name('accept-contact');
+Route::get('/dashboard/contacts', 'UserController@getContacts')->name('contacts');
 Route::get('/user/{id}', 'UserController@getUser')->name('get-user');
-Route::get('/user/contacts', 'UserController@getContacts')->name('contacts');
 Route::post('/user/addcontact', 'UserController@addContact')->name('addcontact');
 Route::get('/user/removecontact', 'UserController@removeContact')->name('removecontact');
 Route::get('/user/messages', 'UserController@getMessages')->name('messages');

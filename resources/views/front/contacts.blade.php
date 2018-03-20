@@ -13,7 +13,7 @@
   </div>
   <div class="col-md-2 op links">
     <p>Agbor</p>
-  </div>  
+  </div>
   <div class="col-md-5 op links" style="overflow-x:hidden;">
     <span>Rice</span>; <span>Cassava</span>; <span>Millet</span>; <span>Wheat</span>;
   </div>
@@ -30,7 +30,7 @@
   </div>
   <div class="col-md-2 op links">
     <p>Abia</p>
-  </div>  
+  </div>
   <div class="col-md-5 op links" style="overflow-x:hidden;">
     <span>Rice</span>; <span>Cassava</span>; <span>Wheat</span>;
   </div>
@@ -47,7 +47,7 @@
   </div>
   <div class="col-md-2 op links">
     <p>Agbor</p>
-  </div>  
+  </div>
   <div class="col-md-5 op links" style="overflow-x:hidden;">
     Millet</span>; <span>Wheat</span>;
   </div>

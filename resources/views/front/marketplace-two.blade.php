@@ -139,30 +139,6 @@
       </div>
     </div>
 
-
-
-  <!-- pagination -->
-  <!-- <div aria-label="">
-      <ul class="pagination justify-content-center pagination-lg">
-        <li class="page-item disabled">
-            <a class="page-link" href="#" tabindex="-1" aria-label="Previous">
-              <span aria-hidden="true"><i class="fa fa-angle-left "></i><span>
-              <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        <li class="page-item active"><a class="page-link " href="#">1<span class="sr-only">(current)</span></a></li>
-        <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
-        <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
-        <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true"><i class="fa fa-angle-right text-dark"></i></span>
-              <span class="sr-only">Next</span>
-            </a>
-        </li>
-      </ul>
-  </div> -->
-
-
   <!-- Footer -->
      <footer>
         <p class="text-center footer-text mt-5">&copy OpenFarm 2018. All Rights Reserved</p>
