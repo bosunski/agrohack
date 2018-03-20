@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Transformers\ProductTransformer;
 use App\Repositories\ProductRepository;
 use App\Http\Controllers\Controller;
+use Alert;
 
 class ProductController extends Controller
 {
@@ -15,16 +16,30 @@ class ProductController extends Controller
         $this->transformer = $transformer;
     }
 
+    public function index()
+    {
+        $products = $this->product->list();
+
+        $data['products'] = $products;
+        return view('dashboard.showcase', $data);
+    }
+
     public function create(Request $request)
     {
         $this->validate($request, [
             'name'             =>     'required',
             'description'      =>     'required',
             'price'            =>     'required',
-            'category_id'      =>     'required'
+            'picture'          =>     'required',
         ]);
 
+        $imageName = 'product-'.time().'.'.$request->picture->getClientOriginalExtension();
+        $request->picture->move(public_path('products'), $imageName);
+
         $data = (object) $request->all();
+        $data->picture = $imageName;
+        //dd($data->picture);
+
         $product = $this->product->create($data);
         if($product) {
             Alert::success('Product Created!', 'Your Product has been created Successfully.')->persistent('Close');

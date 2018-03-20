@@ -312,6 +312,7 @@
   <script src="/js/items.js"></script>
   <script src="/js/sweetalert2.min.js"></script>
  @include('sweet::alert')
+ @yield('after_scripts')
   <script>
     $(document).ready(function () {
 

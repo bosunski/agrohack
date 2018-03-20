@@ -47,7 +47,7 @@ Route::get('/chat', function () {
 });
 
 // Product Routes
-Route::get('/product/list', 'ProductController@list')->name('product-list');
+Route::get('/product/list', 'ProductController@index')->name('product-list');
 Route::post('/product/create', 'ProductController@create')->name('create-product');
 Route::put('/product/update/{product_id}', 'ProductController@update')->name('update-product');
 Route::get('/product/{product_id}', 'ProductController@getProduct')->name('product');

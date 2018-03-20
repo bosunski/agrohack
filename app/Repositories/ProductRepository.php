@@ -3,6 +3,7 @@
 namespace App\Repositories;
 
 use App\Product;
+use Auth;
 
 use File;
 
@@ -10,29 +11,29 @@ class ProductRepository extends BaseRepository
 {
     public function create($data)
     {
-        if ($data->picture != '') {
-            $exploded = explode(',', $data->picture);
-            $decoded = base64_decode($exploded[1]);
-
-            if(str_contains($exploded[0], 'jpeg'))
-                $extension = 'jpg';
-            else
-                $extension = 'png';
-            $filename = 'product-' . time() . "." . $extension;
-            $destinationPath = public_path() . '/img/products/' . $filename;
-
-            file_put_contents($destinationPath, $decoded);
-            $data->picture = $filename;
-
-        }
+        // if ($data->picture != '') {
+        //     $exploded = explode(',', $data->picture);
+        //     $decoded = base64_decode($exploded[1]);
+        //
+        //     if(str_contains($exploded[0], 'jpeg'))
+        //         $extension = 'jpg';
+        //     else
+        //         $extension = 'png';
+        //     $filename = 'product-' . time() . "." . $extension;
+        //     $destinationPath = public_path() . '/img/products/' . $filename;
+        //
+        //     file_put_contents($destinationPath, $decoded);
+        //     $data->picture = $filename;
+        //
+        // }
 
         return Product::create([
             'id'            =>    $this->generateUuid(),
             'user_id'       =>    Auth::user()->id,
             'name'          =>    $data->name,
-            'category_id'   =>    $data->category_id,
             'price'         =>    $data->price,
             'picture'       =>    $data->picture,
+            'description'    => $data->description
         ]);
     }
 
@@ -65,8 +66,7 @@ class ProductRepository extends BaseRepository
 
     public function list($category_id = null, $perpage = 10)
     {
-        if($category_id) $products = Product::where('category_id', $category_id)->paginate($perpage);
-        else $products = Product::where('id', '!=', null)->paginate($perpage);
+        $products = Product::where('user_id', Auth::user()->id)->get();
         return $products;
     }
 
