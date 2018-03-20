@@ -329,6 +329,22 @@
             }, 3000)
         };
 
+        $(".delete-c").click(function(event) {
+            id = '#form-'+$(this).attr('id');
+            swal({
+              title: "Are you sure?",
+              text: "Once this contact is deleted, you will not be able to recover it.",
+              icon: "warning",
+              buttons: true,
+              dangerMode: true,
+            }).then((willDelete) => {
+              if (willDelete) {
+                  $(id).submit();
+              } else {
+                swal("Your contact is still safe.");
+              }
+            });
+        });
     });
   </script>
 

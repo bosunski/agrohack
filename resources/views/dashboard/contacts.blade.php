@@ -17,11 +17,11 @@
             <div class="col-md-4 op links" style="overflow-x:hidden;">
               {{ $contact->farmproducts ? $product->farmproducts : 'None Added' }}
             </div>
-            <div class=" col-md-1 op links" style="overflow-x:hidden;">
-                <form id="" class="" action="{{ route('removecontact', $contact->id) }}" method="post">
+            <div class="col-md-1 op links" style="overflow-x:hidden;">
+                <form id="form-{{ $contact->id }}" class="" action="{{ route('removecontact', $contact->id) }}" method="post">
                     @csrf
                 </form>
-              <span id="{{ $contact->id }}" class="delete-contact fa fa-times"></span>
+              <span id="{{ $contact->id }}" class="delete-c fa fa-times"></span>
             </div>
           </div>
      @empty
@@ -64,32 +64,32 @@
 
 @section('after_script')
     <script>
-      var btns = header.getElementsByClassName("contact-row");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("contact-row-active");
-          current[0].className = current[0].className.replace(" contact-row-active", "");
-          this.className += " contact-row-active";
-        });
-      }
+      // var btns = header.getElementsByClassName("contact-row");
+      // for (var i = 0; i < btns.length; i++) {
+      //   btns[i].addEventListener("click", function() {
+      //     var current = document.getElementsByClassName("contact-row-active");
+      //     current[0].className = current[0].className.replace(" contact-row-active", "");
+      //     this.className += " contact-row-active";
+      //   });
+      // }
 
-      $(function() {
-          // $(".delete-contact").click(function(event) {
-          //     id = '#form-'+$(this).attr(id);
-          //     swal({
-          //       title: "Are you sure?",
-          //       text: "Once this contact is deleted, you will not be able to recover it.",
-          //       icon: "warning",
-          //       buttons: true,
-          //       dangerMode: true,
-          //     }).then((willDelete) => {
-          //       if (willDelete) {
-          //           $(id).submit();
-          //       } else {
-          //         swal("Your contact is still safe.");
-          //       }
-          //     });
-          // });
+      $(document).ready(function() {
+          $(".delete-c").click(function(event) {
+              id = '#form-'+$(this).attr('id');
+              swal({
+                title: "Are you sure?",
+                text: "Once this contact is deleted, you will not be able to recover it.",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+              }).then((willDelete) => {
+                if (willDelete) {
+                    $(id).submit();
+                } else {
+                  swal("Your contact is still safe.");
+                }
+              });
+          });
       });
     </script>
 @endsection

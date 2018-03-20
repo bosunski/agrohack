@@ -139,6 +139,9 @@
              <option value="Outside Nigeria">Outside Nigeria</option>
            </select>
 
+   <div class="form-group mb-3">
+     <input name="location" required value="{{ Auth::user()->location }}" type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address /Location">
+   </div>
             <div class="form-group mb-3 mt-2">
            <input value="{{ Auth::user()->phone }}" name="phone" type="number" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0 profile-form" id="exampleInputPassword1" placeholder="Phone number">
          </div>
