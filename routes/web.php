@@ -30,6 +30,22 @@ Route::get('/header', function () {
     return view('front.header');
 });
 
+Route::get('/blog', function () {
+    return view('front.blog');
+});
+
+Route::get('/dashboard', function () {
+    return view('front.dashboard');
+});
+
+Route::get('/showcase', function () {
+    return view('front.showcase');
+});
+
+Route::get('/chat', function () {
+    return view('front.chat');
+});
+
 // Product Routes
 Route::get('/product/list', 'ProductController@list')->name('product-list');
 Route::post('/product/create', 'ProductController@create')->name('create-product');

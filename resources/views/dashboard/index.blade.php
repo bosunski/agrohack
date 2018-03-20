@@ -226,7 +226,7 @@
          <img src="/img/img-4.jpg" width="80%;">
       </div>
 
-    </div>
+    </div><hr>
     
   </div>
     <!-- Footer -->

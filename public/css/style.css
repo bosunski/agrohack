@@ -3,6 +3,7 @@
 body{
     margin:0;
     font-family: 'Open Sans', sans-serif;
+
 }
 .header-1{
 	padding: 1% 5%;
@@ -61,6 +62,125 @@ body{
 }
 
 
+/*DASHBOARD*/
+.date{
+	font-size: 80%;
+}
+.side-text-1{
+	font-size: 75%;
+	font-style: italic;
+}
+.f-1{
+	font-size: 200%;
+}
+
+.f-2{
+	font-size: 200%;
+}
+
+.f-4{
+	font-size: 400%;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}   
+.api{
+	font-size: 75% ;
+}
+.rate{
+	font-size: 90% !important;
+}
+header{
+	font-weight: bold;
+	font-size: 95% !important;
+}
+#read-more{
+	font-style: normal;
+}
+.sidebar {
+    width:25%; 
+    max-width: 25%; 
+    min-height: 93vh;
+    background-color: #abb1ba;
+    transition: all 0.3s;
+}
+.btn-cut:focus{
+	outline: none;
+	box-shadow: none;
+}
+
+
+
+
+.profile-img{
+    width: 29%;
+    height: 200%;
+    margin-left: 40%; 
+    /*position: absolute;*/
+    background-color: #ffffff;
+    /*margin-top: -30%;*/
+    left: 30%;
+    /*margin-bottom: 30%;*/
+}
+
+
+/*
+    DEMO STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+
+
+#sidebar.active {
+    margin-left: -25%;
+}
+
+
+
+}
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+
+
+
+
 @media only screen and (max-width: 900px){
 
 }
@@ -90,5 +210,8 @@ body{
 		background-color: #fff;
 		width: 100%;
 	}
+	.sidebar {
+        margin-left: -25%;
+    }
 }
 
