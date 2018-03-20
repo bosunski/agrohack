@@ -40,3 +40,7 @@ Route::get('/dashboard', function () {
 Route::get('/showcase', function () {
     return view('front.showcase');
 });
+
+Route::get('/chat', function () {
+    return view('front.chat');
+});

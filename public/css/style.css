@@ -3,6 +3,7 @@
 body{
     margin:0;
     font-family: 'Open Sans', sans-serif;
+
 }
 .header-1{
 	padding: 1% 5%;
@@ -111,6 +112,18 @@ header{
 }
 
 
+
+
+.profile-img{
+    width: 29%;
+    height: 200%;
+    margin-left: 40%; 
+    /*position: absolute;*/
+    background-color: #ffffff;
+    /*margin-top: -30%;*/
+    left: 30%;
+    /*margin-bottom: 30%;*/
+}
 
 
 /*
