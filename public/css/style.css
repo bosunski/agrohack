@@ -148,7 +148,20 @@ header{
     /*left: 30%;*/
     /*margin-bottom: 30%;*/
 }
-
+.contact-row{
+	border-bottom: 2px solid #f2f2f2;
+	margin: 2% 0%;
+	padding: 0%;
+}
+.op{
+	color: #baadb2;
+}
+.contact-row-active{
+	/*margin-top: -30%;*/
+	background-color: #f2f2f2;
+	color: #000;
+	border-bottom: 2px solid #0055ff;
+}
 
 /*
     DEMO STYLE
