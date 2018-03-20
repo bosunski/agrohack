@@ -132,7 +132,6 @@
                     swal("Your product is still safe.");
                   }
                 });
-
             });
 
 

@@ -34,7 +34,7 @@ class ProductController extends Controller
         ]);
         $picture = $request->file('picture');
         $imageName = 'product-'.time().'.'.$picture->getClientOriginalExtension();
-        $picture->move(public_path('products'), $imageName);
+        $picture->move(public_path('img/products'), $imageName);
 
         $data = (object) $request->all();
         $data->picture = $imageName;
@@ -63,7 +63,7 @@ class ProductController extends Controller
         $picture = $request->file('picture');
         if($picture) {
             $imageName = 'product-'.time().'.'.$picture->getClientOriginalExtension();
-            $picture->move(public_path('products'), $imageName);
+            $picture->move(public_path('img/products'), $imageName);
 
             // $data =  $request->all();
             $data['picture'] = $imageName;
