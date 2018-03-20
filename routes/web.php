@@ -29,10 +29,24 @@ Route::get('/header', function () {
     return view('front.header');
 });
 
+Route::get('/blog', function () {
+    return view('front.blog');
+});
+
 Route::get('/dashboard', function () {
     return view('front.dashboard');
 });
 
-Route::get('/dashboard-sell', function () {
-    return view('front.dashboard-sell');
+
+Route::get('/showcase', function () {
+    return view('front.showcase');
 });
+
+Route::get('/chat', function () {
+    return view('front.chat');
+});
+
+Route::get('/storage', function () {
+    return view('front.storage');
+});
+

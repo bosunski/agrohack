@@ -1,24 +1,60 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Showcase &amp; Sell</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Agrohack</title>
 
-    <!-- favicon -->
-    <link rel="icon" href="/img/logo-fav.png" sizes="16x16" type="image/png">
-    <!--Bootstrap CSS -->
-    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
-    <!--Font Awesome -->
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <!--Main CSS-->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+  <!-- favicon -->
+  <link rel="icon" href="/img/logo-fav.png" sizes="16x16" type="image/png">
+  <!--Bootstrap CSS -->
+  <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+  <!--Font Awesome -->
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <!--Main CSS-->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+
+
+
 </head>
-<body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-primary my-0 nav-2">
+<body>
+   <!--  
+    <div class="row header-1">
+        <div class="col-12 col-md-3 "> 
+            <img src="../img/logo.png" class="img-fluid " width="100%">
+        </div>
+    
+        <div class="col-12 col-md-3 text-center d-flex"> 
+            <i class="fa fa-map-marker-alt text-primary pt-3"></i>
+            <div>
+                <p class="mb-0 pb-0">11, Elekahia Road,</p>
+                <p class="mb-0 pb-0 pr-4">Port Harcourt</p>
+                <span class="mt-0 pt-0 pl-3"><em class="text-primary">or find agent near you</em></span>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-3 text-center d-flex"> 
+            <i class="fa fa-info text-primary pt-3 mr-4"></i>
+            <div>
+                <p class="mb-0 pb-0">info@openfarm.com.ng</p>
+                <p class="mb-0 pb-0 pr-4">+234 809 773 7457</p>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-3 text-right"> 
+            <button type="button" class="btn btn-primary btn-lg" style="width: 70%;"><span class="login-btn-text">LOGOUT</span></button>
+        </div>
+    
+    </div>
+ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary my-0 nav-2">
       <a class="navbar-brand" href="#">
         <img src="img/logo.png" width="20%" >
       </a>
@@ -97,7 +133,6 @@
                             <div class="d-flex mr-auto">
                               <p class="mr-2">Rising</p>
                               <p class="mr-1 rate">87%</p>
-                              <!-- <span class="fa fa-genderless f-half"></span> -->
                             </div>
 
                              <!-- <div class="d-flex">
@@ -179,40 +214,110 @@
       
         <!-- Page Content Holder -->
 
-        <!-- ONLY EDIT CODE BELOW THIS LINE -->
         <div id="content">
               <button type="button" id="sidebarCollapse" class="btn bg-transparent border-0 rounded-0 btn-cut">
                   <i class="fa fa-cut icons"></i>
                   <i class="fa fa-bars icons" style="display: none;"></i>
                   <span></span>
               </button>
-
-              <div class="main-content container">
-                  <div class="row">
-                      <div class="col-md-3">
-                          
-                      </div>
-                      <div class="col-md-3">
-                          
-                      </div>
-                      <div class="col-md-3">
-                          
-                      </div>
-                  </div>
-                <div class="dashboard-hdtext">
-                    <h5>
-                        Showcase &amp; Sell
-                    </h5>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="/img/maize.jpg" alt="Card image cap">
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="/img/maize.jpg" alt="Card image cap">
-                </div>
-              </div>
           </div>    
+
+
+        <!-- ONLY EDIT CODE BELOW THIS LINE -->
+
+          <div class="show mt-5">
+            <h3>Showcase & Sell</h3>
+
+            <div class="row mt-5">
+              
+               <div class="col-12 col-md-3 mb-3 ">
+                <div class="card cd-01" style="width: 13rem; height: 14rem">
+                      <img class="card-img-top" src="/img/maize.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-text text-center mt-5">Maize</h4>
+                      </div>
+                    </div>
+                <!--  <img src="/img/maize.jpg">
+                 <h4>Maize</h4> -->
+               </div>
+
+                <div class="col-12 col-md-3">
+                 <div class="card cd-01" style="width: 13rem; height: 14rem">
+                      <img class="card-img-top" src="/img/rice.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-text text-center mb-2">Rice</h4>
+                      </div>
+                    </div>
+               </div>
+
+                <div class="col-12 col-md-3">
+                 <div class="card cd-01" style="width: 13rem; height: 14rem">
+                      <img class="card-img-top" src="/img/wheat.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-text text-center mt-3">Wheat</h4>
+                      </div>
+                    </div>
+               </div>
+
+                <div class="col-12 col-md-3">
+                 <div class="card cd-01" style="width: 13rem; height: 14rem">
+                      <img class="card-img-top" src="/img/barley.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-text text-center mt-3">Barley</h4>
+                      </div>
+                    </div>
+               </div>
+
+                <div class="col-12 col-md-3">
+                <div class="card cd-01" style="width: 13rem; height: 14rem">
+                      <img class="card-img-top" src="/img/oat.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-text text-center">Maize</h4>
+                      </div>
+                    </div>
+                <!--  <img src="/img/maize.jpg">
+                 <h4>Maize</h4> -->
+               </div>
+
+                <div class="col-12 col-md-3">
+                 <div class="card cd-01" style="width: 13rem; height: 14rem">
+                      <img class="card-img-top" src="/img/wheat.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-text text-center">Rice</h4>
+                      </div>
+                    </div>
+               </div>
+
+                <div class="col-12 col-md-3">
+                 <div class="card cd-01 " style="width: 13rem; height: 14rem">
+                      <img class="card-img-top" src="/img/rye.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-text text-center mt-3">Wheat</h4>
+                      </div>
+                    </div>
+               </div>
+
+                <div class="col-12 col-md-3">
+                 <div class="card cd-01" style="width: 13rem; height: 14rem">
+                      <img class="card-img-top" src="/img/oat.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-text text-center mt-3">Barley</h4>
+                      </div>
+                    </div>
+               </div>
+
+
+            </div>
+            
+          </div>
+
         </div>
+
+
+
+
+
+
 
     <!-- <footer>
         <p class="text-center footer-text">&copy OpenFarm 2018. All Rights Reserved</p>
@@ -235,6 +340,5 @@
   </script>
  
 </script>
-    
-</body>
 </html>
+ 

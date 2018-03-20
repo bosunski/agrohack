@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    
+   <!--  
     <div class="row header-1">
         <div class="col-12 col-md-3 "> 
             <img src="../img/logo.png" class="img-fluid " width="100%">
@@ -51,7 +51,7 @@
         </div>
     
     </div>
-
+ -->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary my-0 nav-2">
       <a class="navbar-brand" href="#">
         <img src="img/logo.png" width="20%" >
@@ -94,11 +94,11 @@
     <!-- MAIN -->
     <div class="wrapper">
         <!-- Sidebar Holder -->
-        <nav id="sidebar" class="sidebar px-4 pt-4">
+        <nav id="sidebar" class="sidebar px-4">
             <p class="text-right date">Sunday <span class="font-weight-bold">August 9, 2018</span></p>
 
                       <div class="d-flex">
-                        <i class="fa fa-cloud text-warning f-2 mt-4 mr-auto"></i>
+                        <i class="fa fa-cloud text-white f-2 mt-4 mr-auto"></i>
                         <span class="f-4">27</span>
                         <span class="fa fa-genderless f-1 mt-3"></span>
                       </div>
@@ -213,127 +213,129 @@
       
         <!-- Page Content Holder -->
 
-        <!-- ONLY EDIT CODE BELOW THIS LINE -->
-        <div id="content" class="content ">
+       
+        <div id="content">
+              <button type="button" id="sidebarCollapse" class="btn bg-transparent border-0 rounded-0 btn-cut">
+                  <i class="fa fa-cut icons"></i>
+                  <i class="fa fa-bars icons" style="display: none;"></i>
+                  <span></span>
+              </button>
+          </div> 
+              <!-- ONLY EDIT CODE BELOW THIS LINE -->
+        
+        <div class="row">
 
-              
-            <!-- <nav class="" > -->
-              <div class=" d-flex stretch pt-3 pb-0 mb-0">
-
-                  <div class=" mr-auto">
-                     <!--  <button type="button" id="sidebarCollapse" class="btn bg-transparent border-0 rounded-0 btn-cut mr-auto">
-                        <i class="fa fa-cut icons" style="transform: rotateY(180deg);"></i>
-                        <i class="fa fa-bars icons" style="display: none;"></i>
-                      </button> -->
-                  </div>
-
-                  <div class="d-flex pb-0 mb-0">
-                    <div class="d-flex mr-5 pt-3">
-                      <p class=" pr-0 text-right">View as:</p>
-                      <button class="btn bg-transparent view-active p-0 my-0  mx-3 btn-sm">LIST</button>
-                      <button class="btn bg-transparent m-0 p-0 btn-sm">CARD</button>
-                    </div>
-                      
-                    <div class="mr-5 text-center  mb-0 pb-0 ">
-                      <!-- <i class="fa fa-user-plus f-2"></i> -->
-                      <img src="/img/add-user.svg" class="img-fluid img-responsive" width="150%">
-                      <p class="mb-0 pb-0">New</p>
-                    </div>
-
-                    <div class="mr-5 text-center mb-0 pb-0">
-                      <!-- <i class="fa fa-file-alt f-2"></i> -->
-                      <img src="/img/report.svg" class="img-fluid img-responsive" width="55%">
-                      <p>Report</p>
-                    </div>
-
-                    <div  class="mr-5 text-center mb-0 pb-0">
-                      <!-- <i class="fa fa-comments f-2"></i> -->
-                      <img src="/img/chats.svg" class="img-fluid img-responsive" width="120%">
-                      <p>Chat</p>
-                    </div>
-
-                    <div  class="mr-5 text-center mb-0 pb-0">
-                      <!-- <i class="fa fa-eye f-2"></i> -->
-                      <img src="/img/profile-view.svg" class="img-fluid img-responsive" width="80%">
-                      <p>My Profile</p>
-                    </div>
-                  </div>
-              </div>
-            <!-- </nav> -->
-          <div class="p-5">
-            <p class="h3 mb-4">Welcome <span class="font-weight-bold">Gino</span></p>
-            
-                <!-- <div class="card-div bg-light"> -->
-                  <!-- <div class="row">
-                    <div></div>
-                  </div> -->
-                  <div class="card-deck text-center ">
-                    <div class="card about-card py-5 rounded-0" style="width: 15rem">
-                      <div class="img-div d-flex justify-content-center mx-auto">
-                        <img class="img-responsive img-fluid text-center img-icon" src="/img/messages.svg" alt="Card image cap" width="70px">
-                      </div>
-                      <div class="card-body">
-                        <h5 class="card-title h4">Messages</h5>
-                        </div>
-                    </div>
-                    <div class="card about-card py-5 rounded-0">
-                        <div class="img-div d-flex justify-content-center mx-auto">
-                          <img class="img-responsive img-fluid text-center img-icon" src="/img/notifications.svg" alt="Card image cap" style="width: 150px">
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title h4">Notifications</h5>
-                          </div>
-                      </div>
-                    <div class="card about-card py-5 rounded-0">
-                        <div class="img-div d-flex justify-content-center mx-auto">
-                          <img class="img-responsive img-fluid text-center img-icon" src="/img/access-fund-icon.svg" alt="Card image cap" width="70px">
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title h4">Funding</h5>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="card-deck text-center mt-3 ">
-                    <div class="card about-card py-5 rounded-0">
-                      <div class="img-div d-flex justify-content-center mx-auto">
-                        <img class="img-responsive img-fluid text-center img-icon" src="/img/showcase.svg" alt="Card image cap" width="70px">
-                      </div>
-                      <div class="card-body">
-                        <h5 class="card-title h4">Showcase & Sell</h5>
-                        </div>
-                    </div>
-                    <div class="card about-card py-5 rounded-0">
-                        <div class="img-div d-flex justify-content-center mx-auto">
-                          <img class="img-responsive img-fluid text-center img-icon" src="/img/trainings.svg" alt="Card image cap" width="70px">
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title h4">Trainings</h5>
-                          </div>
-                      </div>
-                    <div class="card about-card py-5 bg-transparent border-0">
-                        <!-- <div class="img-div d-flex justify-content-center mx-auto">
-                          <img class="img-responsive img-fluid text-center" src="img/link.svg" alt="Card image cap" width="70px">
-                        </div>
-                        <div class="card-body">
-                          <h5 class="card-title h1">Values</h5>
-                          <p class="card-text">Explore the histroy of the lorem Ipsum passage and genrate your own text using</p>
-                          </div> -->
-                      </div>
-                  </div>
-
-                <!-- </div> -->
-
-
+          <div class="col-12 col-md-8">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Chat with Farmers</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Notification</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Chat With Doctors</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer.</div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer.</div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam nibh. Nunc varius facilisis eros. Sed erat. In in velit quis arcu ornare laoreet. Curabitur adipiscing luctus massa. Integer ut purus ac augue commodo commodo. Nunc nec mi eu justo tempor consectetuer.</div>
+</div>
 
           </div>
 
 
+           <div class="col-12 col-md-4 profile-div px-5 pb-5 pt-2 border-left">
 
+           <div class="d-flex">
+             <h4 class="text-center mr-auto">EDIT MY PROFILE</h4>
+             <span class="text-right btn bg-transparent btn-close"  style="cursor: pointer;">X</span>
+           </div>
+
+             <div class="signupcontent mt-5">
+                <div class="profile-img border text-center py-3">
+              <img src="/img/profile-pic.svg" alt="profile pics" srcset="">
+            </div>     
+            <form class="form">
+              <div class="form-group  mb-3">          
+                <input type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name">
+              </div>
+
+              <div class="form-group  mb-3">          
+                <input type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputPassword1" placeholder="Middle Name">
+              </div>
+            
+              <div class="form-group   mb-3">          
+                <input type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputPassword1" placeholder="Last Name">
+              </div>
+
+              <!-- <label class="mr-sm-2" for="inlineFormCustomSelect"></label> -->
+              <select class="custom-select border-top-0 border-left-0 border-right-0 rounded-0 mb-3" id="inlineFormCustomSelect">
+                <option selected>Gender</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                
+              </select>
+            
+              <div class="form-group mb-3">          
+                <input type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address /Location">
+              </div>
+
+              <select class="custom-select  border-top-0 border-left-0 border-right-0 rounded-0mb-3" id="inlineFormCustomSelect" name="state" id="state">
+                  <option value="" selected="selected">State</option>
+                  <option value="Abuja FCT">Abuja FCT</option>
+                  <option value="Abia">Abia</option>
+                  <option value="Adamawa">Adamawa</option>
+                  <option value="Akwa Ibom">Akwa Ibom</option>
+                  <option value="Anambra">Anambra</option>
+                  <option value="Bauchi">Bauchi</option>
+                  <option value="Bayelsa">Bayelsa</option>
+                  <option value="Benue">Benue</option>
+                  <option value="Borno">Borno</option>
+                  <option value="Cross River">Cross River</option>
+                  <option value="Delta">Delta</option>
+                  <option value="Ebonyi">Ebonyi</option>
+                  <option value="Edo">Edo</option>
+                  <option value="Ekiti">Ekiti</option>
+                  <option value="Enugu">Enugu</option>
+                  <option value="Gombe">Gombe</option>
+                  <option value="Imo">Imo</option>
+                  <option value="Jigawa">Jigawa</option>
+                  <option value="Kaduna">Kaduna</option>
+                  <option value="Kano">Kano</option>
+                  <option value="Katsina">Katsina</option>
+                  <option value="Kebbi">Kebbi</option>
+                  <option value="Kogi">Kogi</option>
+                  <option value="Kwara">Kwara</option>
+                  <option value="Lagos">Lagos</option>
+                  <option value="Nassarawa">Nassarawa</option>
+                  <option value="Niger">Niger</option>
+                  <option value="Ogun">Ogun</option>
+                  <option value="Ondo">Ondo</option>
+                  <option value="Osun">Osun</option>
+                  <option value="Oyo">Oyo</option>
+                  <option value="Plateau">Plateau</option>
+                  <option value="Rivers">Rivers</option>
+                  <option value="Sokoto">Sokoto</option>
+                  <option value="Taraba">Taraba</option>
+                  <option value="Yobe">Yobe</option>
+                  <option value="Zamfara">Zamfara</option>
+                  <option value="Outside Nigeria">Outside Nigeria</option>
+                </select>
+               
+                 <div class="form-group mb-3">          
+                <input type="number" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputPassword1" placeholder="Phone number">
+              </div>
+            
+              <div class="form-group mb-3">          
+                <input type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0 " id="exampleInputPassword1" placeholder="Farm produce">
+              </div>
+          
         </div>
 
 
-    </div>
+        </div>
 
 
 
@@ -358,6 +360,9 @@
             $('.icons').toggle();
         });
 
+        $('.btn-close').on('click', function (){
+            $(this).parent().parent().hide();
+        })
     });
   </script>
  
