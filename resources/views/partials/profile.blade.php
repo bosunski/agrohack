@@ -8,7 +8,7 @@
   <div class="signupcontent mt-5">
      <div class="profile-img border text-center py-3">
     @if(Auth::user()->picture)
-        <img id="prv-image" src="/img/users/{{ Auth::user()->picture }}" alt="profile pics" srcset="">
+        <img id="prv-image card-img-top" src="/img/users/{{ Auth::user()->picture }}" alt="profile pics" srcset="">
     @else
         <img id="prv-image" src="/img/profile-pic.svg" alt="profile pics" srcset="">
     @endif
@@ -16,17 +16,17 @@
  <form enctype="multipart/form-data" action="{{ route('update-profile', Auth::user()->id) }}" method="post" class="form">
      @csrf
    <div class="form-group  mb-3">
-     <input required value="{{ Auth::user()->name }}" type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+     <input required value="{{ Auth::user()->name }}" type="text" class="form-control profile-form  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
    </div>
    <!--<div class="form-group  mb-3">
      <input required type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputPassword1" placeholder="Middle Name">
    </div>
-
+ 
    <div class="form-group   mb-3">
      <input required type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputPassword1" placeholder="Last Name">
  </div>-->
 
-   <select id="pr-gender" required selected="{{ Auth::user()->gender }}" name="gender" class="custom-select border-top-0 border-left-0 border-right-0 rounded-0 mb-3">
+   <select id="pr-gender" required selected="{{ Auth::user()->gender }}" name="gender" class="custom-select border-top-0 border-left-0 border-right-0 rounded-0 mb-3 profile-form ">
      <option value="">-- Gender --</option>
      <option value="Male">Male</option>
      <option value="Female">Female</option>
@@ -34,11 +34,11 @@
    </select>
 
    <div class="form-group mb-3">
-     <input required value="{{ Auth::user()->location }}" type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address /Location">
+     <input required value="{{ Auth::user()->location }}" type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0 profile-form " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address /Location">
    </div>
 
 
-   <select id="pr-state" required selected="{{ Auth::user()->state }}" class="custom-select  border-top-0 border-left-0 border-right-0 rounded-0mb-3" name="state" id="state">
+   <select id="pr-state" required selected="{{ Auth::user()->state }}" class="custom-select  border-top-0 border-left-0 border-right-0 rounded-0mb-3 profile-form  " name="state" id="state">
        <option value="">State</option>
        <option value="Abuja FCT">Abuja FCT</option>
        <option value="Abia">Abia</option>
@@ -80,16 +80,16 @@
        <option value="Outside Nigeria">Outside Nigeria</option>
      </select>
 
-      <div class="form-group mb-3">
-     <input value="{{ Auth::user()->phone }}" name="phone" type="number" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputPassword1" placeholder="Phone number">
+      <div class="form-group mb-3 mt-2">
+     <input value="{{ Auth::user()->phone }}" name="phone" type="number" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0 profile-form" id="exampleInputPassword1" placeholder="Phone number">
    </div>
 
    <div class="form-group mb-3">
-     <input value="{{ Auth::user()->farmproducts }}" name="farmproducts" type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0 " id="exampleInputPassword1" placeholder="Farm produce">
+     <input value="{{ Auth::user()->farmproducts }}" name="farmproducts" type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0 profile-form" id="exampleInputPassword1" placeholder="Farm produce">
    </div>
 
    <div class="form-group mb-3">
-     <input style="display:none;" name="picture" type="file" class="form-control" id="picture" placeholder="Phone">
+     <input style="display:none;" name="picture" type="file" class="form-control profile-form " id="picture" placeholder="Phone">
    </div>
 
    <div class="d-flex justify-content-center mt-5">

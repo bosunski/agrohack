@@ -67,7 +67,6 @@ body{
 	font-weight: 600;
 }
 
-
 /*DASHBOARD*/
 .date{
 	font-size: 80%;
@@ -163,12 +162,14 @@ header{
 	color: #000;
 	border-bottom: 2px solid #0055ff;
 }
-
-/*
-    DEMO STYLE
-*/
-
-
+.profile-form{
+	border-radius: 0;
+}
+.profile-form:focus{
+	box-shadow: none;
+	outline: none;
+	
+}
 
 /* ---------------------------------------------------
     SIDEBAR STYLE

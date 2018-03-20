@@ -186,7 +186,7 @@
 
                     <div class="tab-pane fade show active pt-4" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-                      <p class="text-center d-flex mb-0" style="opacity: 0.7; margin-top: 40%; display:none;">
+                      <p class="text-center d-flex mb-0" style="opacity: 0.7; margin-top: 0%; display:none;">
                            @yield('content')
 
                          </p>
