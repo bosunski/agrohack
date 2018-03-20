@@ -377,7 +377,7 @@
                <button class="btn btn-primary"> Save</button>
               </div>
         </div> 
-    
+    </form>
         <!-- CHAT -->
 
 

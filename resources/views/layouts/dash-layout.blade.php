@@ -173,9 +173,9 @@
             <!--<p class="h3 mb-4">Welcome <span class="font-weight-bold">Gino</span></p>-->
 
 
-            <div class="row" style="">
+            <div class="row bg-white" style="">
 
-              <div class="col-12 col-md-8">
+              <div class="col-12 col-md-8 mx-0 px-0">
                   <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
                       <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Chat with Farmers</a>
@@ -192,7 +192,7 @@
 
                     <div class="tab-pane fade show active pt-4" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-                      <p class="text-center d-flex mb-0" style="opacity: 0.7; margin-top: 40%; display:none;">
+                      <p class="text-center d-flex mb-0" style="opacity: 0.7; margin-top: 0%; display:none;">
                            @yield('content')
 
                          </p>
@@ -203,7 +203,7 @@
 
 
               @include('partials.profile')
-
+            </div>
 
 
         </div>
@@ -250,7 +250,7 @@
 
         $('.profile-eye').on('click', function() {
           /* Act on the event */
-          $('.profile-div').toggle();
+          $('.profile-div,.chat').toggle();
         });
 
         $("#prv-image").click(function() {
@@ -267,6 +267,73 @@
 
         $("#pr-gender").val('{{ Auth::user()->gender }}');
         $("#pr-state").val('{{ Auth::user()->state }}');
+
+
+
+
+        //Script to simulate back and forth messaging between user and account officer;
+        const msgForm = document.querySelector('.message-form');
+        const msgsArea = document.querySelector('.messages-area');
+        const typingHtml = `
+                            <div class="received-message typing">
+                                <p class="message received show-typing">...</p>
+                            </div>`; //Show when a reply is being typed
+
+        msgForm.addEventListener('submit', addMessage);
+
+        function addMessage(e) {
+            e.preventDefault();
+            const msgInput = document.querySelector('.message-input');
+            if (msgInput.value !== '') {
+                let message = msgInput.value;
+                let msgHtml = `
+                    <div class="sent-message text-left">
+                        <p class="message sent">
+                                 ${message}
+                        </p>
+                   </div>
+                `;
+                msgsArea.innerHTML += msgHtml;
+                msgInput.value = '';
+                simulateReply()
+            } else {
+                return
+            }
+        }
+
+        function simulateReply() {
+            showTyping();
+            const replies = [
+                'Hey thank you for that message',
+                "Just hold on we'll be with you",
+                "What it do my nigs"
+            ];
+            setTimeout(() => {
+                let num = Math.round(Math.random() * replies.length);
+                console.log(num)
+                let randomMessage = replies[num];
+                let replyHtml = `
+                    <div class="received-message text-left">
+                        <p class="message received">
+                                 ${randomMessage}
+                        </p>
+                   </div>
+                `;
+                msgsArea.innerHTML += replyHtml;
+                let msgAreaHeight = msgsArea.scrollHeight;
+                msgsArea.scrollTop = msgAreaHeight;
+            }, 3000)
+        }
+
+        function showTyping() {
+            msgsArea.innerHTML += typingHtml;
+            let msgAreaHeight = msgsArea.scrollHeight;
+            msgsArea.scrollTop = msgAreaHeight;
+            setTimeout(() => {
+                let typing = document.querySelector('.typing');
+                typing.remove()
+            }, 3000)
+        };
 
         $(".delete-c").click(function(event) {
             id = '#form-'+$(this).attr('id');

@@ -1,5 +1,5 @@
 <!-- Sidebar Holder -->
-<nav id="sidebar" class="sidebar px-4 pt-4">
+<nav id="sidebar" class="sidebar px-4 pt-4 bg-light">
     <p class="text-right date">Sunday <span class="font-weight-bold">August 9, 2018</span></p>
 
               <div class="d-flex">

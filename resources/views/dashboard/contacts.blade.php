@@ -25,7 +25,7 @@
             </div>
           </div>
      @empty
-         <h3>You have not added anyone to your contact list. Click add above to add people to your list.</h3>
+         <h6 style="opacity: 0.7">You have not added anyone to your contact list. Click add above to add people to your list.</h6>
      @endforelse
 
     <!-- <div class="row contact-row mt-0 pt-2 mb-0 contact-row-active">
