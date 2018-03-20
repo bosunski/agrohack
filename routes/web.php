@@ -49,9 +49,9 @@ Route::get('/chat', function () {
 // Product Routes
 Route::get('/product/list', 'ProductController@index')->name('product-list');
 Route::post('/product/create', 'ProductController@create')->name('create-product');
-Route::put('/product/update/{product_id}', 'ProductController@update')->name('update-product');
+Route::post('/product/update/{product_id}', 'ProductController@update')->name('update-product');
 Route::get('/product/{product_id}', 'ProductController@getProduct')->name('product');
-Route::delete('/product/delete/{product_id}', 'ProductController@delete')->name('delete-product');
+Route::post('/product/delete/{product_id}', 'ProductController@delete')->name('delete-product');
 
 // User Routes
 Route::get('/user/profile', 'UserController@getProfile')->name('profile');

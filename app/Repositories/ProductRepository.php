@@ -39,21 +39,21 @@ class ProductRepository extends BaseRepository
 
     public function update($product_id, $data)
     {
-        if ($data['picture'] != '') {
-            $exploded = explode(',', $data['picture']);
-            $decoded = base64_decode($exploded[1]);
-
-            if(str_contains($exploded[0], 'jpeg'))
-                $extension = 'jpg';
-            else
-                $extension = 'png';
-            $filename = 'product-' . time() . "." . $extension;
-            $destinationPath = public_path() . '/img/products/' . $filename;
-
-            file_put_contents($destinationPath, $decoded);
-
-            $data['picture'] = $filename;
-        }
+        // if ($data['picture'] != '') {
+        //     $exploded = explode('.', $data['picture']);
+        //     $decoded = base64_decode($exploded[1]);
+        //
+        //     if(str_contains($exploded[0], 'jpeg'))
+        //         $extension = 'jpg';
+        //     else
+        //         $extension = 'png';
+        //     $filename = 'product-' . time() . "." . $extension;
+        //     $destinationPath = public_path() . '/img/products/' . $filename;
+        //
+        //     file_put_contents($destinationPath, $decoded);
+        //
+        //     $data['picture'] = $filename;
+        // }
 
         if($data['picture'] != '' && $data['picture'] != null) $update['picture'] = $data['picture'];
 
@@ -61,7 +61,7 @@ class ProductRepository extends BaseRepository
         $update['description'] = $data['description'];
         $update['price'] = $data['price'];
 
-        return Product::where('id', $product_id)->update($data);
+        return Product::where('id', $product_id)->update($update);
     }
 
     public function list($category_id = null, $perpage = 10)
@@ -87,6 +87,6 @@ class ProductRepository extends BaseRepository
 
     public function getProduct($product_id)
     {
-        return Product::where('id', $product_id)->with('category')->paginate();
+        return Product::where('id', $product_id)->first();
     }
 }

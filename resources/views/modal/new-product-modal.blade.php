@@ -3,7 +3,7 @@
     <div class="modal-content">
       <div class="modal-body">
         <h1>Add User to Product</h1>
-        <form enctype="multipart/form-data" role="form" method="post" action="{{ route('create-product') }}">
+        <form id="product-form" enctype="multipart/form-data" role="form" method="post" action="{{ route('create-product') }}">
           @csrf
           {{-- dd($errors->all()) --}}
           @if ($errors->has('picture'))
@@ -13,7 +13,7 @@
           @endif
           <div class="form-group my-0 py-0">
               <label for="name">Name:</label>
-              <input value="{{ old('name') }}" placeholder="Title" type="text" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" required>
+              <input id="p-name" value="{{ old('name') }}" placeholder="Title" type="text" name="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" required>
 
               @if ($errors->has('name'))
                   <span class="invalid-feedback">
@@ -24,7 +24,7 @@
 
           <div class="form-group my-0 py-0">
               <label for="description">Name:</label>
-              <textarea placeholder="Description" type="text" name="description" class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" required>{{ old('description') }}</textarea>
+              <textarea id="p-description" placeholder="Description" type="text" name="description" class="form-control{{ $errors->has('description') ? ' is-invalid' : '' }}" required>{{ old('description') }}</textarea>
 
             @if ($errors->has('description'))
                 <span class="invalid-feedback">
@@ -35,7 +35,7 @@
 
           <div class="form-group my-0 py-0">
               <label for="price">Price:</label>
-              <input value="{{ old('price') }}" placeholder="Price" type="number" name="price" class="form-control{{ $errors->has('price') ? ' is-invalid' : '' }}" required>
+              <input id="p-price" value="{{ old('price') }}" placeholder="Price" type="number" name="price" class="form-control{{ $errors->has('price') ? ' is-invalid' : '' }}" required>
 
                 @if ($errors->has('price'))
                     <span class="invalid-feedback">
@@ -46,7 +46,6 @@
           <div class="form-group">
               <label for="name">Picture:</label>
               <input type="file" name="picture" class="form-control" required>
-
           </div><br/>
 
 
