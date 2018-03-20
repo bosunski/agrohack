@@ -4,6 +4,7 @@ body{
     margin:0;
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
+
 }
 .header-1{
 	margin:0;
@@ -132,6 +133,22 @@ header{
 
 
 /*@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";*/
+.profile-img{
+    width: 29%;
+    height: 200%;
+    margin-left: 40%; 
+    /*position: absolute;*/
+    background-color: #ffffff;
+    /*margin-top: -30%;*/
+    left: 30%;
+    /*margin-bottom: 30%;*/
+}
+
+
+/*
+    DEMO STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 
 
