@@ -33,11 +33,22 @@ class UserController extends Controller
         return $user;
     }
 
-    public function updateProfile(Request $request)
+    public function updateProfile($id, Request $request)
     {
-        $done = $this->user->update($request->all());
+        $data = $request->all();
+        $picture = $request->file('picture');
+        if($picture) {
+            $imageName = 'product-'.time().'.'.$picture->getClientOriginalExtension();
+            $picture->move(public_path('img/users'), $imageName);
+
+            // $data =  $request->all();
+            $data['picture'] = $imageName;
+        }
+
+        $done = $this->user->update($id, $data);
         if($done) {
-            // Alert
+            Alert::success('Profile Updated!', 'Your Profile has been updated')->persistent('Close');
+            return redirect()->back();
         }
     }
 
