@@ -33,3 +33,6 @@ Route::get('/dashboard', function () {
     return view('front.dashboard');
 });
 
+Route::get('/dashboard-sell', function () {
+    return view('front.dashboard-sell');
+});
