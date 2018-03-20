@@ -62,8 +62,8 @@ Route::post('/product/delete/{product_id}', 'ProductController@delete')->name('d
 Route::get('/user/profile', 'UserController@getProfile')->name('profile');
 Route::post('/user/updateprofile/{id}', 'UserController@updateProfile')->name('update-profile');
 Route::get('/user/inviteaccept/{contact_id}', 'UserController@acceptContact')->name('accept-contact');
+Route::get('/dashboard/contacts', 'UserController@getContacts')->name('contacts');
 Route::get('/user/{id}', 'UserController@getUser')->name('get-user');
-Route::get('/user/contacts', 'UserController@getContacts')->name('contacts');
 Route::post('/user/addcontact', 'UserController@addContact')->name('addcontact');
 Route::get('/user/removecontact', 'UserController@removeContact')->name('removecontact');
 Route::get('/user/messages', 'UserController@getMessages')->name('messages');
@@ -71,6 +71,12 @@ Route::get('/user/conversation/{id}', 'UserController@getConversation')->name('c
 
 // Market Routes
 Route::get('/marketplace', 'MarketController@index')->name('market');
+Route::get('/market/item/{id}', 'MarketController@getItem')->name('marketitem');
+
+// Payment Routes
+Route::post('/pay', 'PaymentController@redirectToGateway')->name('pay');
+Route::get('/sub', 'PaymentController@sub')->name('sub');
+Route::get('/payment/callback', 'PaymentController@handleGatewayCallback');
 
 // Funding Routes
 Route::post('/funding/request', 'FundingController@requestFund')->name('fundrequest');

@@ -43,7 +43,7 @@ class ContactRepository extends BaseRepository
 
     public function list()
     {
-        $Contacts = Contact::where('user_id', Auth::user()->id)->get();
+        $Contacts = Contact::where('user_id', Auth::user()->id)->with('user')->get();
         return $Contacts;
     }
 
@@ -60,7 +60,7 @@ class ContactRepository extends BaseRepository
 
     public function getContact($Contact_id)
     {
-        return Contact::where('id', $Contact_id)->with('category')->first();
+        return Contact::where('id', $Contact_id)->with('user')->first();
     }
 
     public function update($Contact_id, $data)

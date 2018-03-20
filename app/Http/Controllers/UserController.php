@@ -55,8 +55,10 @@ class UserController extends Controller
     public function getContacts()
     {
         $user_id = Auth::user()->id;
-        $contacts = $this->contact->getContacts($user_id);
-        return $contacts;
+        $contacts = $this->contact->list();
+        //dd($contacts);
+        $data['contacts'] = $contacts;
+        return view('dashboard.contacts', $data);
     }
 
     public function addContact(Request $request)
