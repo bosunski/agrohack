@@ -61,7 +61,7 @@ select:focus{
 }
 
 .terms{
-    color: #00abc9;
+    color: #09ABC9;
 }
 
 .login-text{
@@ -79,6 +79,7 @@ select:focus{
 .btn-primary{
     background-color: #09ABC9;
 }
+
 
 .btn-primary:focus {
     background-color: #09ABC9;
@@ -113,8 +114,13 @@ select:focus{
         border-right: none;
     }
 
+    .storage-img{
+        width: 60%;
+        height: 60%;
+    }
+
     .btn{
-    font-size: 1em;
+        font-size: 1em;
     }
 
 
@@ -125,5 +131,88 @@ select:focus{
     .sm-btn{
         margin-bottom: 5%;
     }
+}
+
+
+/* Storage,funding */
+
+
+.storage-header{
+    background-color: #034078;
+}
+
+.storage-header-text{
+    color: #ffffff;
+}
+
+.storage-search{
+    width: 25%;
+}
+
+.form-inline input{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: #ffffff;
+}
+
+.card{
+    border: none;
+}
+
+.card-header{
+	background: #fff;
+	border:none;
+}
+
+.mt-112{
+    margin-top:4.2rem;
+}
+
+.accordion_heading{
+    font-size:1.3em;
+    color: #09ABC9;
+}
+.accordion_body{
+    font-size:1em;
+}
+.card-row{
+    border: 2px solid rgba(105, 103, 115, 0.15);
+}
+
+.accordion_sub_heading{
+    font-size: 0.7em;
+}
+
+.storage-link{
+    font-size: 0.7em;
+}
+
+.storage-img{
+    width: 60%;
+    height: 60%;
+}
+
+.mycardtitle{
+    font-size: 1em;
+    font-weight: 700;
+    padding:none;
+}
+
+.mycardtext{
+    color: #333333;
+    font-size: 0.8em;
+}
+
+.funding-card a{
+    color:#333333;
+}
+
+.funding-card a:hover{
+    color:#09ABC9;
+}
+
+a:hover{
+    text-decoration: none;
 }
 

@@ -55,7 +55,7 @@
                             @endif
                         </div>
 
-                        <div class="justify-content-end">
+                        <div class="dflex justify-content-end">
                             <button type="submit" class="btn btn-primary col-xs-4 col-md-4 sm-btn">Log In</button>
                         </div>
 

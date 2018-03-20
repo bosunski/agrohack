@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="/css/custom.css">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/main.css">
 
 </head>
 <body>
@@ -89,13 +90,21 @@
   <!-- End of Header -->
   <!-- Main Body -->
 
-  <div class="">
-    <img src="/img/blog01.jpg" class="img-002">
-    <div class="centered">BROWSE THE LATEST ARTICLES AND NEWS</div>
-  </div>
+  <div class="container-fluid storage-header">
+        <div class="storage-search mx-auto">
+            <h4 class="storage-header-text pt-5 pb-3 text-center">
+               Market Place
+            </h4>
+            <form class="form-inline">
+                <select class="custom-select mb-4" id="inlineFormCustomSelect" name="search" id="Search">
+               
+                </select>
+            </form>
+        </div>
+    </div>
 
   <div class="">
-    <h4 class="blog-h1">Blog</h4>
+    <p class="text-center mb-5 mt-4"> Nigeria has an annual deficit of over 60 million <br>tons of chicken meat processed from boiler valued</p>
   </div>
 
   <!-- <div class="row ml-3">
@@ -334,7 +343,7 @@
   </div>
  -->
 
- <div class="d-flex justify-content-end d-div">
+ <!-- <div class="d-flex justify-content-end d-div">
         <div class="dropdown">
           <button class="btn bg-white btn-lg" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Large button &nbsp;<i class="fa fa-angle-down"></i>
@@ -347,163 +356,32 @@
               <button class="dropdown-item" type="button">Something else here</button>
           </div>
         </div>
-      </div>
+      </div> -->
       
   <!-- blog posts -->
   <div class="">
     <div class="row bg-white card-div">
       <div class="col-12 col-md-4">
-        <img src="/img/img-5.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-12 col-md-8">
-        <p class="date">Nov 29 2017 &nbsp;| &nbsp;<span class="name1">Naveen Rao</span></p>
-        <h3>Artificial Intelligence at the Edge</h3>
-        <p class="text-justify">
-          Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
-        </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
-        <button class="btn btn-blue">#News</button>
-      </div>
-    </div>
-
-    <div class="row bg-white card-div">
-      <div class="col-12 col-md-4">
-        <img src="/img/img-6.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-12 col-md-8">
-        <p class="date">Nov 29 2017 &nbsp;| &nbsp;<span class="name1">Naveen Rao</span></p>
-        <h3>Artificial Intelligence at the Edge</h3>
-        <p class="text-justify">
-          Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
-        </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
-        <button class="btn btn-blue">#News</button>
-      </div>
-    </div>
-
-    <div class="row bg-white card-div">
-      <div class="col-12 col-md-4">
-        <img src="/img/img-7.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-12 col-md-8">
-        <p class="date">Nov 29 2017 &nbsp;| &nbsp;<span class="name1">Naveen Rao</span></p>
-        <h3>Artificial Intelligence at the Edge</h3>
-        <p class="text-justify">
-          Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
-        </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
-        <button class="btn btn-blue">#News</button>
-      </div>
-    </div>
-
-    <div class="row bg-white card-div">
-      <div class="col-12 col-md-4">
-        <img src="/img/img-8.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-12 col-md-8">
-        <p class="date">Nov 29 2017 &nbsp;| &nbsp;<span class="name1">Naveen Rao</span></p>
-        <h3>Artificial Intelligence at the Edge</h3>
-        <p class="text-justify">
-          Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
-        </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
-        <button class="btn btn-blue">#News</button>
-      </div>
-    </div>
-
-    <div class="row bg-white card-div">
-      <div class="col-12 col-md-4">
-        <img src="/img/img-9.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-12 col-md-8">
-        <p class="date">Nov 29 2017 &nbsp;| &nbsp;<span class="name1">Naveen Rao</span></p>
-        <h3>Artificial Intelligence at the Edge</h3>
-        <p class="text-justify">
-          Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
-        </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
-        <button class="btn btn-blue">#News</button>
-      </div>
-    </div>
-
-    <div class="row bg-white card-div">
-      <div class="col-12 col-md-4">
         <img src="/img/img-10.jpg" class="img-fluid" alt="Responsive image">
       </div>
-      <div class="col-12 col-md-8">
-        <p class="date">Nov 29 2017 &nbsp;| &nbsp;<span class="name1">Naveen Rao</span></p>
-        <h3>Artificial Intelligence at the Edge</h3>
-        <p class="text-justify">
-          Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
-        </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
-        <button class="btn btn-blue">#News</button>
-      </div>
-    </div>
-
-    <div class="row bg-white card-div">
       <div class="col-12 col-md-4">
-        <img src="/img/img-11.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-12 col-md-8">
-        <p class="date">Nov 29 2017 &nbsp;| &nbsp;<span class="name1">Naveen Rao</span></p>
-        <h3>Artificial Intelligence at the Edge</h3>
+        <p class="date">Nov 29 2017 &nbsp;| &nbsp;<span class="name1">Okoye Chidi</span></p>
+        <h3>Broiler Chicken</h3>
         <p class="text-justify">
-          Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
+          <ul>
+            <li style="list-style-type: none; font-weight: bold; font-size:17px; ">3 Months Old</li>
+             <li style="list-style-type: none; font-weight: bold; font-size:17px; ">3 Months Old</li>
+              <li style="list-style-type: none; font-weight: bold; font-size:17px; ">3 Months Old</li>
+          </ul>
         </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
-        <button class="btn btn-blue">#News</button>
+        <button class="btn  read-btn btn-primary">&#8358;3000</button>
+        <button class="btn btn-success">Pay</button>
       </div>
     </div>
-
-    <div class="row bg-white card-div">
-      <div class="col-12 col-md-4">
-        <img src="/img/img-12.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-12 col-md-8">
-        <p class="date">Nov 29 2017 &nbsp;| &nbsp;<span class="name1">Naveen Rao</span></p>
-        <h3>Artificial Intelligence at the Edge</h3>
-        <p class="text-justify">
-          Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
-        </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
-        <button class="btn btn-blue">#News</button>
-      </div>
-    </div>
-
-    <div class="row bg-white card-div">
-      <div class="col-12 col-md-4">
-        <img src="/img/img13.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-12 col-md-8">
-        <p class="date">Nov 29 2017 &nbsp;| &nbsp;<span class="name1">Naveen Rao</span></p>
-        <h3>Artificial Intelligence at the Edge</h3>
-        <p class="text-justify">
-          Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
-        </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
-        <button class="btn btn-blue">#News</button>
-      </div>
-    </div>
-
-    <div class="row bg-white card-div">
-      <div class="col-12 col-md-4">
-        <img src="/img/img-14.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-12 col-md-8">
-        <p class="date">Nov 29 2017 &nbsp;| &nbsp;<span class="name1">Naveen Rao</span></p>
-        <h3>Artificial Intelligence at the Edge</h3>
-        <p class="text-justify">
-          Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
-        </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
-        <button class="btn btn-blue">#News</button>
-      </div>
-    </div>
-  </div>  
+ 
 
   <!-- pagination -->
-  <div aria-label="">
+  <!-- <div aria-label="">
       <ul class="pagination justify-content-center pagination-lg">
         <li class="page-item disabled">
             <a class="page-link" href="#" tabindex="-1" aria-label="Previous">
@@ -521,7 +399,7 @@
             </a>
         </li>
       </ul>
-  </div>
+  </div> -->
 
 
   <!-- Footer -->

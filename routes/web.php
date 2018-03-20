@@ -65,6 +65,8 @@ Route::get('/user/removecontact', 'UserController@removeContact')->name('removec
 Route::get('/user/messages', 'UserController@getMessages')->name('messages');
 Route::get('/user/conversation/{id}', 'UserController@getConversation')->name('conversation');
 
+// Market Routes
+Route::get('/marketplace', 'MarketController@index')->name('market');
 
 // Funding Routes
 Route::post('/funding/request', 'FundingController@requestFund')->name('fundrequest');
@@ -86,4 +88,21 @@ Route::get('category/{category_id}', 'CategoryController@getCategory')->name('ca
 
 Route::get('/storage', function () {
    return view('front.storage');
+});
+
+Route::get('/contacts', function () {
+   return view('front.contacts');
+});
+
+Route::get('/funding', function () {
+    return view('front.funding');
+});
+
+Route::get('/training', function () {
+    return view('front.training');
+});
+
+
+Route::get('/marketplace-two', function () {
+    return view('front.marketplace-two');
 });

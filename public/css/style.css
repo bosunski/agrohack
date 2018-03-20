@@ -18,6 +18,7 @@ body{
 .navbar{
 	padding: 0 0 0 5%;
 	font-size: 80%;
+	background-color: #09ABC9;
 }
 .navbar-brand{
 	display: none;
@@ -30,7 +31,7 @@ body{
 
 }
 .bg-deep-blue{
-	background-color: #0055ff;
+	background-color: #09ABC9;
 }
 .form-control-lg {
 	height: 50px !important;
@@ -54,7 +55,7 @@ body{
 	position: absolute;
 	top: 5;
 	right: 5%;
-	background-color: #0055ff;
+	background-color: #09ABC9;
 	border-radius: 0;
 	border: 0;
 }
