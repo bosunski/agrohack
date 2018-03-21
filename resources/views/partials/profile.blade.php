@@ -1,4 +1,21 @@
-<div id="chat-boxer" style="display:none;" class="col-12 col-md-4  pb-5 border-left bg-white">
+<div id="note-boxer" style="display:none;" class="prf-boxer col-12 col-md-4  pb-5 border-left bg-white">
+
+  <div id="message-box" style="" class="chat mx-0 px-0">
+
+    <div class="chat-contact-details p-2 mx-0 bg-white">
+      <div class="row p-0 m-0">
+        <div class="col-6 col-md-8 pl-2 pr-0 py-0 m-0">
+          <h5 id="note-title"></h5>
+        </div>
+      </div>
+      <h4>Notification Message:</h4>
+      <p id="note-message" class="mt-0 pt-0"></p>
+    </div>
+  </div>
+</div>
+
+
+<div id="chat-boxer" style="display:none;" class="prf-boxer col-12 col-md-4  pb-5 border-left bg-white">
 
   <div id="message-box" style="" class="chat mx-0 px-0">
 
@@ -59,7 +76,7 @@
   </div>
   </div>
 </div>
-<div style="display:none;" id="profile-boxer" class="col-12 col-md-4 bg-success   profile-div pb-5 border-left bg-light">
+<div style="display:none;" id="profile-boxer" class="prf-boxer col-12 col-md-4 bg-success   profile-div pb-5 border-left bg-light">
   <div class="" style="">
     <div class="d-flex">
         <h4 class="text-center mr-auto">EDIT MY PROFILE</h4>

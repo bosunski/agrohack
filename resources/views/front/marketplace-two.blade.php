@@ -116,11 +116,11 @@
         <p class="date">Nov 29 2017 &nbsp;| &nbsp;<span class="name1">Okoye Chidi</span></p>
         <h3>{{ $product->name }}</h3>
         <p class="text-justify">
-          <ul>
+          <!--<ul>
             <li style="list-style-type: none; font-weight: bold; font-size:17px; ">3 Months Old</li>
              <li style="list-style-type: none; font-weight: bold; font-size:17px; ">3 Months Old</li>
               <li style="list-style-type: none; font-weight: bold; font-size:17px; ">3 Months Old</li>
-          </ul>
+          </ul>-->
         </p>
         <form class="" action="{{ route('pay') }}" method="post">
             <div class="form-group">

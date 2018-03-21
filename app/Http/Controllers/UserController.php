@@ -7,6 +7,7 @@ use App\Repositories\UserRepository;
 use App\Repositories\ContactRepository;
 use App\Repositories\MessageRepository;
 use App\Notification;
+use App\Report;
 use Auth;
 use Alert;
 
@@ -68,14 +69,31 @@ class UserController extends Controller
         return view('dashboard.contacts', $data);
     }
 
+    public function addNote()
+    {
+        return view('front.notify');
+    }
+
+    public function addGeneralNote(Request $request)
+    {
+        $notification = new Notification;
+        $notification->type = 'general';
+        $notification->title = $request->title;
+        $notification->message = $request->message;
+        $notification->save();
+
+        return redirect("/notify")->with('status', 'Notification sent to all Users on Open Farm');
+    }
+
 
     public function getNotifications()
     {
-        $user_id = Auth::user()->id;
-        $contacts = $this->contact->list();
-        //dd($contacts);
-        $data['contacts'] = $contacts;
-        return view('dashboard.contacts', $data);
+        $mineg = Notification::where('user_id', Auth::user()->id)->orderBy('created_at', 'desc')->get()->toArray();
+        $general = Notification::where('type', 'general')->orderBy('created_at', 'desc')->get()->toArray();
+        $notifications = array_merge($general, $mineg);
+
+        $data['notifications'] = $notifications;
+        return view('dashboard.notifications', $data);
     }
 
 
@@ -104,6 +122,17 @@ class UserController extends Controller
     {
         $done = $this->contact->deleteContact($contact_id);
         Alert::success('Contact Deleted!', 'Your Contact has been deleted Successfully.')->persistent('Close');
+        return redirect()->back();
+    }
+
+    public function report()
+    {
+        $contacts = $this->contact->list();
+        $report = new Report;
+        $report->user_id = Auth::user()->id;
+        $report->data = json_encode(['contacts' => $contacts]);
+        $report->save();
+        Alert::success('Report Submitted.', 'Thank you for helping us make OpenFarm a better place.')->persistent('Close');
         return redirect()->back();
     }
 

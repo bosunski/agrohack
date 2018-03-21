@@ -1,14 +1,14 @@
 @extends('layouts.dash-layout')
-@section('tab')
+@section('content')
 
 
  <div class="general-contact-div">
-     @forelse ($contacts as $key => $contact)
+     @forelse ($notifications as $key => $notification)
          <div class=" contact-row pt-2 mb-0">
-            <a href="#">This is the title of the message: <span style="opacity: 0.7">this is the body of the message</span></a>
+            <a class="read-note" id="note-{{ $key }}" href="#">{{ $notification['title'] }}</a> <span style="opacity: 0.7">{{ substr($notification['message'], 0, 100) }}</span>
           </div>
      @empty
-         <h6 style="opacity: 0.7">You have not added anyone to your contact list. Click add above to add people to your list.</h6>
+         <h6 style="opacity: 0.7">You have no notification.</h6>
      @endforelse
 
     <!-- <div class="row contact-row mt-0 pt-2 mb-0 contact-row-active">
@@ -45,8 +45,9 @@
 @endsection
 
 
-@section('after_script')
+@section('after_scripts')
     <script>
+        var notifications = {!!  json_encode($notifications) !!};
       // var btns = header.getElementsByClassName("contact-row");
       // for (var i = 0; i < btns.length; i++) {
       //   btns[i].addEventListener("click", function() {
@@ -57,6 +58,19 @@
       // }
 
       $(document).ready(function() {
+          $(".read-note").click(function(event) {
+              event.preventDefault();
+
+              var iid = $(this).attr('id');
+              var key = iid.split('-')[1];
+
+              $("#note-message").html(notifications[key].message);
+              $("#note-title").html(notifications[key].tilte);
+
+              $(".prf-boxer").hide();
+              $("#note-boxer").fadeIn('fast');
+          });
+
           $(".delete-c").click(function(event) {
               id = '#form-'+$(this).attr('id');
               swal({

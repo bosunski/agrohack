@@ -121,13 +121,15 @@
 
     <!-- MAIN -->
     <div class="wrapper">
-        @include('partials.weather')
+        @if(Auth::user()->user_type != 'farmer')
+            @include('partials.empty')
+        @else
+            @include('partials.weather')
+        @endif
         <!-- Page Content Holder -->
 
         <!-- ONLY EDIT CODE BELOW THIS LINE -->
         <div id="content" class="content ">
-
-
             <!-- <nav class="" > -->
               <div class=" d-flex stretch pt-3 pb-0 mb-0">
 
@@ -145,19 +147,22 @@
                       <button class="btn bg-transparent m-0 p-0 btn-sm">CARD</button>
                     </div>
 
-                    <div id="newContact" class="mr-5 text-center  mb-0 pb-0 ">
+                    <div id="newContact" class=" links mr-5 text-center  mb-0 pb-0 ">
                       <!-- <i class="fa fa-user-plus f-2"></i> -->
                       <img src="/img/add-user.svg" class="img-fluid img-responsive" width="150%">
                       <p class="mb-0 pb-0">New</p>
                     </div>
 
-                    <div class="mr-5 text-center mb-0 pb-0">
+                    <div id="send-report" class="mr-5 text-center links  mb-0 pb-0">
                       <!-- <i class="fa fa-file-alt f-2"></i> -->
                       <img src="/img/report.svg" class="img-fluid img-responsive" width="55%">
+                      <form id="report-form" action="{{ route('report') }}" method="post">
+                          @csrf
+                      </form>
                       <p>Report</p>
                     </div>
 
-                    <div  class="mr-5 text-center mb-0 pb-0">
+                    <div  id="to-contacts" class="mr-5 text-center links mb-0 pb-0">
                       <!-- <i class="fa fa-comments f-2"></i> -->
                       <img src="/img/chats.svg" class="img-fluid img-responsive" width="120%">
                       <p>Chat</p>
@@ -180,10 +185,10 @@
               <div class="col-12 col-md-8 mx-0 px-0">
                   <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Chat with Farmers</a>
+                      <a href="{{ route('contacts') }}" class="tab-shit nav-link {{ Route::current()->getName() == 'contacts' ? 'active ' : '' }}" id="home-tab" data-toggle="tab" href="{{ route('contacts') }}" role="tab" aria-controls="home" aria-selected="true">Chat</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Notification</a>
+                      <a href="{{ route('notifications') }}" class="tab-shit nav-link {{ Route::current()->getName() == 'notifications' ? 'active ' : '' }}" id="profile-tab" data-toggle="tab" href="{{ route('notifications') }}" role="tab" aria-controls="profile" aria-selected="false">Notification</a>
                     </li>
                     <!-- <li class="nav-item">
                       <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Chat With Doctors</a>
@@ -207,7 +212,7 @@
 
                       </p>
                     </div>
-                    
+
                   </div>
 
               </div>
@@ -240,9 +245,53 @@
 
  @include('sweet::alert')
  @yield('after_scripts')
+
+ <script type="text/javascript">
+     $(document).ready(function(){
+       var city = "{{ Auth::user()->location }}";
+       var searchtext = "select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='" + city + "') and u='c'"
+       //change city variable dynamically as required
+       $.getJSON("https://query.yahooapis.com/v1/public/yql?q=" + searchtext + "&format=json", function(response){
+        console.log(response);
+
+        var data = response.query.results.channel;
+        var atmosphere = data.atmosphere;
+        var condition = data.item.condition;
+        var astronomy = data.astronomy;
+        var units = data.units;
+        var wind = data.item.wind;
+        var forecast = data.item.forecast;
+        var temp = forecast[0];
+
+        var rising = atmosphere.rising == 0 ? 'Not Rising' : 'Rising';
+
+        $('.w-temp-high').html(temp.high + "C");
+        $('.w-temp-low').html(temp.low + "C");
+        $('.w-humidity').html(atmosphere.humidity + "%");
+        $('.w-pressure').html(atmosphere.pressure + units.pressure);
+        $('.w-rising').html(rising);
+        $('.w-text').html(condition.text);
+        //$('.w-wind-angle').html(wind.direction ? wind.direction +'&deg;' : '');
+        //$('.w-wind-speed').html(wind.speed + + units.speed);
+       });
+
+
+       var fullDate = new Date()
+       console.log(fullDate);
+       document.querySelector('.date').innerHTML = fullDate;
+     });
+ </script>
   <script>
     var auth_id = "{{ Auth::user()->id }}";
     $(document).ready(function () {
+
+        $(".tab-shit").click(function(event) {
+            event.preventDefault();
+            window.location = $(this).attr('href');
+        });
+        $("#to-contacts").click(function(event) {
+            window.location = "{{ route('contacts') }}";
+        });
         var auth_id = "{{ Auth::user()->id }}";
         $('#sidebarCollapse').on('click', function () {
             $('#sidebar').toggleClass('active');
@@ -259,13 +308,13 @@
         });
 
         $('.btn-close').on('click', function (){
-            $(this).parent().parent().hide();
+            $('#profile-boxer').toggle();
         })
 
         $('.profile-eye').on('click', function() {
           /* Act on the event */
-          $("#chat-boxer").hide();
-          $('.profile-div').toggle();
+           $(".prf-boxer").hide();
+           $('#profile-boxer').toggle();
         });
 
         $("#prv-image").click(function() {

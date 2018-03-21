@@ -15,6 +15,26 @@ function retrieveMessageList(id) {
     });
 }
 
+$(function() {
+    $("#send-report").click(function(event) {
+        /* Act on the event */
+        event.preventDefault();
+        swal({
+          title: "Are you sure?",
+          text: "confirming this will generate a report of your interactions with OpenFarm and send it, so we can create better services for you.",
+          icon: "warning",
+          buttons: true,
+          dangerMode: true,
+        }).then((willDelete) => {
+          if (willDelete) {
+              $("#report-form").submit();
+          } else {
+            //swal("Your contact is still safe.");
+          }
+        });
+    });
+});
+
 var refreshTime;
 $(function() {
     $("#close-chat").click(function() {
@@ -38,7 +58,7 @@ $(function() {
 
           retrieveMessageList(id);
 
-          $("#profile-boxer").hide();
+           $(".prf-boxer").hide();
           $("#chat-boxer").fadeIn('fast');
 
           refreshTime = window.setInterval(function() {

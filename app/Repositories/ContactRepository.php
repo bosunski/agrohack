@@ -13,7 +13,7 @@ class ContactRepository extends BaseRepository
     public function create($user_id = null, $data)
     {
         // Check if its my email
-        if(!$data->email == Auth::user()->email) return (object) ['done' => false, 'message' => 'You cannot Add yourself as a Contact.'];
+        if($data->email == Auth::user()->email) return (object) ['done' => false, 'message' => 'You cannot Add yourself as a Contact.'];
 
         // Get the user being added
         $contact = User::where('email', $data->email)->first();
@@ -33,6 +33,13 @@ class ContactRepository extends BaseRepository
             'id'  => $this->generateUUID(),
             'user_id' => Auth::user()->id,
             'contact_id' => $contact['id'],
+            'accepted'    => 0,
+        ]);
+
+        $done2 = Contact::create([
+            'id'  => $this->generateUUID(),
+            'user_id' => $contact['id'],
+            'contact_id' => Auth::user()->id,
             'accepted'    => 0,
         ]);
 

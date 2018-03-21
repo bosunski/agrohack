@@ -117,39 +117,5 @@
 </nav>
 
 @section('after_scripts')
-    <script type="text/javascript">
-        $(document).ready(function(){
-          var city = "{{ Auth::user()->location }}";
-          var searchtext = "select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='" + city + "') and u='c'"
-          //change city variable dynamically as required
-          $.getJSON("https://query.yahooapis.com/v1/public/yql?q=" + searchtext + "&format=json", function(response){
-           console.log(response);
-
-           var data = response.query.results.channel;
-           var atmosphere = data.atmosphere;
-           var condition = data.item.condition;
-           var astronomy = data.astronomy;
-           var units = data.units;
-           var wind = data.item.wind;
-           var forecast = data.item.forecast;
-           var temp = forecast[0];
-
-           var rising = atmosphere.rising == 0 ? 'Not Rising' : 'Rising';
-
-           $('.w-temp-high').html(temp.high + "C");
-           $('.w-temp-low').html(temp.low + "C");
-           $('.w-humidity').html(atmosphere.humidity + "%");
-           $('.w-pressure').html(atmosphere.pressure + units.pressure);
-           $('.w-rising').html(rising);
-           $('.w-text').html(condition.text);
-           //$('.w-wind-angle').html(wind.direction ? wind.direction +'&deg;' : '');
-           //$('.w-wind-speed').html(wind.speed + + units.speed);
-          });
-
-
-          var fullDate = new Date()
-          console.log(fullDate);
-          document.querySelector('.date').innerHTML = fullDate;
-        });
-    </script>
+    
 @endsection
