@@ -69,10 +69,10 @@
             <a class="nav-link text-white nav-link-bold" href="/marketplace">MARKET</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="/training">TRAINING</a>
+            <a class="nav-link text-white nav-link-bold" href="/blog/training">TRAINING</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="/blog">NEWS</a>
+            <a class="nav-link text-white nav-link-bold" href="/blog/news">NEWS</a>
           </li>
           <li class="nav-item mr-4">
             <a class="nav-link text-white nav-link-bold" href="/about-us">ABOUT US</a>
