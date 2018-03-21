@@ -9,4 +9,6 @@ class Category extends Model
     protected $fillables = [
         'id', 'name',
     ];
+
+    public $incrementing = false;
 }

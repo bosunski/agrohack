@@ -105,247 +105,9 @@
         </div>
     </div>
 
-  <!-- <div class="row ml-3">
-    
-    <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-1.jpg" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">It takes time, money and a lot of effort to start and successfully run an agribusiness, either as a </p>
-              <a href="#" class="card-link">Top Posts </a>
-              <a href="#" class="card-link cl-01">Innovation</a>
-            </div>
-        </div>
-
-    </div>
-
-
-      <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-3.jpg" alt="Card image cap">
-          <div class="card-body">
-             <h5 class="card-title">Community Index</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">View Points</a>
-              <a href="#" class="card-link">Technology</a>
-            </div>
-        </div>
-    </div>
-
-
-     <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-3.jpg" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title">Farming in the Niger-Delta</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Top Posts</a>
-              <a href="#" class="card-link">Population</a>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-3.jpg" alt="Card image cap">
-          <div class="card-body">
-             <h5 class="card-title">Utilizing various Channels</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Curations</a>
-              <a href="#" class="card-link">Investments</a>
-            </div>
-        </div>
-    </div>
-
-
-
-     <div class="col-12 col-md-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-1.jpg" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">It takes time, money and a lot of effort to start and successfully run an agribusiness, either as a </p>
-              <a href="#" class="card-link">Top Posts </a>
-              <a href="#" class="card-link cl-01">Innovation</a>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-4.jpg" alt="Card image cap">
-          <div class="card-body">
-             <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-    </div>
-
-
-     <div class="col-12 col-md-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-2.jpg" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Recent</a>
-              <a href="#" class="card-link">New Oil</a>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="col-12 col-md-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-3.jpg" alt="Card image cap">
-          <div class="card-body">
-             <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Personal</a>
-              <a href="#" class="card-link">Earth</a>
-            </div>
-        </div>
-    </div>
-
-
-     <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-1.jpg" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">It takes time, money and a lot of effort to start and successfully run an agribusiness, either as a </p>
-              <a href="#" class="card-link">Top Posts </a>
-              <a href="#" class="card-link cl-01">Innovation</a>
-            </div>
-        </div>
-
-    </div>
-
-
-      <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-4.jpg" alt="Card image cap">
-          <div class="card-body">
-             <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Personal</a>
-              <a href="#" class="card-link">Harvest</a>
-            </div>
-        </div>
-    </div>
-
-
-     <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-1.jpg" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-3.jpg" alt="Card image cap">
-          <div class="card-body">
-             <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-    </div>
-
-
-
-     <div class="col-12 col-md-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-2.jpg" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">It takes time, money and a lot of effort to start and successfully run an agribusiness, either as a </p>
-              <a href="#" class="card-link">Top Posts </a>
-              <a href="#" class="card-link cl-01">Innovation</a>
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="col-12 col-md-3 mb-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-4.jpg" alt="Card image cap">
-          <div class="card-body">
-             <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-    </div>
-
-
-     <div class="col-12 col-md-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-1.jpg" alt="Card image cap">
-          <div class="card-body">
-              <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="col-12 col-md-3">
-              <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="/img/img-4.jpg" alt="Card image cap">
-          <div class="card-body">
-             <h5 class="card-title">Utilizing Arable Farmland</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-        </div>
-    </div>
-
-
-
-  </div>
- -->
 
  <div class="d-flex justify-content-end d-div">
         <div class="dropdown">
-          <button class="btn bg-white btn-lg" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Large button &nbsp;<i class="fa fa-angle-down"></i>
-          </button>
           <div class="dropdown-menu">
             <button class="dropdown-item" type="button">Action</button>
             <div class="dropdown-divider"></div>
@@ -355,25 +117,30 @@
           </div>
         </div>
       </div>
-      
+
   <!-- blog posts -->
   <div class="">
-    <div class="row bg-white card-div">
-      <div class="col-12 col-md-4">
-        <img src="/img/img-5.jpg" class="img-fluid" alt="Responsive image">
-      </div>
-      <div class="col-12 col-md-8">
-        <p class="date">Nov 29 2017 &nbsp;| &nbsp;<span class="name1">Naveen Rao</span></p>
-        <h3>Artificial Intelligence at the Edge</h3>
-        <p class="text-justify">
-          Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
-        </p>
-        <button class="btn btn-blue read-btn"><a href="/singleblog">Read more</a></button>
-        <button class="btn btn-blue">#News</button>
-      </div>
-    </div>
+      @forelse ($posts as $key => $post)
+          <div class="row bg-white card-div">
+            <div class="col-12 col-md-4">
+              <img src="/img/img-5.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-12 col-md-8">
+              <p class="date">{{ $post->created_at }} &nbsp;| &nbsp;<span class="name1">{{ $category->name }}</span></p>
+              <h3>{{ $post->title }}</h3>
+              <p class="text-justify">
+                {{ substr(strip_tags($post->content), 0, 380) }}
+            </p>
+              <button class="btn btn-blue read-btn"><a href="/singleblog/{{ $post->id }}">Read more</a></button>
+              <button class="btn btn-blue">#News</button>
+            </div>
+          </div>
+      @empty
+          <h5>No Posts in this Category Yet.</h5>
+      @endforelse
 
-    <div class="row bg-white card-div">
+
+    {{-- <div class="row bg-white card-div">
       <div class="col-12 col-md-4">
         <img src="/img/img-6.jpg" class="img-fluid" alt="Responsive image">
       </div>
@@ -506,8 +273,8 @@
         <button class="btn btn-blue read-btn"><a href="/singleblog">Read more</a></button>
         <button class="btn btn-blue">#News</button>
       </div>
-    </div>
-  </div>  
+    </div> --}}
+  </div>
 
   <!-- pagination -->
   <div aria-label="">
@@ -534,7 +301,7 @@
   <!-- Footer -->
      <footer>
         <p class="text-center footer-text mt-5">&copy OpenFarm 2018. All Rights Reserved</p>
-    </footer> 
+    </footer>
 
    <!-- Bootstrap JS -->
   <script src="/js/jquery/jquery.min.js"></script>

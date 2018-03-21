@@ -104,7 +104,7 @@
     </div>
 
   <div class="">
-    <p class="text-center mb-5 mt-4"> Nigeria has an annual deficit of over 60 million <br>tons of chicken meat processed from boiler valued</p>
+    <p class="text-center mb-5 mt-4">Description: {{ $product->description }}</p>
   </div>
   <!-- blog posts -->
   <div class="">
@@ -113,7 +113,7 @@
         <img src="/img/products/{{ $product->picture ? $product->picture : 'default.png' }}" class="img-fluid" alt="Responsive image">
       </div>
       <div class="col-12 col-md-4">
-        <p class="date">Nov 29 2017 &nbsp;| &nbsp;<span class="name1">Okoye Chidi</span></p>
+        <p class="date"><span class="name1">Okoye Chidi</span></p>
         <h3>{{ $product->name }}</h3>
         <p class="text-justify">
           <!--<ul>
@@ -124,7 +124,7 @@
         </p>
         <form class="" action="{{ route('pay') }}" method="post">
             <div class="form-group">
-                <input type="text" id="shipping_address" class="form-control" name="shipping_address" required>
+                <input type="text" id="shipping_address" placeholder="Shipping Address" class="form-control" name="shipping_address" required>
             </div>
             @csrf
             <input type="hidden" name="email" value="bosunski@gmail.com"> {{-- required --}}

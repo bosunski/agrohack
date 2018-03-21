@@ -1,5 +1,7 @@
 <?php
-
+use App\Category;
+use App\Post;
+use App\Notification;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,6 +40,16 @@ Route::get('/blog', function () {
    return view('front.blog');
 });
 
+Route::get('/blog/{name}', function ($name) {
+    $view = $name == 'news' ? 'front.blog' : 'front.training';
+    $category = Category::where('name', strtolower($name))->firstOrFail();
+    $posts = Post::where('category_id', $category['id'])->get();
+    $data['posts'] = $posts;
+    $data['category'] = $category;
+       return view($view, $data);
+});
+
+
 // Route::get('/dashboard', function () {
 //     return view('front.dashboard');
 // });
@@ -59,12 +71,35 @@ Route::get('/notifications', function () {
    return view('front.notifications');
 });
 
-Route::get('/createBlog', function () {
-   return view('admin.createBlog');
+Route::get('/createblog', function () {
+    $categories = Category::all();
+    $data['categories'] = $categories;
+   return view('admin.createBlog', $data);
 });
 
-Route::get('/singleblog', function () {
-   return view('front.singleblog');
+Route::post('/createblog', function () {
+   $post = new Post;
+   $post->id = str_random();
+   $post->category_id = request()->category_id;
+   $post->content = request()->content;
+   $post->title = request()->title;
+   $post->save();
+
+    $uri = 'http://agrohack.local/singleblog/'.$post->id;
+   $notification = new Notification;
+   $notification->type = 'general';
+   $notification->title = 'New Open Farm Blog Post';
+   $notification->message = 'Hey there we just added a new post to our platform, go check it out. Here '.$uri;
+   $notification->save();
+
+   return redirect()->back()->with('status', 'Post Created Successfully');
+})->name('makeblog');
+
+
+Route::get('/singleblog/{id}', function ($id) {
+    $post = Post::where('id', $id)->first();
+    $data['post'] = $post;
+   return view('front.singleblog', $data);
 });
 
 // Product Routes

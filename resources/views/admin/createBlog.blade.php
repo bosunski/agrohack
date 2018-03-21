@@ -21,7 +21,7 @@
       tinymce.init({
       selector: 'textarea',  // change this value according to your HTML
       plugin: 'a_tinymce_plugin advlist autolink link image lists charmap print preview',
-        
+
       toolbar: 'undo redo | styleselect | bold italic | link image | image',
       a_plugin_option: true,
       a_configuration_option: 400,
@@ -38,11 +38,11 @@
 <body class="bg-light">
   <!-- Header -->
    <div class="row header-1">
-        <div class="col-12 col-md-3 "> 
+        <div class="col-12 col-md-3 ">
             <img src="../img/logo.png" class="img-fluid " width="100%">
         </div>
-    
-        <div class="col-12 col-md-3 text-center d-flex"> 
+
+        <div class="col-12 col-md-3 text-center d-flex">
             <i class="fa fa-map-marker-alt text-primary pt-3"></i>
             <div>
                 <p class="mb-0 pb-0">11, Elekahia Road,</p>
@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-3 text-center d-flex"> 
+        <div class="col-12 col-md-3 text-center d-flex">
             <i class="fa fa-info text-primary pt-3 mr-4"></i>
             <div>
                 <p class="mb-0 pb-0">info@openfarm.com.ng</p>
@@ -59,10 +59,10 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-3 text-right"> 
+        <div class="col-12 col-md-3 text-right">
             <button type="button" class="btn btn-primary btn-lg"><span class="login-btn-text">REGISTER/LOGIN</span></button>
         </div>
-    
+
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-primary my-0">
@@ -94,7 +94,7 @@
             <a class="nav-link text-white nav-link-bold" href="#">CONTACT US</a>
           </li>
 
-          <li class="nav-item mr-4 btn-toggle d-flex justify-content-center">      
+          <li class="nav-item mr-4 btn-toggle d-flex justify-content-center">
             <button type="button" class="btn btn-primary-toggle btn-lg rounded-0"><span class="login-btn-text">REGISTER/LOGIN</span></button>
           </li>
         </ul>
@@ -106,7 +106,7 @@
   <!-- End of Header -->
   <!-- Main Body -->
 
- 
+
 
   <div class="">
     <h4 class="blog-h1">Create a post</h4>
@@ -114,46 +114,51 @@
 
    <div class=" d-flex justify-content-center pt-5">
            <div class="" style="width: 40%">
-                <form>
+                <form action="{{ route('makeblog') }}" method="post">
+                    @if (session('status'))
+                        <div class="alert alert-success">
+                            {{ session('status') }}
+                        </div>
+                    @endif
                         <div class="form-group row">
                           <label for="inputEmail3" class="col-sm-2 col-form-label">Title</label>
                           <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Title">
+                            <input name="title" type="text" class="form-control" id="inputEmail3" placeholder="Title">
                           </div>
                         </div>
                         <div class="form-group row">
                           <label for="exampleFormControlSelect1" class="col-sm-2 col-form-label">Post Type</label>
-                          <select class="form-control ml-3" id="exampleFormControlSelect1" style="width:78%;">
-                            <option>blog post</option>
-                            <option>tutorials</option>
-                            <option>...</option>
-                            <option>4</option>
-                            <option>5</option>
+                          <select name="category_id" class="form-control ml-3" id="exampleFormControlSelect1" style="width:78%;">
+                            @foreach ($categories as $key => $value)
+                                <option value="{{ $value->id }}">{{ $value->name }}</option>
+                            @endforeach
                           </select>
                         </div>
                         <fieldset class="form-group">
                           <div class="row">
                             <legend class="col-form-label col-sm-2 pt-0">Body</legend>
                             <div class="col-sm-10">
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                                <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
                             </div>
                           </div>
                         </fieldset>
-                        
+
                         <div class="form-group row ml-5">
                           <div class=" btn">
                             <button type="submit" class="btn btn-primary ml-5">Create Post</button>
                           </div>
 
-                          <div class=" btn">
+                          <!--<div class=" btn">
                             <button type="submit" class="btn btn-white border ml-5">Cancel</button>
-                          </div>
+                        </div>-->
                         </div>
+
+                        @csrf
                       </form>
-             
+
            </div>
 
-        
+
 
 
         </div>
@@ -161,7 +166,7 @@
   <!-- Footer
      <footer>
         <p class="text-center footer-text mt-5">&copy OpenFarm 2018. All Rights Reserved</p>
-    </footer> 
+    </footer>
 
    <!-- Bootstrap JS -->
   <script src="/js/jquery/jquery.min.js"></script>
