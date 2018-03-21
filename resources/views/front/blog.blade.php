@@ -368,7 +368,7 @@
         <p class="text-justify">
           Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
         </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
+        <button class="btn btn-blue read-btn"><a href="/singleblog">Read more</a></button>
         <button class="btn btn-blue">#News</button>
       </div>
     </div>
@@ -383,7 +383,7 @@
         <p class="text-justify">
           Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
         </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
+         <button class="btn btn-blue read-btn"><a href="/singleblog">Read more</a></button>
         <button class="btn btn-blue">#News</button>
       </div>
     </div>
@@ -398,7 +398,7 @@
         <p class="text-justify">
           Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
         </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
+         <button class="btn btn-blue read-btn"><a href="/singleblog">Read more</a></button>
         <button class="btn btn-blue">#News</button>
       </div>
     </div>
@@ -413,7 +413,7 @@
         <p class="text-justify">
           Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
         </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
+         <button class="btn btn-blue read-btn"><a href="/singleblog">Read more</a></button>
         <button class="btn btn-blue">#News</button>
       </div>
     </div>
@@ -428,7 +428,7 @@
         <p class="text-justify">
           Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
         </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
+         <button class="btn btn-blue read-btn"><a href="/singleblog">Read more</a></button>
         <button class="btn btn-blue">#News</button>
       </div>
     </div>
@@ -443,7 +443,7 @@
         <p class="text-justify">
           Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
         </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
+         <button class="btn btn-blue read-btn"><a href="/singleblog">Read more</a></button>
         <button class="btn btn-blue">#News</button>
       </div>
     </div>
@@ -458,7 +458,7 @@
         <p class="text-justify">
           Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
         </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
+         <button class="btn btn-blue read-btn"><a href="/singleblog">Read more</a></button>
         <button class="btn btn-blue">#News</button>
       </div>
     </div>
@@ -473,7 +473,7 @@
         <p class="text-justify">
           Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
         </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
+         <button class="btn btn-blue read-btn"><a href="/singleblog">Read more</a></button>
         <button class="btn btn-blue">#News</button>
       </div>
     </div>
@@ -488,7 +488,7 @@
         <p class="text-justify">
           Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
         </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
+         <button class="btn btn-blue read-btn"><a href="/singleblog">Read more</a></button>
         <button class="btn btn-blue">#News</button>
       </div>
     </div>
@@ -503,7 +503,7 @@
         <p class="text-justify">
           Imagine being able to… … have a camera-enabled assistant monitor your aging parents to make sure they are alert and healthy … autonomously  watch for product imperfections in factories without human interference … identify and locate lost hikers by using vision-enhanced drones to automatically send help … automatically recognize your petsitter and let him or…
         </p>
-        <button class="btn btn-blue read-btn">Read more <i class="fa fa-angle-down"></i></button>
+        <button class="btn btn-blue read-btn"><a href="/singleblog">Read more</a></button>
         <button class="btn btn-blue">#News</button>
       </div>
     </div>
