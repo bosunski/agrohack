@@ -1,6 +1,6 @@
-<div class="col-12 col-md-4 bg-success   pb-5 border-left bg-light">
- 
-  <div class="chat mx-0 px-0">
+<div id="chat-boxer" style="display:none;" class="col-12 col-md-4 bg-success   pb-5 border-left bg-light">
+
+  <div id="message-box" style="" class="chat mx-0 px-0">
 
     <div class="chat-contact-details p-2 mx-0 bg-white">
       <div class="row p-0 m-0">
@@ -8,16 +8,16 @@
           <img src="/img/profile-pic.svg"  class="img-responsive img-fluid bg-light p-4 m-0 border links" width="100%;">
         </div>
         <div class="col-6 col-md-8 pl-2 pr-0 py-0 m-0">
-          <h5>Nedy Udpmbat, <span class="fa-l-d"><em>sex</em></span></h5>
-          <i class="fa fa-map-marker-alt fa-l mb-2">&nbsp; Address</i>
-          <i class="fa fa-phone fa-l" >&nbsp; phone number</i>
+          <h5 id="message-name">Nedy Udpmbat, <span class="fa-l-d"><em id="message-gender">sex</em></span></h5>
+          <i id="message-location" class="fa fa-map-marker-alt fa-l mb-2">&nbsp; Address</i>
+          <i id="message-phone" class="fa fa-phone fa-l" >&nbsp; phone number</i>
         </div>
       </div>
-      <h5 class="fa-l-dd mt-2 mb-0 pb-0">Farm produce</h5>
-      <p class="mt-0 pt-0">Rice; Cassava; Millet;</p>
+      <h5  class="fa-l-dd mt-2 mb-0 pb-0">Farm produce</h5>
+      <p id="message-farmproduce" class="mt-0 pt-0">Rice; Cassava; Millet;</p>
     </div>
 
-    <div class="chat-space bg-light" ">
+    <div class="chat-space bg-light">
       <!--Chat header-->
       <!-- <div class="chat-space-header">
           User name
@@ -27,38 +27,40 @@
       <!-- <hr style="margin: 10px 0"> -->
       <div class="chat-box pt-0">
           <!--Area where all the messages will be. Has a max-height. Can be altered-->
-          <div class="messages-area mt-0">
-              <!--sent message from the user-->
+          <div id="c-message-list" class="messages-area mt-0">
+              <!--sent message from the user-
               <div class="sent-message text-left">
                   <p class="message sent">
                       hey Bosun we can win yea?
                   </p>
               </div>
-              <!--Message received-->
+              <!--Message received-
               <div class="received-message text-left">
                   <p class="message received">
                       Yea sure!
                   </p>
-              </div>
+              </div>-->
+              No Message between you and this user.
           </div>
           <!--Form to add new messages-->
-          <form action="" class="message-form">
-              <div class="message-input-area">
-                  <label for="user-message"></label>
-                  <!--Input area for message-->
-                  <input type="text" class="message-input" name="user-message" id="user-message"
-                         placeholder="Write a message">
-                  <!--Submit button-->
-                  <button class="btn" type="submit">
-                      <i class="fa fa-paper-plane message-submit"></i>
-                  </button>
-              </div>
-          </form>
-      </div>
-  </div>
-  </div>
+          <div class="message-input-area">
+              <label for="user-message"></label>
+              <!--Input area for message-->
+              <input type="text" class="message-input" name="user-message" id="user-message"
+                     placeholder="Write a message">
+              <!--Submit button-->
+              <button id="message-send" class="btn" type="submit">
+                  <i class="fa fa-paper-plane message-submit"></i>
+              </button>
+          </div>
 
-  <div class="profile-div" style="display: none;">
+      </div>
+      <button id="close-chat" type="button" class="btn btn-primary btn-sm-xs" name="button">Close Chat</button>
+  </div>
+  </div>
+</div>
+<div style="display:none;" id="profile-boxer" class="col-12 col-md-4 bg-success   profile-div pb-5 border-left bg-light">
+  <div class="" style="">
     <div class="d-flex">
         <h4 class="text-center mr-auto">EDIT MY PROFILE</h4>
         <span class="text-right btn bg-transparent btn-close"  style="cursor: pointer;">X</span>
@@ -80,7 +82,7 @@
          <!--<div class="form-group  mb-3">
            <input required type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputPassword1" placeholder="Middle Name">
          </div>
-       
+
          <div class="form-group   mb-3">
            <input required type="text" class="form-control border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputPassword1" placeholder="Last Name">
        </div>-->
@@ -93,7 +95,7 @@
          </select>
 
          <div class="form-group mb-3">
-           <input required value="{{ Auth::user()->location }}" type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0 profile-form " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address /Location">
+           <input name="location" required value="{{ Auth::user()->location }}" type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0 profile-form " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address /Location">
          </div>
 
 
@@ -138,11 +140,7 @@
              <option value="Zamfara">Zamfara</option>
              <option value="Outside Nigeria">Outside Nigeria</option>
            </select>
-
-   <div class="form-group mb-3">
-     <input name="location" required value="{{ Auth::user()->location }}" type="text" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Address /Location">
-   </div>
-            <div class="form-group mb-3 mt-2">
+        <div class="form-group mb-3 mt-2">
            <input value="{{ Auth::user()->phone }}" name="phone" type="number" class="form-control  border-top-0 border-left-0 border-right-0 rounded-0 profile-form" id="exampleInputPassword1" placeholder="Phone number">
          </div>
 

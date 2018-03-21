@@ -26,6 +26,12 @@ class UserController extends Controller
         return $user;
     }
 
+    public function getUser($user_id)
+    {
+        $user = $this->user->getUser($user_id);
+        return $user;
+    }
+
     public function acceptContact($contact_id)
     {
         // The repo must check if its already accepted, if yes, return 404
@@ -92,10 +98,17 @@ class UserController extends Controller
         return redirect()->back();
     }
 
-
-    public function getMessages()
+    public function addMessage(Request $request)
     {
-        $messages = $this->message->getMessages($this->user_id);
+        $data = (object)$request->all();
+        $done = $this->message->create($data);
+        if($done) echo 'done';
+    }
+
+
+    public function getMessages($contact_id)
+    {
+        $messages = $this->message->getMessages($this->user_id, $contact_id);
         return $messages;
     }
 

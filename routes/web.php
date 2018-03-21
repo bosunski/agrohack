@@ -79,8 +79,9 @@ Route::get('/dashboard/contacts', 'UserController@getContacts')->name('contacts'
 Route::get('/dashboard/notifications', 'UserController@getNotifications')->name('notifications');
 Route::get('/user/{id}', 'UserController@getUser')->name('get-user');
 Route::post('/user/addcontact', 'UserController@addContact')->name('addcontact');
+Route::post('/users/sendmessage', 'UserController@addMessage')->name('addmessage');
 Route::post('/user/removecontact/{id}', 'UserController@removeContact')->name('removecontact');
-Route::get('/user/messages', 'UserController@getMessages')->name('messages');
+Route::get('/user/messages/{id}', 'UserController@getMessages')->name('messages');
 Route::get('/user/conversation/{id}', 'UserController@getConversation')->name('conversation');
 
 // Market Routes
