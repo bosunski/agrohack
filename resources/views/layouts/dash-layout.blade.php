@@ -197,6 +197,15 @@
 
                          </p>
                     </div>
+
+                    <div class="tab-pane fade pt-4" id="notification" role="tabpanel" aria-labelledby="notify-tab">
+
+                      <p class="text-center d-flex mb-0" style="opacity: 0.7; margin-top: 0%; display:none;">
+                           @yield('tab')
+
+                      </p>
+                    </div>
+                    
                   </div>
 
               </div>
