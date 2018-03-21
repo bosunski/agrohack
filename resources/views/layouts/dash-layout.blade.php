@@ -133,27 +133,27 @@
             <!-- <nav class="" > -->
               <div class=" d-flex stretch pt-3 pb-0 mb-0">
 
-                  <div class=" mr-auto">
+                  <div class=" space">
                      <!--  <button type="button" id="sidebarCollapse" class="btn bg-transparent border-0 rounded-0 btn-cut mr-auto">
                         <i class="fa fa-cut icons" style="transform: rotateY(180deg);"></i>
                         <i class="fa fa-bars icons" style="display: none;"></i>
                       </button> -->
                   </div>
 
-                  <div class="d-flex pb-0 mb-0">
+                  <div class="side-list pb-0 mb-0">
                     <div class="d-flex mr-5 pt-3">
                       <p class=" pr-0 text-right">View as:</p>
                       <button class="btn bg-transparent view-active p-0 my-0  mx-3 btn-sm">LIST</button>
                       <button class="btn bg-transparent m-0 p-0 btn-sm">CARD</button>
                     </div>
 
-                    <div id="newContact" class=" links mr-5 text-center  mb-0 pb-0 ">
+                    <div id="newContact" class=" mr-o links mr-5 text-center  mb-0 pb-0 ">
                       <!-- <i class="fa fa-user-plus f-2"></i> -->
                       <img src="/img/add-user.svg" class="img-fluid img-responsive" width="150%">
                       <p class="mb-0 pb-0">New</p>
                     </div>
 
-                    <div id="send-report" class="mr-5 text-center links  mb-0 pb-0">
+                    <div id="send-report" class="mr-o mr-5 text-center links  mb-0 pb-0">
                       <!-- <i class="fa fa-file-alt f-2"></i> -->
                       <img src="/img/report.svg" class="img-fluid img-responsive" width="55%">
                       <form id="report-form" action="{{ route('report') }}" method="post">
@@ -162,7 +162,7 @@
                       <p>Report</p>
                     </div>
 
-                    <div  id="to-contacts" class="mr-5 text-center links mb-0 pb-0">
+                    <div  id="to-contacts" class="mr-o mr-5 text-center links mb-0 pb-0">
                       <!-- <i class="fa fa-comments f-2"></i> -->
                       <img src="/img/chats.svg" class="img-fluid img-responsive" width="120%">
                       <p>Chat</p>
@@ -183,6 +183,7 @@
             <div class="row bg-white" style="">
 
               <div class="col-12 col-md-8 mx-0 px-0">
+
                   <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
                       <a href="{{ route('contacts') }}" class="tab-shit nav-link {{ Route::current()->getName() == 'contacts' ? 'active ' : '' }}" id="home-tab" data-toggle="tab" href="{{ route('contacts') }}" role="tab" aria-controls="home" aria-selected="true">Chat</a>
@@ -190,31 +191,48 @@
                     <li class="nav-item">
                       <a href="{{ route('notifications') }}" class="tab-shit nav-link {{ Route::current()->getName() == 'notifications' ? 'active ' : '' }}" id="profile-tab" data-toggle="tab" href="{{ route('notifications') }}" role="tab" aria-controls="profile" aria-selected="false">Notification</a>
                     </li>
-                    <!-- <li class="nav-item">
-                      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Chat With Doctors</a>
-                    </li> -->
+
                   </ul>
 
                   <div class="tab-content" id="myTabContent">
 
-                    <div class="tab-pane fade show active pt-4 bg-white" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="tab-pane fade show active pt-4 bg-white" id="nav-chat" role="tabpanel" aria-labelledby="chat-tab">
 
                       <p class="text-center d-flex mb-0" style="opacity: 0.7; margin-top: 0%; display:none;">
                            @yield('content')
 
-                         </p>
+                      </p>
                     </div>
 
-                    <div class="tab-pane fade pt-4 " id="notification" role="tabpanel" aria-labelledby="notify-tab">
+                    <div class="tab-pane fade pt-4 " id="nav-notify" role="tabpanel" aria-labelledby="notify-tab">
 
                       <p class="text-center d-flex mb-0" style="opacity: 0.7; margin-top: 0%; display:none;">
                            @yield('tab')
+                           <!-- bfcbwfbfbsf -->
 
                       </p>
                     </div>
 
                   </div>
 
+
+
+                    <!-- <nav>
+                      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+                        <a class="nav-item nav-link active" id="nav-chat-tab" data-toggle="tab" href="#nav-chat" role="tab" aria-controls="nav-chat" aria-selected="true">Home</a>
+                        <a class="nav-item nav-link" id="nav-notify-tab" data-toggle="tab" href="#nav-notify" role="tab" aria-controls="nav-notify" aria-selected="false">Profile</a>
+
+                      </div>
+                    </nav>
+
+                    <div class="tab-content" id="nav-tabContent">
+
+                      <div class="tab-pane fade show active" id="nav-chat" role="tabpanel" aria-labelledby="nav-chat-tab">...</div>
+                      <div class="tab-pane fade" id="nav-notify" role="tabpanel" aria-labelledby="nav-notify-tab">...</div>
+
+                    </div>
+ -->
               </div>
 
 
