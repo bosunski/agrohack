@@ -22,8 +22,8 @@ body{
 }
 
 .profile-img{
-    width: 29%;
-    height: 17%;
+    width: 27%;
+    height: 12%;
     position: absolute;
     background-color: #ffffff;
     margin-top: -30%;
@@ -34,9 +34,12 @@ body{
 }
 
 .profile-img img{
-    width: 60%;
-    height: 60%;
-    padding-top: 10%;
+    width: 50%;
+    height: 50%;
+}
+
+.profile-imgtext{
+    font-size: 0.7em;
 }
 
 select{
@@ -138,7 +141,7 @@ select:focus{
 
 
 .storage-header{
-    background-color: #034078;
+    background-color: #007090;
 }
 
 .storage-header-text{

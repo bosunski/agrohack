@@ -34,13 +34,13 @@
         </div>
 
         <div class="signupcontent mt-5">
-            <div class="profile-img border text-center pt-3">
-                <span>Click to change.</span>
-              <img id="prv-image" src="/img/profile-pic.svg" alt="profile pics" srcset="">
+            <div class="profile-img border text-center pt-2 pb-1">
+                <span class="profile-imgtext">Click to change.</span>
+                <img id="prv-image" src="/img/profile-pic.svg" alt="profile pics" srcset="">
             </div>
             <form action="/register" method="post" class="form">
               <label class="mr-sm-2" for="inlineFormCustomSelect">Business Category</label>
-              <select selected="{{ old('business_category') }}" required name="business_category" class="{{ $errors->has('business_category') ? ' is-invalid' : '' }} custom-select border-top-0 border-left-0 border-right-0 mb-3" required id="inlineFormCustomSelect">
+              <select selected="{{ old('business_category') }}" required name="business_category" class="rounded-0 {{ $errors->has('business_category') ? ' is-invalid' : '' }} custom-select border-top-0 border-left-0 border-right-0 mb-3" required id="inlineFormCustomSelect">
                 <option value="">Choose Category</option>
                 <option value="Poultry">Poultry</option>
                 <option value="Foodstuff">Foodstuffs</option>
@@ -54,7 +54,7 @@
               @endif
 
               <div class="form-group mb-3">
-                <input value="{{ old('name') }}" name="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                <input value="{{ old('name') }}" name="name" type="text" class="rounded-0 form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
                 @if ($errors->has('name'))
                     <span class="invalid-feedback">
                         <strong>{{ $errors->first('name') }}</strong>
@@ -63,7 +63,7 @@
               </div>
 
               <label class="mr-sm-2" for="inlineFormCustomSelect">Who Are You?</label>
-              <select selected="{{ old('user_type') }}" required name="user_type" class="{{ $errors->has('user_type') ? ' is-invalid' : '' }} custom-select border-top-0 border-left-0 border-right-0 mb-3" id="inlineFormCustomSelect">
+              <select selected="{{ old('user_type') }}" required name="user_type" class="rounded-0 {{ $errors->has('user_type') ? ' is-invalid' : '' }} custom-select border-top-0 border-left-0 border-right-0 mb-3" id="inlineFormCustomSelect">
                 <option value="">Select</option>
                 <option value="farmer">Farmer</option>
                 <option value="investor">Investor</option>
@@ -78,7 +78,7 @@
               @endif
 
               <div class="form-group mb-3">
-                <input value="{{ old('email') }}" name="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                <input value="{{ old('email') }}" name="email" type="email" class="form-control rounded-0{{ $errors->has('email') ? ' is-invalid' : '' }}" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
 
                 @if ($errors->has('email'))
                     <span class="invalid-feedback">
@@ -88,7 +88,7 @@
               </div>
 
               <div class="form-group mb-3">
-                <input name="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" id="exampleInputPassword1" placeholder="Password">
+                <input name="password" type="password" class="form-control rounded-0{{ $errors->has('password') ? ' is-invalid' : '' }}" id="exampleInputPassword1" placeholder="Password">
 
                 @if ($errors->has('password'))
                     <span class="invalid-feedback">
@@ -98,7 +98,7 @@
              </div>
 
               <div class="form-group mb-3">
-                <input name="password_confirmation" type="password" class="form-control{{ $errors->has('password_confirmation') ? ' is-invalid' : '' }}" id="exampleInputPassword1" placeholder="Password Again">
+                <input name="password_confirmation" type="password" class="form-control rounded-0{{ $errors->has('password_confirmation') ? ' is-invalid' : '' }}" id="exampleInputPassword1" placeholder="Password Again">
 
                 @if ($errors->has('password_confirmation'))
                     <span class="invalid-feedback">
@@ -107,7 +107,7 @@
                 @endif
               </div>
 
-              <select selected="{{ old('state') }}" name="state" class="custom-select border-top-0 border-left-0 border-right-0 mb-3" id="inlineFormCustomSelect" name="state" id="state" required>
+              <select selected="{{ old('state') }}" name="state" class="rounded-0 custom-select border-top-0 border-left-0 border-right-0 mb-3" id="inlineFormCustomSelect" name="state" id="state" required>
                   <option >State</option>
                   <option value="Abuja FCT">Abuja FCT</option>
                   <option value="Abia">Abia</option>
@@ -155,7 +155,7 @@
                     </span>
                 @endif
             <div class="form-group mb-3">
-              <input value="{{ old('location') }}" name="location" type="text" class="form-control{{ $errors->has('location') ? ' is-invalid' : '' }}" id="exampleInputPassword1" placeholder="Location">
+              <input value="{{ old('location') }}" name="location" type="text" class="form-control rounded-0 {{ $errors->has('location') ? ' is-invalid' : '' }}" id="exampleInputPassword1" placeholder="Location">
 
               @if ($errors->has('location'))
                   <span class="invalid-feedback">
@@ -165,7 +165,7 @@
             </div>
 
             <div class="form-group mb-3">
-              <select selected="{{ old('gender') }}" required name="gender" class="{{ $errors->has('gender') ? ' is-invalid' : '' }} custom-select border-top-0 border-left-0 border-right-0 mb-3" id="inlineFormCustomSelect" name="state" id="state">
+              <select selected="{{ old('gender') }}" required name="gender" class="rounded-0 {{ $errors->has('gender') ? ' is-invalid' : '' }} custom-select border-top-0 border-left-0 border-right-0 mb-3" id="inlineFormCustomSelect" name="state" id="state">
                   <option value="">Gender</option>
                   <option value="Male">Male</option>
                   <option value="Female">Female</option>
@@ -179,7 +179,7 @@
             </div>
 
             <div class="form-group mb-3">
-              <input value="{{ old('phone') }}" name="phone" type="number" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" id="exampleInputPassword1" placeholder="Phone">
+              <input value="{{ old('phone') }}" name="phone" type="number" class="rounded-0 form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" id="exampleInputPassword1" placeholder="Phone">
 
               @if ($errors->has('phone'))
                   <span class="invalid-feedback">
@@ -189,7 +189,7 @@
             </div>
 
             <div class="form-group mb-3">
-              <input style="display:none;" name="picture" type="file" class="form-control" id="picture" placeholder="Phone">
+              <input style="display:none;" name="picture" type="file" class="rounded-0 form-control" id="picture" placeholder="Phone">
             </div>
 
               <p class="login-text mb-3 text-justify">By clicking Register, You are indicating that you have read and agreed to the <a href="" class="terms">terms and conditions</a> of this service
