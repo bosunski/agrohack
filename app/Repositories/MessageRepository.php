@@ -3,8 +3,9 @@
 namespace App\Repositories;
 
 use App\Message;
-
+use DB;
 use File;
+use Auth;
 
 class MessageRepository extends BaseRepository
 {
@@ -12,9 +13,10 @@ class MessageRepository extends BaseRepository
     {
         return Message::create([
             'id'  => $this->generateUUID(),
-            'user_id' => Auth::user()->id,
-            'Message_id' => $data->Message_id,
-            'accepted'    => 0,
+            'sender_id' => Auth::user()->id,
+            'recipient_id' => $data->recipient_id,
+            'message' => $data->message,
+            'read'    => 0,
         ]);
     }
 
@@ -45,6 +47,26 @@ class MessageRepository extends BaseRepository
                                 ['read', '=', 0]
                             ]
                         )->get();
+        return $Messages;
+    }
+
+    public function getMessages($sender_id, $recipient_id)
+    {
+        $sender_id = Auth::user()->id;
+        $Messages = Message::where(
+                            [
+                                ['sender_id', '=', $sender_id],
+                                ['recipient_id', '=', $recipient_id]
+                            ]
+                        )->orWhere(
+                            [
+                                ['sender_id', '=', $recipient_id],
+                                ['recipient_id', '=', $sender_id]
+                            ]
+                            )->orderBy('created_at', 'asc')->get();
+        //dd($sender_id);
+        // $messages = DB::table('messages')->select(
+        //     DB::raw("(sender_id = '".Auth::user()->id."' AND recipient_id='$recipient_id') OR (recipient_id = '$sender_id' AND sender_id='$recipient_id')"))->get();
         return $Messages;
     }
 

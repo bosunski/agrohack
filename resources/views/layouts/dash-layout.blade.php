@@ -224,12 +224,15 @@
   <script src="/js/jquery/jquery.min.js"></script>
   <script src="/js/bootstrap/bootstrap.min.js"></script>
   <script src="/js/items.js"></script>
+  <script type="text/javascript" src="/js/all.js"></script>
   <script src="/js/sweetalert2.min.js"></script>
+
  @include('sweet::alert')
  @yield('after_scripts')
   <script>
+    var auth_id = "{{ Auth::user()->id }}";
     $(document).ready(function () {
-
+        var auth_id = "{{ Auth::user()->id }}";
         $('#sidebarCollapse').on('click', function () {
             $('#sidebar').toggleClass('active');
             $('.icons').toggle();
@@ -250,7 +253,8 @@
 
         $('.profile-eye').on('click', function() {
           /* Act on the event */
-          $('.profile-div,.chat').toggle();
+          $("#chat-boxer").hide();
+          $('.profile-div').toggle();
         });
 
         $("#prv-image").click(function() {
@@ -271,69 +275,69 @@
 
 
 
-        //Script to simulate back and forth messaging between user and account officer;
-        const msgForm = document.querySelector('.message-form');
-        const msgsArea = document.querySelector('.messages-area');
-        const typingHtml = `
-                            <div class="received-message typing">
-                                <p class="message received show-typing">...</p>
-                            </div>`; //Show when a reply is being typed
-
-        msgForm.addEventListener('submit', addMessage);
-
-        function addMessage(e) {
-            e.preventDefault();
-            const msgInput = document.querySelector('.message-input');
-            if (msgInput.value !== '') {
-                let message = msgInput.value;
-                let msgHtml = `
-                    <div class="sent-message text-left">
-                        <p class="message sent">
-                                 ${message}
-                        </p>
-                   </div>
-                `;
-                msgsArea.innerHTML += msgHtml;
-                msgInput.value = '';
-                simulateReply()
-            } else {
-                return
-            }
-        }
-
-        function simulateReply() {
-            showTyping();
-            const replies = [
-                'Hey thank you for that message',
-                "Just hold on we'll be with you",
-                "What it do my nigs"
-            ];
-            setTimeout(() => {
-                let num = Math.round(Math.random() * replies.length);
-                console.log(num)
-                let randomMessage = replies[num];
-                let replyHtml = `
-                    <div class="received-message text-left">
-                        <p class="message received">
-                                 ${randomMessage}
-                        </p>
-                   </div>
-                `;
-                msgsArea.innerHTML += replyHtml;
-                let msgAreaHeight = msgsArea.scrollHeight;
-                msgsArea.scrollTop = msgAreaHeight;
-            }, 3000)
-        }
-
-        function showTyping() {
-            msgsArea.innerHTML += typingHtml;
-            let msgAreaHeight = msgsArea.scrollHeight;
-            msgsArea.scrollTop = msgAreaHeight;
-            setTimeout(() => {
-                let typing = document.querySelector('.typing');
-                typing.remove()
-            }, 3000)
-        };
+        // //Script to simulate back and forth messaging between user and account officer;
+        // const msgForm = document.querySelector('.message-form');
+        // const msgsArea = document.querySelector('.messages-area');
+        // const typingHtml = `
+        //                     <div class="received-message typing">
+        //                         <p class="message received show-typing">...</p>
+        //                     </div>`; //Show when a reply is being typed
+        //
+        // msgForm.addEventListener('submit', addMessage);
+        //
+        // function addMessage(e) {
+        //     e.preventDefault();
+        //     const msgInput = document.querySelector('.message-input');
+        //     if (msgInput.value !== '') {
+        //         let message = msgInput.value;
+        //         let msgHtml = `
+        //             <div class="sent-message text-left">
+        //                 <p class="message sent">
+        //                          ${message}
+        //                 </p>
+        //            </div>
+        //         `;
+        //         msgsArea.innerHTML += msgHtml;
+        //         msgInput.value = '';
+        //         simulateReply()
+        //     } else {
+        //         return
+        //     }
+        // }
+        //
+        // function simulateReply() {
+        //     showTyping();
+        //     const replies = [
+        //         'Hey thank you for that message',
+        //         "Just hold on we'll be with you",
+        //         "What it do my nigs"
+        //     ];
+        //     setTimeout(() => {
+        //         let num = Math.round(Math.random() * replies.length);
+        //         console.log(num)
+        //         let randomMessage = replies[num];
+        //         let replyHtml = `
+        //             <div class="received-message text-left">
+        //                 <p class="message received">
+        //                          ${randomMessage}
+        //                 </p>
+        //            </div>
+        //         `;
+        //         msgsArea.innerHTML += replyHtml;
+        //         let msgAreaHeight = msgsArea.scrollHeight;
+        //         msgsArea.scrollTop = msgAreaHeight;
+        //     }, 3000)
+        // }
+        //
+        // function showTyping() {
+        //     msgsArea.innerHTML += typingHtml;
+        //     let msgAreaHeight = msgsArea.scrollHeight;
+        //     msgsArea.scrollTop = msgAreaHeight;
+        //     setTimeout(() => {
+        //         let typing = document.querySelector('.typing');
+        //         typing.remove()
+        //     }, 3000)
+        // };
 
         $(".delete-c").click(function(event) {
             id = '#form-'+$(this).attr('id');
