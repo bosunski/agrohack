@@ -37,7 +37,7 @@ class ContactRepository extends BaseRepository
         ]);
 
         if($done) {
-            return (object) ['done' => true, 'message' => 'Contact Added.'];
+            return (object) ['done' => true, 'message' => 'Contact Added.', 'data' => $done];
         }
     }
 

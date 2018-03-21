@@ -10,6 +10,7 @@ use Paystack;
 use App\Transaction;
 use App\Repositories\ProductRepository;
 use Alert;
+use App\Notification;
 
 class PaymentController extends Controller
 {
@@ -47,6 +48,13 @@ class PaymentController extends Controller
             $tr->price = $product->price;
             $tr->status = $data->status;
             $tr->save();
+
+            $notification = new Notification;
+            $notification->user_id = $product->user_id;
+            $notification->type = 'user';
+            $notification->title = 'Product Sale';
+            $notification->message = 'Congrats, Your Product ' . $product->name .' has been paid for.';
+            $notification->save();
 
             if($tr) {
                 Alert::success('Purchased Successfully', 'Your product has been purchased and will be shipped to you soon!')->persistent('Close');
