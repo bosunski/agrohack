@@ -29,29 +29,29 @@
 
     <div class="row header-1">
         <div class="col-12 col-md-3 ">
-            <img src="../img/logo.png" class="img-fluid " width="100%">
+            <img src="../img/logo.png" class="img-fluid mt-3" width="50%">
         </div>
 
-        <div class="col-12 col-md-3 text-center d-flex">
+        <div class="col-12 col-md-3 text-right d-flex">
             <i class="fa fa-map-marker-alt text-primary pt-3"></i>
             <div>
-                <p class="mb-0 pb-0">11, Elekahia Road,</p>
-                <p class="mb-0 pb-0 pr-4">Port Harcourt</p>
-                <span class="mt-0 pt-0 pl-3"><em class="text-primary">or find agent near you</em></span>
+                <p class="mb-0 pb-0 index-text">11, Elekahia Road,</p>
+                <p class="mb-0 pb-0 pr-4 index-text">Port Harcourt</p>
+                <em class="text-primary mb-0 pb-0 index-text">or find agent near you</em>
             </div>
         </div>
 
-        <div class="col-12 col-md-3 text-center d-flex">
+        <div class="col-12 col-md-3 text-left d-flex">
             <i class="fa fa-info text-primary pt-3 mr-4"></i>
             <div>
-                <p class="mb-0 pb-0">info@openfarm.com.ng</p>
-                <p class="mb-0 pb-0 pr-4">+234 809 773 7457</p>
+                <p class="mb-0 pb-0 index-text">info@openfarm.com.ng</p>
+                <p class="mb-0 pb-0 pr-2 index-text">+234 809 773 7457</p>
             </div>
         </div>
         @guest
             <div class="col-12 col-md-3 text-right">
 
-                <a  class="btn btn-primary btn-lg" style="width: 70%;">
+                <a  class="btn btn-primary py-2 px-5">
                     <span class="login-btn-text">LOGIN / REGISTER</span>
                 </a>
             </div>
@@ -72,7 +72,8 @@
 
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary my-0 nav-2">
+
+    <nav class="navbar navbar-expand-lg navbar-light nav-bg my-0 nav-2">
       <a class="navbar-brand" href="#">
         <img src="img/logo.png" width="20%" >
       </a>

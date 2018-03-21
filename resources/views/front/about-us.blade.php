@@ -100,7 +100,7 @@
 					<img src="/img/img-14.jpg" class="img-fluid img-responsive float-right hero-image">
 				</div>
 				<div class="col-12 col-md-6 pt-5">
-					<p class="text-white hero-text mb-0 pb-0">We help you keep track of your team</p>
+					<p class="text-white hero-text mb-0 pb-0">We keep you in touch with fellow farmers, vets, investors and the latest trends in the agro-tech sector</p>
 					<p class="text-white mt-0  hero-text-2 ">Explore the histroy of the lorem Ipsum passage and generate your own text using</p>
 				</div>
 		    </div>
@@ -109,7 +109,7 @@
 		<div class="container container-fluid text-center bg-white story-div">
 			<!-- <div class="border-top-25 d-flex justify-content-center"></div> -->
 			<hr class="hr">
-			<header class="header-tag">Our Story</header>
+			<p class="header-tag">Our Story</p>
 			<p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 

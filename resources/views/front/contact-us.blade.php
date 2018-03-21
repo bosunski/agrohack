@@ -137,7 +137,7 @@
 				<div class="col-12 col-md-5">
 					<div class="details-div">
 						<div class="container-fluid bg-lighter text-center details-div-1 pb-1 mb-5">
-							<i class="fa fa-map-marker fa-border  rounded-circle"></i>
+							<i class="fa fa-map-marker-alt fa-border  rounded-circle"></i>
 							<p class="h5">Location</p>
 							<p class="">No 53, Mambolo Street, Wuse Zone 2,<br> Abuja, Nigeria.</p>
 						</div>

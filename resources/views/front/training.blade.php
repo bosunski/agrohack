@@ -94,11 +94,11 @@
     <div class="container-fluid storage-header pb-3 ">
         <div class="storage-search m-auto">
             <h4 class="storage-header-text pt-5 pb-3 text-center">
-                Trainings
+                Trainings/Tutorials
             </h4>
-            <form class="form mb-5">
+            <!-- <form class="form mb-5">
                 <input type="text" class="form-control mb-5 training-input"  placeholder="Search" >
-            </form>
+            </form> -->
         </div>
     </div>
 
@@ -121,8 +121,7 @@
                 <button class="btn btn-primary"> View more</button>
             </div><br/>
 
-
-            <div class="row mt-5 pt-5">
+             <div class="row mt-5 pt-5">
             <div class="col-md-3">
                 <div class="video-playlist">
                     <video  id="videoplayer" poster="/img/funding2.jpg" width="100%" controls >
@@ -139,6 +138,44 @@
                 <button class="btn btn-primary"> View more</button>
             </div>
         </div>
+
+         <div class="row mt-5 pt-5">
+            <div class="col-md-3">
+                <div class="video-playlist">
+                    <video  id="videoplayer" poster="/img/funding2.jpg" width="100%" controls >
+                        <source src="/video/video2.mp4" type="video/mp4" >                
+                    </video>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p class="mb-0 pb-0">Nov 29 2017 &nbsp;| &nbsp;<span>Naveen Rao</span></p>
+                <h3><a href="#" class="storage-link">How to Write A good Proposal</a></h3>
+                <p class="text-justify">
+                    Automatically send help … automatically recognize your petsitter and let him or Automatically send help … automatically recognize your petsitter and let him or…
+                </p>
+                <button class="btn btn-primary"> View more</button>
+            </div>
+        </div>
+
+         <div class="row mt-5 pt-5">
+            <div class="col-md-3">
+                <div class="video-playlist">
+                    <video  id="videoplayer" poster="/img/funding2.jpg" width="100%" controls >
+                        <source src="/video/video2.mp4" type="video/mp4" >                
+                    </video>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <p class="mb-0 pb-0">Nov 29 2017 &nbsp;| &nbsp;<span>Naveen Rao</span></p>
+                <h3><a href="#" class="storage-link">How to Write A good Proposal</a></h3>
+                <p class="text-justify">
+                    Automatically send help … automatically recognize your petsitter and let him or Automatically send help … automatically recognize your petsitter and let him or…
+                </p>
+                <button class="btn btn-primary"> View more</button>
+            </div>
+        </div>
+
+           </div>
     </div>
 
 
