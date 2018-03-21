@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Repositories\UserRepository;
 use App\Repositories\ContactRepository;
 use App\Repositories\MessageRepository;
+use App\Notification;
 use Auth;
 use Alert;
 
@@ -83,6 +84,14 @@ class UserController extends Controller
         $data = (object)$request->all();
         $contact = $this->contact->create($this->user_id, $data);
         if($contact->done) {
+            // We notify the person concerned
+            $notification = new Notification;
+            $notification->user_id = $contact->data->contact_id;
+            $notification->type = 'user';
+            $notification->title = 'Contact Update';
+            $notification->message = Auth::user()->name . ' has added you at contact. His email is ' . Auth::user()->email;
+            $notification->save();
+
             Alert::success('Contact Created!', 'Your Contact has been created Successfully.')->persistent('Close');
             return redirect('/dashboard/contacts');
         } else {
