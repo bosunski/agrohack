@@ -131,42 +131,44 @@
             <!-- <nav class="" > -->
               <div class=" d-flex stretch pt-3 pb-0 mb-0">
 
-                  <div class=" mr-auto">
+                  <div class=" space">
                      <!--  <button type="button" id="sidebarCollapse" class="btn bg-transparent border-0 rounded-0 btn-cut mr-auto">
                         <i class="fa fa-cut icons" style="transform: rotateY(180deg);"></i>
                         <i class="fa fa-bars icons" style="display: none;"></i>
                       </button> -->
                   </div>
 
-                  <div class="d-flex pb-0 mb-0">
+                  <div class="side-list pb-0 mb-0">
                     <div class="d-flex mr-5 pt-3">
                       <p class=" pr-0 text-right">View as:</p>
                       <button class="btn bg-transparent view-active p-0 my-0  mx-3 btn-sm">LIST</button>
                       <button class="btn bg-transparent m-0 p-0 btn-sm">CARD</button>
                     </div>
 
-                    <div id="newContact" class="mr-5 text-center  mb-0 pb-0 ">
-                      <!-- <i class="fa fa-user-plus f-2"></i> -->
-                      <img src="/img/add-user.svg" class="img-fluid img-responsive" width="150%">
-                      <p class="mb-0 pb-0">New</p>
-                    </div>
+                    <div class="side-list-2 mx-0 px-0">
+                      <div id="newContact" class="mr-o text-center  mb-0 pb-0 ">
+                        <!-- <i class="fa fa-user-plus f-2"></i> -->
+                        <img src="/img/add-user.svg" class="img-fluid img-responsive user-icon" >
+                        <p class="mb-0 pb-0 link-text">New</p>
+                      </div>
 
-                    <div class="mr-5 text-center mb-0 pb-0">
-                      <!-- <i class="fa fa-file-alt f-2"></i> -->
-                      <img src="/img/report.svg" class="img-fluid img-responsive" width="55%">
-                      <p>Report</p>
-                    </div>
+                      <div class="mr-o text-center mb-0 pb-0">
+                        <!-- <i class="fa fa-file-alt f-2"></i> -->
+                        <img src="/img/report.svg" class="img-fluid img-responsive report-icon">
+                        <p class="link-text">Report</p>
+                      </div>
 
-                    <div  class="mr-5 text-center mb-0 pb-0">
-                      <!-- <i class="fa fa-comments f-2"></i> -->
-                      <img src="/img/chats.svg" class="img-fluid img-responsive" width="120%">
-                      <p>Chat</p>
-                    </div>
+                      <div  class="mr-o text-center mb-0 pb-0">
+                        <!-- <i class="fa fa-comments f-2"></i> -->
+                        <img src="/img/chats.svg" class="img-fluid img-responsive chat-icon" >
+                        <p class="link-text">Chat</p>
+                      </div>
 
-                    <div  class="profile-eye links mr-5 text-center mb-0 pb-0">
-                      <!-- <i class="fa fa-eye f-2"></i> -->
-                      <img src="/img/profile-view.svg" class=" img-fluid img-responsive" width="80%">
-                      <p>My Profile</p>
+                      <div  class="profile-eye links mr-5 text-center mb-0 pb-0">
+                        <!-- <i class="fa fa-eye f-2"></i> -->
+                        <img src="/img/profile-view.svg" class=" img-fluid img-responsive profile-icon" >
+                        <p class="link-text">My Profile</p>
+                      </div>
                     </div>
                   </div>
               </div>
@@ -197,13 +199,14 @@
                       <p class="text-center d-flex mb-0" style="opacity: 0.7; margin-top: 0%; display:none;">
                            @yield('content')
 
-                         </p>
+                      </p>
                     </div>
 
                     <div class="tab-pane fade pt-4 " id="notification" role="tabpanel" aria-labelledby="notify-tab">
 
                       <p class="text-center d-flex mb-0" style="opacity: 0.7; margin-top: 0%; display:none;">
-                           @yield('tab')
+                           <!-- @yield('tab') -->
+                           bfcbwfbfbsf
 
                       </p>
                     </div>

@@ -71,7 +71,9 @@ body{
     opacity: 0.6;
     color: #fff;
 }
-
+.space{
+    margin-right: auto;
+}
 .bg-deep-blue::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #fff;
     opacity: 1; /* Firefox */
@@ -398,8 +400,27 @@ header{
     /*width: 500px;*/
 }
 
-
-
+.side-list{
+    display: flex;
+}
+.side-list-2{
+    display: flex;
+}
+.user-icon{
+    width: 150%;
+}
+.report-icon{
+    width: 55%;
+}
+.chat-icon{
+    width: 120%;
+}
+.profile-icon{
+    width: 65%;
+}
+.mr-o{
+    margin-right: 10%;
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -438,7 +459,7 @@ header{
 		width: 100%;
 	}
 	.sidebar {
-        margin-left: -25%;
+        display: none;
     }
 
     .navbar-toggler{
@@ -448,6 +469,45 @@ header{
         border-radius: 3%;
         border-radius: 3px;
         border: 0;
+    }
+    .space{
+        display: none;
+    }
+    .side-list{
+        display: block;
+    }
+    .side-list-2{
+        display: flex;
+    }
+    .user-icon{
+        width: 500%;
+        /*margin-right: 5%;*/
+    }
+    .report-icon{
+        width: 200%;
+    }
+    .chat-icon{
+        width: 200%;
+    }
+    .profile-icon{
+        width: 200%;
+    }
+    .mr-o{
+        margin-right: 10%;
+        width: 150%;
+    }
+    .profile-eye{
+        width: 150%;
+    }
+    .link-text{
+        display: none;
+    }
+    .side-list{
+        padding: 0 5%;
+        margin-bottom:5%;
+    }
+    .nav-tab{
+        padding-top: 5%;
     }
 }
 
@@ -473,7 +533,7 @@ header{
 		width: 100%;
 	}
 	.sidebar {
-        margin-left: -25%;
+        display: none;
     }
 
     .navbar-toggler{
@@ -482,5 +542,44 @@ header{
         right: 5%;
         border-radius: 3%;
         border: 0;
+    }
+    .space{
+        display: none;
+    }
+    .side-list{
+        display: block;
+    }
+    .side-list-2{
+        display: flex;
+    }
+    .user-icon{
+        width: 500%;
+        /*margin-right: 5%;*/
+    }
+    .report-icon{
+        width: 200%;
+    }
+    .chat-icon{
+        width: 200%;
+    }
+    .profile-icon{
+        width: 200%;
+    }
+    .mr-o{
+        margin-right: 10%;
+        width: 150%;
+    }
+    .profile-eye{
+        width: 150%;
+    }
+    .link-text{
+        display: none;
+    }
+    .side-list{
+        padding: 0 5%;
+        margin-bottom:5%;
+    }
+    .nav-tab{
+        padding-top: 5%;
     }
 }
