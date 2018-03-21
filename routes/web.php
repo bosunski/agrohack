@@ -15,6 +15,10 @@ Route::get('/', function () {
    return view('front.index');
 });
 
+Route::get('/index', function () {
+   return view('front.index');
+});
+
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('home');
@@ -49,6 +53,14 @@ Route::get('/chat', function () {
 
 Route::get('/contacts', function () {
    return view('front.contacts');
+});
+
+Route::get('/notifications', function () {
+   return view('front.notifications');
+});
+
+Route::get('/createBlog', function () {
+   return view('admin.createBlog');
 });
 
 Route::get('/singleblog', function () {
@@ -107,8 +119,8 @@ Route::get('/storage', function () {
    return view('front.storage');
 });
 
-Route::get('/contacts', function () {
-   return view('front.contacts');
+Route::get('/contact-us', function () {
+   return view('front.contact-us');
 });
 
 Route::get('/funding', function () {
@@ -122,4 +134,8 @@ Route::get('/training', function () {
 
 Route::get('/marketplace-two', function () {
     return view('front.marketplace-two');
+});
+
+Route::get('/about-us', function () {
+    return view('front.about-us');
 });

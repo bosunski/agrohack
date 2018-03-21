@@ -7,7 +7,9 @@ body{
 
 
 }
-
+.nav-bg{
+    background-color: #09ABC9;
+}
 .head{
     text-align: center;
     margin-top: 3%;
@@ -40,12 +42,24 @@ margin-left: 30px;
 
 .c-t-1{
 	font-weight: bold;
-	margin-left: 11%;
+	margin-left: 0px;
 	margin-top: 15%;
+	font-size: 1em;
+	text-align: center;
+}
+
+.btn-1{
+	font-size: 0.8em;
+}
+
+.mycard{
+	width: 80%;
 }
 
 .c-text{
-	justify-content: center;
+	text-align: center;
+	font-size: 0.8em;
+	margin-left: 0px;
 }
 
 .deck-2{
@@ -66,11 +80,11 @@ margin-left: 30px;
 
 .section2-h{
 	text-align: center;
-	font-size: 30px;
+	font-size: 2.5em;
 }
 
 .section3{
-	margin-top: 8%;
+	margin-top: 5%;
 }
 
 .btn-1{
@@ -84,7 +98,18 @@ margin-left: 30px;
 
 .h-1{
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 1em;
+	color: #333333;
+}
+
+.index-img{
+	width: 100%;
+	height: 50px;
+}
+
+.h-2{
+	font-size: 0.9em;
+	color: #555555;
 }
 
 .carousel-inner{
@@ -98,10 +123,6 @@ margin-left: 30px;
 	margin-left: -50px;
 	text-align: justify;
 }
-.p-01{
-	margin-left: 
-}
-
 
 .carousel-1{
 	font-weight: bold;
@@ -182,6 +203,10 @@ margin-left: 30px;
 	margin-top: 6%;
 }
 
+.tinywheel{
+	width: 100%;
+	height: 30px;
+}
 .first{
 	display: inline-block;
 	margin-left: 20%;
@@ -206,15 +231,23 @@ margin-left: 30px;
     }
 @media only screen and (max-width: 400px){
    .carousel-inner{
-   	height: 100%;
+   		height: 100%;
    }
 
    .carousel-caption{
-	margin-bottom:50px;
-	color: white;
-	margin-right: 70px;
-	/*font-size: 15px;
-	text-align: justify;*/
+		margin-bottom:50px;
+		color: white;
+		display: block;
+		top: -46%;
+		margin-right: 70px;
+		/*font-size: 15px;
+		text-align: justify;*/
+}
+
+.carousel-1{
+	font-weight: bold;
+	font-size: 3em;
+	display: block;
 }
 
 .centered {
@@ -228,12 +261,60 @@ margin-left: 30px;
     transform: translate(-50%, -50%);
 }
 
-.show{
-	margin-left: 50%;
+	.storage-header{
+		background-color: #007090;
+	}
+
+	.storage-header-text{
+		color: #ffffff;
+	}
+
+	.storage-search{
+		width: 25%;
+	}
+
+	.show{
+		margin-left: 50%;
+	}
+
+	.cd-01{
+		margin-bottom: 5%;
+	}
+
+	.nav-bg{
+    	background-color: #09ABC9;
+	}
+
+	.c-t-1{
+		font-weight: bold;
+		font-size: 1.3em;
+		margin-left: 0px;
+		margin-top: 15%;
+	}
+
+	.c-text{
+		padding-bottom: 5%;
+		text-align: center;
+	}
+
+	.section2-h{
+		font-size: 1.5em;
+		font-weight: 600;
+	}
+
+	.tinywheel{
+		width: 100%;
+		height: 50px;
+	}
+
 }
 
-.cd-01{
-	margin-bottom: 5%;
+@media only screen and (max-width: 400px){
+    
+   .storage-search{
+        width: 100%;
+        margin: 0% auto;
+    }
 }
-}
+
 

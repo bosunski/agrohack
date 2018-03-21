@@ -20,12 +20,17 @@ body{
     font-size: 0.6em;
     color: #BDBDBD;
 }
+.profile-form:focus{
+    box-shadow: none;
+    outline: none;
 
+}
 .profile-img{
-    width: 29%;
-    height: 17%;
-    position: absolute;
+    width: 40%;
+    height: 20%;
+    /*position: absolute;*/
     background-color: #ffffff;
+    padding: 4%;
     margin-top: -30%;
 }
 .logo-banner img{
@@ -34,9 +39,12 @@ body{
 }
 
 .profile-img img{
-    width: 60%;
-    height: 60%;
-    padding-top: 10%;
+    width: 50%;
+    height: 50%;
+}
+
+.profile-imgtext{
+    font-size: 0.7em;
 }
 
 select{
@@ -123,7 +131,6 @@ select:focus{
         font-size: 1em;
     }
 
-
     .signupheader{
         font-size: 1em;
     }
@@ -138,7 +145,7 @@ select:focus{
 
 
 .storage-header{
-    background-color: #034078;
+    background-color: #007090;
 }
 
 .storage-header-text{
@@ -147,6 +154,7 @@ select:focus{
 
 .storage-search{
     width: 25%;
+    
 }
 
 .form-inline input{
@@ -214,5 +222,20 @@ select:focus{
 
 a:hover{
     text-decoration: none;
+}
+
+@media only screen and (max-width: 400px){
+    
+    .form-control{
+        font-size: 1em;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+   .storage-search{
+        width: 100%;
+        margin: 0% auto;
+    }
 }
 
