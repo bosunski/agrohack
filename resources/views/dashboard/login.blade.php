@@ -37,7 +37,7 @@
                         @csrf
                         <div class="form-group mb-3">
                             <label class="mr-sm-2" for="inlineFormCustomSelect">Email</label>
-                            <input name="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="sombori@nigerdelta.com">
+                            <input name="email" type="email" class="rounded-0 form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="sombori@nigerdelta.com">
 
                             @if ($errors->has('email'))
                                 <span class="invalid-feedback">
@@ -47,7 +47,7 @@
                         </div>
 
                         <div class="form-group mb-3">
-                            <input name="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" id="exampleInputPassword1" placeholder="Password">
+                            <input name="password" type="password" class="rounded-0 form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" id="exampleInputPassword1" placeholder="Password">
                             @if ($errors->has('password'))
                                 <span class="invalid-feedback">
                                     <strong>{{ $errors->first('password') }}</strong>
@@ -55,16 +55,16 @@
                             @endif
                         </div>
 
-                        <div class="dflex justify-content-end">
-                            <button type="submit" class="btn btn-primary col-xs-4 col-md-4 sm-btn">Log In</button>
+                        <div class="dflex justify-content-end ">
+                            <button type="submit" class="btn btn-primary col-xs-4 col-md-4 sm-btn ">Log In</button>
                         </div>
 
                         <div>
                             <!--<p class="login-text">
                                 Forgot Password?
                             </p>-->
-                            <p class="login-text">
-                                Or Click <a href="{{ route('register') }}">here</a> to register
+                            <p class="login-text mt-3">
+                                Click <a href="{{ route('register') }}">here</a> to register
                             </p>
                         </div>
 
