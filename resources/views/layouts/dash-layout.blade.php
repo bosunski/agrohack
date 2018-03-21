@@ -83,30 +83,36 @@
       <div class="collapse navbar-collapse header-no-auth " id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item mr-4 active">
-            <a class="nav-link text-white nav-link-bold" href="#">HOME <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white nav-link-bold" href="/">HOME <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="#">DASHBOARD</a>
+            <a class="nav-link text-white nav-link-bold" href="/dashboard">DASHBOARD</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="#">FUNDING</a>
+            <a class="nav-link text-white nav-link-bold" href="/funding">FUNDING</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="#">TRAINING</a>
+            <a class="nav-link text-white nav-link-bold" href="/training">TRAINING</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="#">NEWS</a>
+            <a class="nav-link text-white nav-link-bold" href="/news">NEWS</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="#">STORAGE FACILITIES</a>
+            <a class="nav-link text-white nav-link-bold" href="/storage">STORAGE FACILITIES</a>
           </li>
 
           <li class="nav-item mr-4 btn-toggle d-flex justify-content-center">
             <button type="button" class="btn btn-primary-toggle btn-lg rounded-0"><span class="login-btn-text">LOGOUT</span></button>
           </li>
         </ul>
-        <form class="form-inline my-0 my-lg-0  mx-0 ">
-          <input class="form-control form-control-lg border-0 rounded-0 text-white bg-deep-blue" type="search" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;search for produce/farmer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#x1F50D;" size="45">
+        <form method="post" class="form-inline my-0 my-lg-0  mx-0" action="{{ route('find') }}">
+            @csrf
+          <input required name="query" class="form-control form-control-lg border-0 rounded-0 text-white bg-deep-blue" type="search" placeholder="Search for produce/farmer &#x1F50D;" size="45">
+          <select required class="form-control" name="user_type">
+              <option value=""> Select Type </option>
+              <option value="farmer">Farmer</option>
+              <option value="doctor">Doctor</option>
+          </select>
         </form>
       </div>
     </nav>
@@ -191,6 +197,15 @@
 
                          </p>
                     </div>
+
+                    <div class="tab-pane fade pt-4" id="notification" role="tabpanel" aria-labelledby="notify-tab">
+
+                      <p class="text-center d-flex mb-0" style="opacity: 0.7; margin-top: 0%; display:none;">
+                           @yield('tab')
+
+                      </p>
+                    </div>
+                    
                   </div>
 
               </div>
@@ -218,12 +233,15 @@
   <script src="/js/jquery/jquery.min.js"></script>
   <script src="/js/bootstrap/bootstrap.min.js"></script>
   <script src="/js/items.js"></script>
+  <script type="text/javascript" src="/js/all.js"></script>
   <script src="/js/sweetalert2.min.js"></script>
+
  @include('sweet::alert')
  @yield('after_scripts')
   <script>
+    var auth_id = "{{ Auth::user()->id }}";
     $(document).ready(function () {
-
+        var auth_id = "{{ Auth::user()->id }}";
         $('#sidebarCollapse').on('click', function () {
             $('#sidebar').toggleClass('active');
             $('.icons').toggle();
@@ -244,7 +262,8 @@
 
         $('.profile-eye').on('click', function() {
           /* Act on the event */
-          $('.profile-div,.chat').toggle();
+          $("#chat-boxer").hide();
+          $('.profile-div').toggle();
         });
 
         $("#prv-image").click(function() {
@@ -265,69 +284,69 @@
 
 
 
-        //Script to simulate back and forth messaging between user and account officer;
-        const msgForm = document.querySelector('.message-form');
-        const msgsArea = document.querySelector('.messages-area');
-        const typingHtml = `
-                            <div class="received-message typing">
-                                <p class="message received show-typing">...</p>
-                            </div>`; //Show when a reply is being typed
-
-        msgForm.addEventListener('submit', addMessage);
-
-        function addMessage(e) {
-            e.preventDefault();
-            const msgInput = document.querySelector('.message-input');
-            if (msgInput.value !== '') {
-                let message = msgInput.value;
-                let msgHtml = `
-                    <div class="sent-message text-left">
-                        <p class="message sent">
-                                 ${message}
-                        </p>
-                   </div>
-                `;
-                msgsArea.innerHTML += msgHtml;
-                msgInput.value = '';
-                simulateReply()
-            } else {
-                return
-            }
-        }
-
-        function simulateReply() {
-            showTyping();
-            const replies = [
-                'Hey thank you for that message',
-                "Just hold on we'll be with you",
-                "What it do my nigs"
-            ];
-            setTimeout(() => {
-                let num = Math.round(Math.random() * replies.length);
-                console.log(num)
-                let randomMessage = replies[num];
-                let replyHtml = `
-                    <div class="received-message text-left">
-                        <p class="message received">
-                                 ${randomMessage}
-                        </p>
-                   </div>
-                `;
-                msgsArea.innerHTML += replyHtml;
-                let msgAreaHeight = msgsArea.scrollHeight;
-                msgsArea.scrollTop = msgAreaHeight;
-            }, 3000)
-        }
-
-        function showTyping() {
-            msgsArea.innerHTML += typingHtml;
-            let msgAreaHeight = msgsArea.scrollHeight;
-            msgsArea.scrollTop = msgAreaHeight;
-            setTimeout(() => {
-                let typing = document.querySelector('.typing');
-                typing.remove()
-            }, 3000)
-        };
+        // //Script to simulate back and forth messaging between user and account officer;
+        // const msgForm = document.querySelector('.message-form');
+        // const msgsArea = document.querySelector('.messages-area');
+        // const typingHtml = `
+        //                     <div class="received-message typing">
+        //                         <p class="message received show-typing">...</p>
+        //                     </div>`; //Show when a reply is being typed
+        //
+        // msgForm.addEventListener('submit', addMessage);
+        //
+        // function addMessage(e) {
+        //     e.preventDefault();
+        //     const msgInput = document.querySelector('.message-input');
+        //     if (msgInput.value !== '') {
+        //         let message = msgInput.value;
+        //         let msgHtml = `
+        //             <div class="sent-message text-left">
+        //                 <p class="message sent">
+        //                          ${message}
+        //                 </p>
+        //            </div>
+        //         `;
+        //         msgsArea.innerHTML += msgHtml;
+        //         msgInput.value = '';
+        //         simulateReply()
+        //     } else {
+        //         return
+        //     }
+        // }
+        //
+        // function simulateReply() {
+        //     showTyping();
+        //     const replies = [
+        //         'Hey thank you for that message',
+        //         "Just hold on we'll be with you",
+        //         "What it do my nigs"
+        //     ];
+        //     setTimeout(() => {
+        //         let num = Math.round(Math.random() * replies.length);
+        //         console.log(num)
+        //         let randomMessage = replies[num];
+        //         let replyHtml = `
+        //             <div class="received-message text-left">
+        //                 <p class="message received">
+        //                          ${randomMessage}
+        //                 </p>
+        //            </div>
+        //         `;
+        //         msgsArea.innerHTML += replyHtml;
+        //         let msgAreaHeight = msgsArea.scrollHeight;
+        //         msgsArea.scrollTop = msgAreaHeight;
+        //     }, 3000)
+        // }
+        //
+        // function showTyping() {
+        //     msgsArea.innerHTML += typingHtml;
+        //     let msgAreaHeight = msgsArea.scrollHeight;
+        //     msgsArea.scrollTop = msgAreaHeight;
+        //     setTimeout(() => {
+        //         let typing = document.querySelector('.typing');
+        //         typing.remove()
+        //     }, 3000)
+        // };
 
         $(".delete-c").click(function(event) {
             id = '#form-'+$(this).attr('id');
@@ -345,6 +364,24 @@
               }
             });
         });
+
+        $(".add-c").click(function(event) {
+            id = '#form-'+$(this).attr('id');
+            swal({
+              title: "Are you sure?",
+              text: "This person will be added to your contact list so you can chat.",
+              icon: "warning",
+              buttons: true,
+              dangerMode: true,
+            }).then((willDelete) => {
+              if (willDelete) {
+                  $(id).submit();
+              } else {
+                //swal("Your contact is still safe.");
+              }
+            });
+        });
+
     });
   </script>
 

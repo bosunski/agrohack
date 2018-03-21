@@ -26,6 +26,12 @@ class UserController extends Controller
         return $user;
     }
 
+    public function getUser($user_id)
+    {
+        $user = $this->user->getUser($user_id);
+        return $user;
+    }
+
     public function acceptContact($contact_id)
     {
         // The repo must check if its already accepted, if yes, return 404
@@ -61,16 +67,27 @@ class UserController extends Controller
         return view('dashboard.contacts', $data);
     }
 
+
+    public function getNotifications()
+    {
+        $user_id = Auth::user()->id;
+        $contacts = $this->contact->list();
+        //dd($contacts);
+        $data['contacts'] = $contacts;
+        return view('dashboard.contacts', $data);
+    }
+
+
     public function addContact(Request $request)
     {
         $data = (object)$request->all();
         $contact = $this->contact->create($this->user_id, $data);
         if($contact->done) {
             Alert::success('Contact Created!', 'Your Contact has been created Successfully.')->persistent('Close');
-            return redirect()->back();
+            return redirect('/dashboard/contacts');
         } else {
             Alert::error('Unable to Create Contact', $contact->message)->autoclose(3000);
-            return redirect()->back();
+            return redirect('/dashboard/contacts');
         }
     }
 
@@ -81,10 +98,17 @@ class UserController extends Controller
         return redirect()->back();
     }
 
-
-    public function getMessages()
+    public function addMessage(Request $request)
     {
-        $messages = $this->message->getMessages($this->user_id);
+        $data = (object)$request->all();
+        $done = $this->message->create($data);
+        if($done) echo 'done';
+    }
+
+
+    public function getMessages($contact_id)
+    {
+        $messages = $this->message->getMessages($this->user_id, $contact_id);
         return $messages;
     }
 

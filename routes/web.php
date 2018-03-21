@@ -55,6 +55,18 @@ Route::get('/contacts', function () {
    return view('front.contacts');
 });
 
+Route::get('/notifications', function () {
+   return view('front.notifications');
+});
+
+Route::get('/createBlog', function () {
+   return view('admin.createBlog');
+});
+
+Route::get('/singleblog', function () {
+   return view('front.singleblog');
+});
+
 // Product Routes
 Route::get('/product/list', 'ProductController@index')->name('product-list');
 Route::post('/product/create', 'ProductController@create')->name('create-product');
@@ -67,10 +79,13 @@ Route::get('/user/profile', 'UserController@getProfile')->name('profile');
 Route::post('/user/updateprofile/{id}', 'UserController@updateProfile')->name('update-profile');
 Route::get('/user/inviteaccept/{contact_id}', 'UserController@acceptContact')->name('accept-contact');
 Route::get('/dashboard/contacts', 'UserController@getContacts')->name('contacts');
+
+Route::get('/dashboard/notifications', 'UserController@getNotifications')->name('notifications');
 Route::get('/user/{id}', 'UserController@getUser')->name('get-user');
 Route::post('/user/addcontact', 'UserController@addContact')->name('addcontact');
+Route::post('/users/sendmessage', 'UserController@addMessage')->name('addmessage');
 Route::post('/user/removecontact/{id}', 'UserController@removeContact')->name('removecontact');
-Route::get('/user/messages', 'UserController@getMessages')->name('messages');
+Route::get('/user/messages/{id}', 'UserController@getMessages')->name('messages');
 Route::get('/user/conversation/{id}', 'UserController@getConversation')->name('conversation');
 
 // Market Routes
@@ -90,7 +105,7 @@ Route::get('/funding/all', 'FundingController@getAllFundingRequests')->name('all
 
 
 // Search Routes
-Route::get('/search', 'SearchController@find')->name('find');
+Route::post('/search', 'SearchController@find')->name('find');
 // // Category Routes
 // Route::get('category/list', 'CategoryController@list')->name('category-list');
 // Route::get('category/all', 'CategoryController@all')->name('category-all');

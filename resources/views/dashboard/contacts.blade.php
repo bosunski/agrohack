@@ -9,13 +9,13 @@
               <img src="/img/profile-pic.svg"  class="img-responsive img-fluid bg-light p-1 links" width="40%;">
             </div>
             <div class="col-md-3">
-              <p class="font-weight-bold links">{{ $contact->user->name }}</p>
+              <p str="chat-{{ $contact->user->id }}" class="chat-name font-weight-bold links">{{ $contact->user->name }}</p>
             </div>
-            <div class="col-md-2 op links">
+            <div class="col-md-4 op links">
               <p>{{ $contact->user->location }}</p>
             </div>
-            <div class="col-md-4 op links" style="overflow-x:hidden;">
-              {{ $contact->farmproducts ? $product->farmproducts : 'None Added' }}
+            <div class="col-md-2 op links" style="overflow-x:hidden;">
+              {{ ucfirst($contact->user->user_type) }}
             </div>
             <div class="col-md-1 op links" style="overflow-x:hidden;">
                 <form id="form-{{ $contact->id }}" class="" action="{{ route('removecontact', $contact->id) }}" method="post">
@@ -23,6 +23,7 @@
                 </form>
               <span id="{{ $contact->id }}" class="delete-c fa fa-times"></span>
             </div>
+            <input id="chat-{{ $contact->user->id }}" type="hidden"  value="{{ $contact->user->id }}">
           </div>
      @empty
          <h6 style="opacity: 0.7">You have not added anyone to your contact list. Click add above to add people to your list.</h6>
@@ -58,6 +59,7 @@
             Millet</span>; <span>Wheat</span>;
           </div>
      </div>-->
+     <input type="hidden" id="_token" value="{{ csrf_token() }}">
  </div>
 @endsection
 
