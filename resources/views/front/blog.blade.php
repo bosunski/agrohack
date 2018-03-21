@@ -94,19 +94,16 @@
 
   <!-- Main Body -->
 
-  <div class="container-fluid storage-header">
-      <div class="storage-search mx-auto">
-          <h4 class="storage-header-text pt-5 pb-3 text-center">
-              Browse the latest Articles and News
-          </h4>
-          <form class="form-inline">
-              <select class="custom-select mb-4" id="inlineFormCustomSelect" name="search" id="Search">
-              <option value="loan" selected="selected">Loans</option>
-              <option value="Grants">Grant</option>
-          </select>
-          </form>
-      </div>
-  </div>
+  <div class="container-fluid storage-header pb-3 ">
+        <div class="storage-search m-auto">
+            <h4 class="storage-header-text pt-5 pb-3 text-center">
+                Browse The Latest Articles and News
+            </h4>
+            <form class="form mb-5">
+                <input type="text" class="form-control mb-5 training-input"  placeholder="Search" >
+            </form>
+        </div>
+    </div>
 
   <!-- <div class="row ml-3">
     

@@ -126,7 +126,6 @@ select:focus{
         font-size: 1em;
     }
 
-
     .signupheader{
         font-size: 1em;
     }
@@ -150,6 +149,7 @@ select:focus{
 
 .storage-search{
     width: 25%;
+    
 }
 
 .form-inline input{
@@ -217,5 +217,20 @@ select:focus{
 
 a:hover{
     text-decoration: none;
+}
+
+@media only screen and (max-width: 400px){
+    
+    .form-control{
+        font-size: 1em;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+   .storage-search{
+        width: 100%;
+        margin: 0% auto;
+    }
 }
 
