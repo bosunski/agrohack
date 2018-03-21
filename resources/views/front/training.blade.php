@@ -107,14 +107,15 @@
         <div class="row mt-5 pt-5">
             <div class="col-md-3">
                 <div class="video-playlist">
-                    <video  id="videoplayer" poster="/img/funding4.jpg" width="100%" controls >
+                   <!--  <video  id="videoplayer" poster="/img/funding4.jpg" width="100%" controls >
                         <source src="/video/video1.mp4" type="video/mp4" >                
-                    </video>
+                    </video> -->
+                    <iframe width="250" height="200" src="https://www.youtube.com/embed/--DOBrUB1tw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-md-6">
                 <p class="mb-0 pb-0">Nov 29 2017 &nbsp;| &nbsp;<span>Naveen Rao</span></p>
-                <h3><a href="#" class="storage-link">How to Write A good Proposal</a></h3>
+                <h3><a href="#" class="storage-link">Nigeria entrepreneur converts shipping containers into productive farms</a></h3>
                 <p class="text-justify">
                     Automatically send help … automatically recognize your petsitter and let him or Automatically send help … automatically recognize your petsitter and let him or…
                 </p>
@@ -124,14 +125,12 @@
              <div class="row mt-5 pt-5">
             <div class="col-md-3">
                 <div class="video-playlist">
-                    <video  id="videoplayer" poster="/img/funding2.jpg" width="100%" controls >
-                        <source src="/video/video2.mp4" type="video/mp4" >                
-                    </video>
+                    <iframe width="250" height="200" src="https://www.youtube.com/embed/Tp6qK3Qbjkw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-md-6">
                 <p class="mb-0 pb-0">Nov 29 2017 &nbsp;| &nbsp;<span>Naveen Rao</span></p>
-                <h3><a href="#" class="storage-link">How to Write A good Proposal</a></h3>
+                <h3><a href="#" class="storage-link">CatFish farming in the Niger Delta of Nigeria</a></h3>
                 <p class="text-justify">
                     Automatically send help … automatically recognize your petsitter and let him or Automatically send help … automatically recognize your petsitter and let him or…
                 </p>
@@ -142,14 +141,12 @@
          <div class="row mt-5 pt-5">
             <div class="col-md-3">
                 <div class="video-playlist">
-                    <video  id="videoplayer" poster="/img/funding2.jpg" width="100%" controls >
-                        <source src="/video/video2.mp4" type="video/mp4" >                
-                    </video>
+                    <iframe width="250" height="200" src="https://www.youtube.com/embed/yJSDekz08Og" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-md-6">
                 <p class="mb-0 pb-0">Nov 29 2017 &nbsp;| &nbsp;<span>Naveen Rao</span></p>
-                <h3><a href="#" class="storage-link">How to Write A good Proposal</a></h3>
+                <h3><a href="#" class="storage-link">15 Facts About Nigerian Pumpkin Leaf (Ugu) | All Nigerian Recipes</a></h3>
                 <p class="text-justify">
                     Automatically send help … automatically recognize your petsitter and let him or Automatically send help … automatically recognize your petsitter and let him or…
                 </p>
@@ -157,17 +154,15 @@
             </div>
         </div>
 
-         <div class="row mt-5 pt-5">
+         <div class="row my-5 py-5">
             <div class="col-md-3">
                 <div class="video-playlist">
-                    <video  id="videoplayer" poster="/img/funding2.jpg" width="100%" controls >
-                        <source src="/video/video2.mp4" type="video/mp4" >                
-                    </video>
+                    <iframe width="250" height="200" src="https://www.youtube.com/embed/vbCCvO3rKhc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-md-6">
                 <p class="mb-0 pb-0">Nov 29 2017 &nbsp;| &nbsp;<span>Naveen Rao</span></p>
-                <h3><a href="#" class="storage-link">How to Write A good Proposal</a></h3>
+                <h3><a href="#" class="storage-link">Tomato Farming in Nigeria & how to make money</a></h3>
                 <p class="text-justify">
                     Automatically send help … automatically recognize your petsitter and let him or Automatically send help … automatically recognize your petsitter and let him or…
                 </p>

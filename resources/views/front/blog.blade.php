@@ -99,9 +99,9 @@
             <h4 class="storage-header-text pt-5 pb-3 text-center">
                 Browse The Latest Articles and News
             </h4>
-            <form class="form mb-5">
+            <!-- <form class="form mb-5">
                 <input type="text" class="form-control mb-5 training-input"  placeholder="Search" >
-            </form>
+            </form> -->
         </div>
     </div>
 
@@ -341,21 +341,7 @@
   </div>
  -->
 
- <div class="d-flex justify-content-end d-div">
-        <div class="dropdown">
-          <button class="btn bg-white btn-lg" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Large button &nbsp;<i class="fa fa-angle-down"></i>
-          </button>
-          <div class="dropdown-menu">
-            <button class="dropdown-item" type="button">Action</button>
-            <div class="dropdown-divider"></div>
-              <button class="dropdown-item" type="button">Another action</button>
-              <div class="dropdown-divider"></div>
-              <button class="dropdown-item" type="button">Something else here</button>
-          </div>
-        </div>
-      </div>
-      
+ 
   <!-- blog posts -->
   <div class="">
     <div class="row bg-white card-div">
