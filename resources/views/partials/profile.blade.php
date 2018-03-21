@@ -1,4 +1,4 @@
-<div id="chat-boxer" style="display:none;" class="col-12 col-md-4 bg-success   pb-5 border-left bg-light">
+<div id="chat-boxer" style="display:none;" class="col-12 col-md-4  pb-5 border-left bg-white">
 
   <div id="message-box" style="" class="chat mx-0 px-0">
 

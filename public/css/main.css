@@ -20,12 +20,17 @@ body{
     font-size: 0.6em;
     color: #BDBDBD;
 }
+.profile-form:focus{
+    box-shadow: none;
+    outline: none;
 
+}
 .profile-img{
-    width: 27%;
-    height: 12%;
-    position: absolute;
+    width: 40%;
+    height: 20%;
+    /*position: absolute;*/
     background-color: #ffffff;
+    padding: 4%;
     margin-top: -30%;
 }
 .logo-banner img{
