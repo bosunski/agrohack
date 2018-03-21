@@ -68,10 +68,10 @@
             <a class="nav-link text-white nav-link-bold" href="/marketplace">MARKET</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="/training">TRAINING</a>
+            <a class="nav-link text-white nav-link-bold" href="/blog/training">TRAINING</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="/blog">NEWS</a>
+            <a class="nav-link text-white nav-link-bold" href="/blog/news">NEWS</a>
           </li>
           <li class="nav-item mr-4">
             <a class="nav-link text-white nav-link-bold" href="/about-us">ABOUT US</a>
@@ -99,25 +99,14 @@
             <h4 class="storage-header-text pt-5 pb-3 text-center">
                 Browse The Latest Articles and News
             </h4>
-            <form class="form mb-5">
+            <!-- <form class="form mb-5">
                 <input type="text" class="form-control mb-5 training-input"  placeholder="Search" >
-            </form>
+            </form> -->
         </div>
     </div>
 
 
- <div class="d-flex justify-content-end d-div">
-        <div class="dropdown">
-          <div class="dropdown-menu">
-            <button class="dropdown-item" type="button">Action</button>
-            <div class="dropdown-divider"></div>
-              <button class="dropdown-item" type="button">Another action</button>
-              <div class="dropdown-divider"></div>
-              <button class="dropdown-item" type="button">Something else here</button>
-          </div>
-        </div>
-      </div>
-
+ 
   <!-- blog posts -->
   <div class="">
       @forelse ($posts as $key => $post)

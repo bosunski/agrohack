@@ -42,7 +42,7 @@
 	background-color: white;
 
 }
-.fa-envelope , .fa-map-marker , .fa-phone{
+.fa-envelope , .fa-map-marker-alt , .fa-phone{
 	color: #09ABC9;
 }
 
@@ -153,7 +153,7 @@ iframe{
 	width: 90%;
 }
 .hero-text{
-	font-size: 3.5em;
+	font-size: 2em;
 	font-weight: 300;
 }
 .hero-text-2{
@@ -162,7 +162,8 @@ iframe{
 	padding: 0 15% 1% 1%;
 }
 .header-tag{
-	font-size: 250%;
+	/*font-size: 250%;*/
+	font-size: 3em;
 }
 .stats-card{
 	margin: 10% 0;

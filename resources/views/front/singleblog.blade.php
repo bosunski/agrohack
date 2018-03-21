@@ -14,9 +14,9 @@
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <!--Main CSS-->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link rel="stylesheet" href="/css/custom.css">
   <link rel="stylesheet" href="/css/style.css">
 
+  <link rel="stylesheet" href="/css/custom.css">
 </head>
 <body>
  <!-- Header -->
@@ -68,10 +68,10 @@
             <a class="nav-link text-white nav-link-bold" href="/marketplace">MARKET</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="/training">TRAINING</a>
+            <a class="nav-link text-white nav-link-bold" href="/blog/training">TRAINING</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="/blog">NEWS</a>
+            <a class="nav-link text-white nav-link-bold" href="/blog/news">NEWS</a>
           </li>
           <li class="nav-item mr-4">
             <a class="nav-link text-white nav-link-bold" href="/about-us">ABOUT US</a>
@@ -96,13 +96,15 @@
     <div class="centered">BROWSE THE LATEST ARTICLES AND NEWS</div>
   </div>
 
-  <div class="">
+  <div class=" mb-5 ">
     <h4 class="blog-h1">Blog</h4>
   </div>
 
-
-    <div class="first">
+   <!--  <div class="first">
       <img src="/img/img-11.jpg">
+     </div> -->
+     <div class="text-center">
+       <img src="/img/img-11.jpg" class="img-thumbnail" alt="...">
      </div>
      <div>
        <h3 class="first-1 mt-3">{{ $post->title }}</h3>

@@ -15,7 +15,7 @@
     <!--Main CSS-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <!-- Header -->
@@ -67,10 +67,10 @@
             <a class="nav-link text-white nav-link-bold" href="/marketplace">MARKET</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="/training">TRAINING</a>
+            <a class="nav-link text-white nav-link-bold" href="/blog/training">TRAINING</a>
           </li>
           <li class="nav-item mr-4">
-            <a class="nav-link text-white nav-link-bold" href="/blog">NEWS</a>
+            <a class="nav-link text-white nav-link-bold" href="/blog/news">NEWS</a>
           </li>
           <li class="nav-item mr-4">
             <a class="nav-link text-white nav-link-bold" href="/about-us">ABOUT US</a>
@@ -94,51 +94,35 @@
     <div class="container-fluid storage-header pb-3 ">
         <div class="storage-search m-auto">
             <h4 class="storage-header-text pt-5 pb-3 text-center">
-                Trainings
+                Trainings/Tutorials
             </h4>
-            <form class="form mb-5">
+            <!-- <form class="form mb-5">
                 <input type="text" class="form-control mb-5 training-input"  placeholder="Search" >
-            </form>
+            </form> -->
         </div>
     </div>
 
 
     <div class="container">
-        <div class="row mt-5 pt-5">
-            <div class="col-md-3">
-                <div class="video-playlist">
-                    <video  id="videoplayer" poster="/img/funding4.jpg" width="100%" controls >
-                        <source src="/video/video1.mp4" type="video/mp4" >                
-                    </video>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <p class="mb-0 pb-0">Nov 29 2017 &nbsp;| &nbsp;<span>Naveen Rao</span></p>
-                <h3><a href="#" class="storage-link">How to Write A good Proposal</a></h3>
-                <p class="text-justify">
-                    Automatically send help … automatically recognize your petsitter and let him or Automatically send help … automatically recognize your petsitter and let him or…
-                </p>
-                <button class="btn btn-primary"> View more</button>
-            </div><br/>
-
-
-            <div class="row mt-5 pt-5">
-            <div class="col-md-3">
-                <div class="video-playlist">
-                    <video  id="videoplayer" poster="/img/funding2.jpg" width="100%" controls >
-                        <source src="/video/video2.mp4" type="video/mp4" >                
-                    </video>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <p class="mb-0 pb-0">Nov 29 2017 &nbsp;| &nbsp;<span>Naveen Rao</span></p>
-                <h3><a href="#" class="storage-link">How to Write A good Proposal</a></h3>
-                <p class="text-justify">
-                    Automatically send help … automatically recognize your petsitter and let him or Automatically send help … automatically recognize your petsitter and let him or…
-                </p>
-                <button class="btn btn-primary"> View more</button>
-            </div>
-        </div>
+            @forelse ($posts as $key => $post)
+                <div class="row mt-5 pt-5">
+                   <div class="col-md-3">
+                       <div class="video-playlist">
+                           <iframe width="250" height="200" src="https://www.youtube.com/embed/Tp6qK3Qbjkw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                       </div>
+                   </div>
+                   <div class="col-md-6">
+                       <p class="mb-0 pb-0">{{ $post->created_at }} &nbsp;| &nbsp;<span>{{ $category->name }}</span></p>
+                       <h3><a href="#" class="storage-link">{{ $post->title }}</a></h3>
+                       <p class="text-justify">
+                           {{ substr(strip_tags($post->content), 0, 380) }}
+                        </p>
+                       <a href="/singleblog/{{ $post->id }}" class="btn btn-primary"> View more</a>
+                   </div>`
+               </div>
+            @empty
+                <h5>No Training / Tutorials Available yet Come again later.</h5>
+            @endforelse
     </div>
 
 
@@ -148,19 +132,19 @@
             if (a == '02') {
                 var video = document.getElementById('videoplayer');
                 var videoList = document.getElementById('video-list');
-                video.pause(); 
+                video.pause();
                 video.src = "videos/1.mp4";
-                video.load(); 
-                video.play(); 
+                video.load();
+                video.play();
                 return false;
             }
 
             if (a == '03') {
                 var video = document.getElementById('videoplayer');
-                video.pause(); 
-                video.src = "videos/2.mp4"; 
+                video.pause();
+                video.src = "videos/2.mp4";
                 video.load();
-                video.play(); 
+                video.play();
                 return false;
             }
     </script>

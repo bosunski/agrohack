@@ -36,9 +36,9 @@ Route::get('/header', function () {
    return view('front.header');
 });
 
-Route::get('/blog', function () {
-   return view('front.blog');
-});
+// Route::get('/blog', function () {
+//    return view('front.blog');
+// });
 
 Route::get('/blog/{name}', function ($name) {
     $view = $name == 'news' ? 'front.blog' : 'front.training';
