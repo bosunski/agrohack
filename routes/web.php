@@ -51,6 +51,14 @@ Route::get('/contacts', function () {
    return view('front.contacts');
 });
 
+Route::get('/notifications', function () {
+   return view('front.notifications');
+});
+
+Route::get('/createBlog', function () {
+   return view('admin.createBlog');
+});
+
 Route::get('/singleblog', function () {
    return view('front.singleblog');
 });
