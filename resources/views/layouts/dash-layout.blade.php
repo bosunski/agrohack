@@ -108,10 +108,12 @@
         <form method="post" class="form-inline my-0 my-lg-0  mx-0" action="{{ route('find') }}">
             @csrf
           <input required name="query" class="form-control form-control-lg border-0 rounded-0 text-white bg-deep-blue" type="search" placeholder="Search for produce/farmer &#x1F50D;" size="45">
-          <select required class="form-control" name="user_type">
+          <select required class="form-control form-control-lg border-0 rounded-0 text-white bg-deep-blue" name="user_type">
               <option value=""> Select Type </option>
               <option value="farmer">Farmer</option>
               <option value="doctor">Doctor</option>
+              <option value="investor">Investor</option>
+              <option value="produce">Farm produce</option>
           </select>
         </form>
       </div>
@@ -183,14 +185,14 @@
                     <li class="nav-item">
                       <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Notification</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                       <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Chat With Doctors</a>
-                    </li>
+                    </li> -->
                   </ul>
 
                   <div class="tab-content" id="myTabContent">
 
-                    <div class="tab-pane fade show active pt-4" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="tab-pane fade show active pt-4 bg-white" id="home" role="tabpanel" aria-labelledby="home-tab">
 
                       <p class="text-center d-flex mb-0" style="opacity: 0.7; margin-top: 0%; display:none;">
                            @yield('content')
@@ -198,7 +200,7 @@
                          </p>
                     </div>
 
-                    <div class="tab-pane fade pt-4" id="notification" role="tabpanel" aria-labelledby="notify-tab">
+                    <div class="tab-pane fade pt-4 " id="notification" role="tabpanel" aria-labelledby="notify-tab">
 
                       <p class="text-center d-flex mb-0" style="opacity: 0.7; margin-top: 0%; display:none;">
                            @yield('tab')
