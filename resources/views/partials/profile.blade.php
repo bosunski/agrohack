@@ -59,7 +59,11 @@
   </div>
   </div>
 </div>
-<div style="display:none;" id="profile-boxer" class="col-12 col-md-4 bg-success   profile-div pb-5 border-left bg-light">
+
+
+
+
+<div style="display:none;" id="profile-boxer" class="col-12 col-md-4   profile-div pb-5 border-left bg-white">
   <div class="" style="">
     <div class="d-flex">
         <h4 class="text-center mr-auto">EDIT MY PROFILE</h4>

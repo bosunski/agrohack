@@ -421,6 +421,10 @@ header{
 .mr-o{
     margin-right: 10%;
 }
+.link-text{
+    /*display: none;*/
+    font-size: 0.9em;
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES
